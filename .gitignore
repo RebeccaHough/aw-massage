@@ -1,0 +1,14 @@
+# dependencies
+/node_modules
+
+# images
+/WebsiteImages-
+
+# compilery things for sass and semantic
+/.sass-cache
+style.css.map
+/semantic/*
+
+# but don't ignore semantic dist files
+!/semantic/dist/semantic.min.css
+!/semantic/dist/semantic.min.js

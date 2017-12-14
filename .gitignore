@@ -2,13 +2,19 @@
 /node_modules
 
 # images
-/WebsiteImages-
+/assets/images/*
 
-# compilery things for sass and semantic
+# compilery things for sass
 /.sass-cache
 style.css.map
+
+# compilery things for semantic
 /semantic/*
 
-# but don't ignore semantic dist files
+# but don't ignore semantic dist or modified files
 !/semantic/dist/semantic.min.css
 !/semantic/dist/semantic.min.js
+!/semantic/src/site/elements/image.variables
+
+# Todo list
+todo.txt

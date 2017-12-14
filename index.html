@@ -6,6 +6,8 @@
 		<meta content="author" name="D Waterman">
 		<meta content="description" name="Massage Website">
 		<link rel="stylesheet" href="style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="semantic/dist/semantic.min.js"></script>
 	</head>
 	<body>
 	    <div id="pageTitle">
@@ -13,20 +15,36 @@
 			AW Massage
 		</div>
 
-		<ul id="navigationBar">
-			<li><a href="index.html" class="active">Home</a></li>
-			<li><a href="treatments.html">Treatments</a></li>
-			<li><a href="whattoexpect.html">What To Expect</a></li>
-			<li><a href="about.html">About Aase</a></li>
-			<li><a href="contact.html">Contact</a></li>
-			<li><a href="feedback.html">Feedback</a></li>
-		</ul>
+		<div class="mobile only tablet only">3 menu bar</div>
+
+		<div class="ui horizontal divider">
+		</div>
+
+		<div id="navBar" class="ui stackable container menu">
+			<div class="item">
+				<a href="index.html" class="active">Home</a>
+			</div>
+			<div class="item">
+				<a href="treatments.html">Treatments</a>
+			</div>
+			<div class="item">
+				<a href="whattoexpect.html">What To Expect</a>
+			</div>
+			<div class="item">
+				<a href="about.html">About Aase</a>
+			</div>
+			<div class="item">
+				<a href="contact.html">Contact</a>
+			</div>
+			<div class="item">
+				<a href="feedback.html">Feedback</a>
+			</div>
+		</div>
 
 		<div class="centeredImage">
 			<img src="WebsiteImages/OrchidStone.jpg" alt="Orchid Picture" style="width: 600px; height: 300px;">
 		</div>
 		
-		<!-- Main Text -->
 		<div id="mainContent">
 			<p style="text-align:center; font-family:Arial; font-size:1.1em;">"A happy mind is medicine, no better prescription exists."</p>
 			<br>
@@ -68,12 +86,46 @@
 			<img src="WebsiteImages/CTha.jpg" alt="CThA Logo" style="width: 250px; height: 146px;">
 		</div>
 		
-		<div id="footer">
-			<div id="footerCopyright">
-				<p>Copyright &copy; 2017 AW massage</p>
-			</div>
-			<div id="footerTags">
-				<p><strong>Swedish, Deep Tissue, Advanced Clinical, Hot Stone Fusion Massage --- Rowledge, Farnham, Frensham, Alton, Crondall, Bentley, Churt</strong></p>
+		<div id="footer" class="ui inverted vertical segment">
+			<div class="ui container">
+				<div class="ui center aligned inverted divided stackable grid">
+					<div class="three wide left aligned column">
+						<h4 class="ui inverted header">Massages Offered</h4>
+						<div class="ui inverted link list">
+							<a href="#" class="item">Swedish</a>
+							<a href="#" class="item">Deep Tissue</a>
+							<a href="#" class="item">Advanced Clinical</a>
+							<a href="#" class="item">Hot Stone Fusion Massage</a>
+						</div>
+					</div> 
+					<div class="three wide left aligned column">
+						<h4 class="ui inverted header">Group 2</h4>
+						<div class="ui inverted link list">
+							<a href="#" class="item">Link</a>
+							<a href="#" class="item">Link</a>
+							<a href="#" class="item">Link</a>
+							<a href="#" class="item">Link</a>
+						</div>
+					</div>
+					<div class="seven wide left aligned column">
+						<h4 class="ui inverted header">Footer</h4>
+						<p>Footer text</p>
+					</div>
+				</div>
+				<div class="ui inverted section divider"></div>
+				<div class="ui center aligned container">
+					<img src="assets/images/logo.png" class="ui centered medium image" alt="AW Massage Logo">
+					<h5 class="inverted header">Copyright &copy; 2017 AW Massage</h5>
+					<div class="ui horizontal inverted small divided list">
+						<div class="item">Rowledge</div>
+						<div class="item">Farnham</div> 
+						<div class="item">Frensham</div>
+						<div class="item">Alton</div>
+						<div class="item">Crondall</div>
+						<div class="item">Bentley</div>
+						<div class="item">Churt</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</body>

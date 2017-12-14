@@ -2,6 +2,7 @@
 /* Site variables for AW Massage wesbsite*/
 /* Brand colours */
 /* Font styling */
+@import url(./semantic/dist/semantic.min.css);
 body {
   font-family: "Calibri Light", Calibri, Verdana, Arial, sans-serif;
   font-size: 1em;
@@ -36,7 +37,7 @@ body {
       /* 1010 size of 'what to expect' title */ }
       body #pageTitle img {
         display: none; } }
-  body #navigationBar {
+  body .navBar {
     overflow: hidden;
     background-color: #bababa;
     font-size: 0;
@@ -44,24 +45,24 @@ body {
     margin: 0;
     padding: 0;
     text-align: center; }
-    body #navigationBar ul {
+    body .navBar ul {
       font-size: 0; }
-    body #navigationBar li {
+    body .navBar li {
       font-size: 16px;
       display: inline;
       margin: 0;
       padding: 0; }
-    body #navigationBar a {
+    body .navBar a {
       display: inline-block;
       color: black;
       text-align: center;
       padding: 14px 16px;
       text-decoration: none;
       font-size: 1.2em; }
-    body #navigationBar a:hover {
+    body .navBar a:hover {
       background-color: #e0e0e0;
       color: black; }
-    body #navigationBar a.active {
+    body .navBar a.active {
       background-color: #834962;
       color: white; }
   body #contactTable {
@@ -99,11 +100,8 @@ body {
     font-weight: bold;
     background-color: #834962;
     padding: 0.8em; }
-  body #footerTags, body #footerCopyright {
-    font-family: Verdana;
-    font-size: 0.6em;
-    color: #999999;
-    text-align: center;
-    margin-top: 2em; }
+  body #footer {
+    margin: 3em 0 0;
+    padding: 3em 0 2em; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,5 +1,6 @@
 /* Cascading Style Sheet for AW Massage Website */
 @import "./variables.scss";
+@import "./semantic/dist/semantic.min.css";
 
 body {
 	font-family: $font-stack;
@@ -43,7 +44,7 @@ body {
 		} 
 	}
 	
-	#navigationBar {
+	.navBar {
 		overflow: hidden;
 		background-color: $nav-bar-colour;
 		font-size: 0;
@@ -128,13 +129,9 @@ body {
 		padding: 0.8em;
 	}
 	
-	#footer {}
-	#footerTags, #footerCopyright { 
-		font-family: Verdana;
-		font-size: 0.6em;
-		color: $font-colour-subtle;
-		text-align: center;
-		margin-top: 2em;
-	}	
+	#footer { 
+		margin: 3em 0 0;
+		padding: 3em 0 2em;
+	}
 }
 

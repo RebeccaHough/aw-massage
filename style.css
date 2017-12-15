@@ -14,14 +14,14 @@ body {
   body ul {
     list-style-type: none; }
   body h2 {
-    color: #834962; }
+    color: #704d9a; }
   body #pageTitle {
     font: bold 120% Segoe Script, cursive, sans-serif;
     font-size: 4em;
     text-align: center;
     position: relative;
     padding: 20px;
-    background-color: #834962;
+    background-color: #704d9a;
     color: white; }
     body #pageTitle img {
       height: 103px;
@@ -32,39 +32,6 @@ body {
       position: absolute;
       top: 0;
       left: 0; }
-  @media screen and (max-width: 1010px) {
-    body {
-      /* 1010 size of 'what to expect' title */ }
-      body #pageTitle img {
-        display: none; } }
-  body .navBar {
-    overflow: hidden;
-    background-color: #bababa;
-    font-size: 0;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    text-align: center; }
-    body .navBar ul {
-      font-size: 0; }
-    body .navBar li {
-      font-size: 16px;
-      display: inline;
-      margin: 0;
-      padding: 0; }
-    body .navBar a {
-      display: inline-block;
-      color: black;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-      font-size: 1.2em; }
-    body .navBar a:hover {
-      background-color: #e0e0e0;
-      color: black; }
-    body .navBar a.active {
-      background-color: #834962;
-      color: white; }
   body #contactTable {
     width: 500px;
     margin-left: auto;
@@ -88,20 +55,28 @@ body {
     margin-bottom: 2em;
     margin-left: auto;
     margin-right: auto; }
-  body #mainContent p, body #mainContent h1, body #mainContent h2, body #mainContent ul {
-    margin: auto;
-    max-width: 900px;
-    padding: 0.5em;
-    text-align: left;
-    list-style-type: disc; }
+  body #cards {
+    margin: 10px 0;
+    padding: 20px 0; }
+    body #cards img {
+      height: 185px; }
   body #treatmentInfo {
     text-align: center;
     font-size: 1.5em;
     font-weight: bold;
-    background-color: #834962;
+    background-color: #704d9a;
     padding: 0.8em; }
   body #footer {
     margin: 3em 0 0;
     padding: 3em 0 2em; }
+  body .text-overlay {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 10px 15px; }
+  body .word-wrap {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word; }
 
 /*# sourceMappingURL=style.css.map */

@@ -37,46 +37,7 @@ body {
 		}
 	}
 	
-	@media screen and (max-width: 1010px) {
-		/* 1010 size of 'what to expect' title */
-		#pageTitle img { 
-			display: none; 
-		} 
-	}
-	
-	.navBar {
-		overflow: hidden;
-		background-color: $nav-bar-colour;
-		font-size: 0;
-		list-style: none;
-		margin: 0; 
-		padding: 0;
-		text-align: center;
-		ul {
-			font-size: 0;
-		}			
-		li {
-			font-size: 16px;
-			display: inline;
-			margin: 0; 
-			padding: 0;
-		}
-		a {
-			display: inline-block;
-			color: black;
-			text-align: center;
-			padding: 14px 16px;
-			text-decoration: none;
-			font-size: 1.2em;
-		}
-		a:hover {
-			background-color: $secondary;
-			color: black;
-		}
-		a.active {
-			background-color: $primary;
-			color: white;
-		}
+	#navBar {
 	}
 	
 	#contactTable {
@@ -112,15 +73,16 @@ body {
 	}
 	
 	#mainContent {
-		p, h1, h2, ul {
-			margin: auto;
-			max-width: 900px;
-			padding: 0.5em;
-			text-align: left;
-			list-style-type: disc;
-		}
 	}
 	
+	#cards {
+		margin: 10px 0;
+		padding: 20px 0;
+		img {
+			height: 185px;
+		}
+	}
+
 	#treatmentInfo {
 		text-align: center;
 		font-size: 1.5em;
@@ -132,6 +94,19 @@ body {
 	#footer { 
 		margin: 3em 0 0;
 		padding: 3em 0 2em;
+	}
+
+	.text-overlay {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		padding: 10px 15px;
+	}
+
+	.word-wrap {
+		overflow-wrap: break-word;
+		word-wrap: break-word;
+		word-break: break-word;
 	}
 }
 

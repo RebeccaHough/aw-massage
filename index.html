@@ -7,45 +7,38 @@
 		<meta content="description" name="Massage Website">
 		<link rel="stylesheet" href="style.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script src="semantic/dist/semantic.min.js"></script>
+		<script src="semantic/dist/semantic.js"></script>
 	</head>
 	<body>
+		<div class="ui vertical inverted sidebar menu left toggleable">
+			<a class="active item" href="index.html">Home</a>
+			<a class="item" href="treatments.html">Treatments</a>
+			<a class="item" href="whattoexpect.html">What To Expect</a>
+			<a class="item" href="about.html">About Aase</a>
+			<a class="item" href="contact.html">Contact</a>
+			<a class="item" href="feedback.html">Feedback</a>
+		</div>
+		<div class="pusher">
 	    <div id="pageTitle">
-			<img src="WebsiteImages/MassageLogo.png" alt="Massage Logo">
+			<img class="ui image computer only" src="WebsiteImages/MassageLogo.png" alt="Massage Logo">
 			AW Massage
 		</div>
 
-		<div class="mobile only tablet only">3 menu bar</div>
-
-		<div class="ui horizontal divider">
-		</div>
-
-		<div id="navBar" class="ui stackable container menu">
-			<div class="item">
-				<a href="index.html" class="active">Home</a>
-			</div>
-			<div class="item">
-				<a href="treatments.html">Treatments</a>
-			</div>
-			<div class="item">
-				<a href="whattoexpect.html">What To Expect</a>
-			</div>
-			<div class="item">
-				<a href="about.html">About Aase</a>
-			</div>
-			<div class="item">
-				<a href="contact.html">Contact</a>
-			</div>
-			<div class="item">
-				<a href="feedback.html">Feedback</a>
+		<div id="navBar" class="ui computer only tablet only main menu">
+			<div class="ui container">
+				<a class="toggle item"><i class="sidebar icon"></i></a>
+				<a class="active item" href="index.html">Home</a>
+				<a class="item" href="treatments.html">Treatments</a>
+				<a class="item" href="whattoexpect.html">What To Expect</a>
+				<a class="item" href="about.html">About Aase</a>
+				<a class="item" href="contact.html">Contact</a>
+				<a class="item" href="feedback.html">Feedback</a>
 			</div>
 		</div>
 
-		<div class="centeredImage">
-			<img src="WebsiteImages/OrchidStone.jpg" alt="Orchid Picture" style="width: 600px; height: 300px;">
-		</div>
-		
-		<div id="mainContent">
+		<img class="ui centered image" src="assets/images/logo.png" alt="Orchid Picture" style="width: 600px; height: 300px;">
+
+		<div id="mainContent" class="ui text container">
 			<p style="text-align:center; font-family:Arial; font-size:1.1em;">"A happy mind is medicine, no better prescription exists."</p>
 			<br>
 			
@@ -58,33 +51,124 @@
 			<p>Stress is one of the greatest causes of illness in our society today. Studies have shown the effectiveness of massage therapy in reducing stress. The <a href="http://www.healingheartpower.com/article1.html">human touch</a> should not be underestimated for its soothing and healing properties.</p>
 			
 			<p><b>To achieve the most effective result, I incorporate techniques from the following types of massage:</b></p>
-			
-			<ul>
-				<li>
-					<a href="treatments.html#swedishMassage">Swedish Massage</a> helps you unwind and relax, 
-				</li>
-				<li>
-					<a href="treatments.html#deepTissueMassage">Deep Tissue Massage</a> releases deeper tension, 
-				</li>
-				<li>
-					<a href="treatments.html#hotStoneMassage">Hot Stone Massage</a> treats chronic pain and sports injuries, or offers the ultimate treatment of luxury, 
-				</li>
-				<li>
-					<a href="treatments.html#advancedClinicalMassage">Advanced Clinical Massage</a> treats sports injuries and relieves chronic or persistent pain, 
-				</li>
-				<li>
-					<a href="treatments.html#scarTissueMassage">Scar Tissue Release Massage</a> helps improve appearance, decrease pain and enhance range of motion. 
-				</li>
-			</ul>
-			
-			<p>Each treatment is tailored to your requirements and preferences, leaving you revitalised and refreshed and in a happier frame of mind.</p>
-			
-			<p>So set aside some 'me-time' and book an appointment with AW massage on <span style="font-size:1.2em; text-decoration: underline;"><strong>07784740591</strong></span>.</p>
+		</div>
+
+		<div id="cards" class="ui container">
+			<div class="ui cards">
+				<div class="ui raised card">
+					<div class="image">
+						<img src="assets/images/logo.png">
+						<div class="text-overlay"> 
+							<h3 class="ui header">Swedish Massage</h3>
+						</div>
+					</div>
+					<div class="content">
+						A swedish massage helps you to unwind and relax.
+					</div>
+					<div class="extra content">
+						<a class="right floated" href="treatments.html#swedishMassage">
+							See More
+							<i class="angle right icon"></i>
+						</a>
+					</div>
+				</div>
+				<div class="ui raised card">
+					<div class="image">
+						<img src="assets/images/logo.png">
+						<div class="text-overlay"> 
+							<h3 class="ui header">Deep Tissue Massage</h3>
+						</div>
+					</div>
+					<div class="content">
+						A deep tissue massage releases deeper tension.
+					</div>
+					<div class="extra content">
+						<a class="right floated" href="treatments.html#deepTissueMassage">
+							See More
+							<i class="angle right icon"></i>
+						</a>
+					</div>
+				</div>
+				<div class="ui raised card">
+					<div class="image">
+						<img src="assets/images/logo.png">
+						<div class="text-overlay"> 
+							<h3 class="ui header">Hot Stone Massage</h3>
+						</div>
+					</div>
+					<div class="content">
+						A hot stone massage treats chronic pain and sports injuries, or offers the ultimate treatment of luxury.
+					</div>
+					<div class="extra content">
+						<a class="right floated" href="treatments.html#hotStoneMassage">
+							See More
+							<i class="angle right icon"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="ui cards">
+				<div class="ui raised card">
+					<div class="image">
+						<img src="assets/images/logo.png">
+						<div class="text-overlay"> 
+							<h3 class="ui header">Advanced Clinical Massage</h3>
+						</div>
+					</div>
+					<div class="content">
+						A advanced clinical massage treats sports injuries and relieves chronic or persistent pain.
+					</div>
+					<div class="extra content">
+						<a class="right floated" href="treatments.html#advancedClinicalMassage">
+							See More
+							<i class="angle right icon"></i>
+						</a>
+					</div>
+				</div>
+				<div class="ui raised card">
+					<div class="image">
+						<img src="assets/images/logo.png">
+						<div class="text-overlay"> 
+							<h3 class="ui header">Scar Tissue Massage</h3>
+						</div>
+					</div>
+					<div class="content">
+						A scar tissue release massage helps improve appearance, decrease pain and enhance range of motion. 
+					</div>
+					<div class="extra content">
+						<a class="right floated" href="treatments.html#scarTissueMassage">
+							See More
+							<i class="angle right icon"></i>
+						</a>
+					</div>
+				</div>
+				<div class="ui raised card">
+					<div class="content">
+						<p>
+							Each treatment is tailored to your requirements and preferences, leaving you revitalised and refreshed and in a happier frame of mind.
+						</p>
+						<p>
+							So set aside some 'me-time' and book an appointment with AW Massage.
+						</p>
+						<button class="ui basic button" href="contact.html">
+							Book now
+							<i class="angle right icon"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="ui text container">
+			<p>
+				Each treatment is tailored to your requirements and preferences, leaving you revitalised and refreshed and in a happier frame of mind.
+			</p>
+			<p>
+				So set aside some 'me-time' and book an appointment with AW massage on <span style="text-decoration: underline"><strong>07784740591</strong></span>.
+			</p>
 		</div>
 		
-		<div style="text-align:center;">
-			<img src="WebsiteImages/CTha.jpg" alt="CThA Logo" style="width: 250px; height: 146px;">
-		</div>
+		<img class="ui centered medium image" src="assets/images/logo.png" style="padding-top: 20px">
 		
 		<div id="footer" class="ui inverted vertical segment">
 			<div class="ui container">
@@ -98,16 +182,36 @@
 							<a href="#" class="item">Hot Stone Fusion Massage</a>
 						</div>
 					</div> 
-					<div class="three wide left aligned column">
-						<h4 class="ui inverted header">Group 2</h4>
+					<div class="four wide left aligned column">
+						<h4 class="ui inverted header">Contact Us</h4>
 						<div class="ui inverted link list">
-							<a href="#" class="item">Link</a>
-							<a href="#" class="item">Link</a>
-							<a href="#" class="item">Link</a>
-							<a href="#" class="item">Link</a>
+							<div class="item">
+								<i class="user outline icon"></i>
+								<div class="content">
+									Aase Waterman
+								</div>
+							</div>
+							<div class="item">
+								<i class="marker icon"></i>
+								<div class="content">
+									Rowledge, Surrey
+								</div>
+							</div>
+							<div class="item">
+								<i class="text telephone icon"></i>
+								<div class="content">
+									07784740591
+								</div>
+							</div>
+							<div class="item">
+								<i class="mail icon"></i>
+								<div class="content word-wrap">
+									<a href="mailto:aase@aquaman.plus.com">aase@aquaman.plus.com</a>
+								</div>
+							</div>
 						</div>
 					</div>
-					<div class="seven wide left aligned column">
+					<div class="five wide left aligned column">
 						<h4 class="ui inverted header">Footer</h4>
 						<p>Footer text</p>
 					</div>
@@ -115,7 +219,7 @@
 				<div class="ui inverted section divider"></div>
 				<div class="ui center aligned container">
 					<img src="assets/images/logo.png" class="ui centered medium image" alt="AW Massage Logo">
-					<h5 class="inverted header">Copyright &copy; 2017 AW Massage</h5>
+					<h5 class="inverted header">Copyright <i class="copyright icon"></i> 2017 AW Massage</h5>
 					<div class="ui horizontal inverted small divided list">
 						<div class="item">Rowledge</div>
 						<div class="item">Farnham</div> 
@@ -128,5 +232,7 @@
 				</div>
 			</div>
 		</div>
+		</div>
+		<script src="script.js"></script>		
 	</body>
 </html>

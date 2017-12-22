@@ -5,16 +5,18 @@
 /assets/images/*
 
 # compilery things for sass
-/.sass-cache
-style.css.map
+/assets/style/.sass-cache
+/assets/style/style.css.map
 
 # compilery things for semantic
 /semantic/*
 
-# but don't ignore semantic dist or modified files
+# but don't ignore semantic dist, modified files, or our theme
 !/semantic/dist/semantic.min.css
 !/semantic/dist/semantic.min.js
-!/semantic/src/site/elements/image.variables
 
-# Todo list
+# our theme
+!/semantic/src/themes/awmassage
+
+# todo list
 todo.txt

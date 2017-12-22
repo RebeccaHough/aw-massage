@@ -1,6 +1,6 @@
 /* Cascading Style Sheet for AW Massage Website */
 @import "./variables.scss";
-@import "./semantic/dist/semantic.min.css";
+@import "../../semantic/dist/semantic.min.css";
 
 body {
 	font-family: $font-stack;
@@ -16,30 +16,17 @@ body {
 	h2 {
 		color: $primary;
 	}
+}
 
-	#pageTitle { 
-		font: bold 120% $font-stack-titles;
-		font-size: 4em; 
-		text-align: center;
-		position: relative;
-		padding: 20px; 
-		background-color: $primary;
-		color: white;
-		img {
-			height: 103px;
-			width: auto;
-			max-width: 100%;
-			max-height: 100%;
-			padding: 20px;
-			position: absolute;
-			top: 0;
-			left: 0;
-		}
+	#pageHeader {
+		min-height: 425px;
+		//padding
 	}
-	
-	#navBar {
+
+	#navBar .toggle.item {
+		display: none;
 	}
-	
+
 	#contactTable {
 		width: 500px;
 		margin-left: auto;
@@ -74,14 +61,6 @@ body {
 	
 	#mainContent {
 	}
-	
-	#cards {
-		margin: 10px 0;
-		padding: 20px 0;
-		img {
-			height: 185px;
-		}
-	}
 
 	#treatmentInfo {
 		text-align: center;
@@ -96,11 +75,15 @@ body {
 		padding: 3em 0 2em;
 	}
 
+	//utility classes
+
 	.text-overlay {
 		position: absolute;
 		bottom: 0;
-		right: 0;
+		left: 0;
+		width: 100%;
 		padding: 10px 15px;
+		text-align: center;
 	}
 
 	.word-wrap {
@@ -108,5 +91,25 @@ body {
 		word-wrap: break-word;
 		word-break: break-word;
 	}
-}
 
+/* Media queries */
+
+@media only screen and (max-width: 700px) {
+	#pageHeader {
+		min-height: 400px;
+		h1 {
+			font-size: 2em; //TODO
+		}
+		h2 {
+			font-size: 1.5em; //TODO
+		}
+	}
+	//hide menu
+	#navBar a {
+		display: none;
+	}
+	//show mobile sidebar menu opener
+	#navBar a.toggle.item {
+		display: block;
+	}
+}

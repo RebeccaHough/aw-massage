@@ -1,0 +1,90 @@
+/* Cascading Style Sheet for AW Massage Website */
+/* Site variables for AW Massage wesbsite*/
+/* Brand colours */
+/* Font styling */
+@import url(../../semantic/dist/semantic.min.css);
+body {
+  font-family: "Calibri Light", Calibri, Verdana, Arial, sans-serif;
+  font-size: 1em;
+  color: black;
+  line-height: 1.166;
+  margin: 0px;
+  padding: 0px;
+  background: #e0e0e0; }
+  body ul {
+    list-style-type: none; }
+  body h2 {
+    color: #704d9a; }
+
+#pageHeader {
+  min-height: 425px; }
+
+#navBar .toggle.item {
+  display: none; }
+
+#contactTable {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black;
+  border-collapse: collapse; }
+  #contactTable th, #contactTable td, #contactTable tr {
+    padding: 6px;
+    border: 1px solid black; }
+  #contactTable th {
+    font-size: 1.1em; }
+
+#aboutTable {
+  margin: auto;
+  max-width: 900px;
+  border: 0px solid black; }
+  #aboutTable tr, #aboutTable td {
+    border: 0px; }
+
+.centeredImage img {
+  display: block;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-left: auto;
+  margin-right: auto; }
+
+#treatmentInfo {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  background-color: #704d9a;
+  padding: 0.8em; }
+
+#footer {
+  margin: 3em 0 0;
+  padding: 3em 0 2em; }
+
+.text-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 15px;
+  text-align: center; }
+
+.word-wrap {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word; }
+
+/* Media queries */
+@media only screen and (max-width: 700px) {
+  #pageHeader {
+    min-height: 400px; }
+    #pageHeader h1 {
+      font-size: 2em; }
+    #pageHeader h2 {
+      font-size: 1.5em; }
+
+  #navBar a {
+    display: none; }
+
+  #navBar a.toggle.item {
+    display: block; } }
+
+/*# sourceMappingURL=style.css.map */

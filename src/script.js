@@ -4,3 +4,9 @@ $('.toggleable.sidebar')
     transition: 'overlay',
     dimPage: false
 });
+$('#cards .image').dimmer({
+    on: 'hover'
+});
+$('#treatments .image').dimmer({
+    on: 'hover'
+});

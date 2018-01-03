@@ -11,11 +11,9 @@
 # compilery things for semantic
 /semantic/*
 
-# but don't ignore semantic dist, modified files, or our theme
+# but don't ignore semantic dist files, or our theme
 !/semantic/dist/semantic.min.css
 !/semantic/dist/semantic.min.js
-
-# our theme
 !/semantic/src/themes/awmassage
 
 # todo list

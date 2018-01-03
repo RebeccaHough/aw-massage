@@ -1,0 +1,5 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+@groupCardMargin: 0px;
+@borderRadius: 0px;

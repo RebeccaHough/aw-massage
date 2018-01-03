@@ -8,13 +8,23 @@
 /assets/style/.sass-cache
 /assets/style/style.css.map
 
-# compilery things for semantic
-/semantic/*
-
+# compilery things for semantic 
 # but don't ignore semantic dist files, or our theme
+/semantic/**
+!/semantic/dist
+!/semantic/src
+
+/semantic/dist/**
 !/semantic/dist/semantic.min.css
 !/semantic/dist/semantic.min.js
+
+/semantic/src/**
+!/semantic/src/themes/
+
+/semantic/src/themes/**
 !/semantic/src/themes/awmassage
+
+!/semantic/src/themes/awmassage/**
 
 # todo list
 todo.txt

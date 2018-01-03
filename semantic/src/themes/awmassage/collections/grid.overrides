@@ -1,0 +1,221 @@
+/*******************************
+         Site Overrides
+*******************************/
+
+/*******************************
+           Snug Grids 
+********************************/
+
+/* ui.snug.grid introduces a new class for grids that by default collapses all gutters (left- and right-padding) between columns/items in a row and row spacing (top- and bottom-margins) between rows */
+
+.ui.grid.snug {
+  margin-top: -(@snugRowSpacing / 2);
+  margin-bottom: -(@snugRowSpacing / 2);
+  margin-left: -(@snugGutterWidth / 2);
+  margin-right: -(@snugGutterWidth / 2);
+}
+
+.ui.grid + .grid {
+  margin-top: @consecutiveGridDistance;
+}
+
+/*******************************
+          Snug Columns 
+********************************/
+
+/* For 16 column wide grids */ 
+.ui.grid.snug > .column:not(.row),
+.ui.grid.snug > .row > .column {
+  padding-left: (@snugGutterWidth / 2);
+  padding-right: (@snugGutterWidth / 2);
+}
+
+.ui.grid > * {
+  padding-left: (@snugGutterWidth / 2);
+  padding-right: (@snugGutterWidth / 2);
+}
+
+/* Vertical padding when no rows */
+.ui.grid > .column:not(.row) {
+  padding-top: (@snugRowSpacing / 2);
+  padding-bottom: (@snugRowSpacing / 2);
+}
+
+/*******************************
+          Snug Rows 
+********************************/
+
+.ui.grid.snug > .row {
+  padding: 0px;
+  padding-top: @snugRowSpacing;
+  padding-bottom: @snugRowSpacing;
+}
+
+.ui.grid.snug > .column:not(.row),
+.ui.grid.snug > .row > .column {
+  padding-left: @snugGutterWidth;
+  padding-right: @snugGutterWidth;
+}
+
+.ui.grid.snug > * {
+  padding-left: @snugGutterWidth;
+  padding-right: @snugGutterWidth;
+}
+
+/*******************************
+      Snug Loose Coupling 
+********************************/
+
+/* Align Dividers with Gutter */
+.ui.grid.snug .row + .ui.divider {
+  flex-grow: 1;
+  margin: (@snugRowSpacing / 2) (@snugGutterWidth / 2);
+}
+.ui.grid.snug .column + .ui.vertical.divider {
+  height: ~"calc(50% - "(@snugRowSpacing/2)~")";
+}
+
+/*******************************
+      Snug Grid Variations
+*******************************/
+
+
+/*-----------------------
+       Page Grid
+-------------------------*/
+
+@media only screen and (max-width: @largestMobileScreen) {
+  .ui.page.grid.snug {
+    padding-left: @snugMobileGutterWidth;
+    padding-right: @snugMobileGutterWidth;
+  }
+}
+@media only screen and (min-width: @tabletBreakpoint) and (max-width: @largestTabletScreen) {
+  .ui.page.grid.snug {
+    padding-left: @snugTabletGutterWidth;
+    padding-right: @snugTabletGutterWidth;
+  }
+}
+@media only screen and (min-width: @computerBreakpoint) and (max-width: @largestSmallMonitor) {
+  .ui.page.grid.snug {
+    padding-left: @snugComputerGutterWidth;
+    padding-right: @snugComputerGutterWidth;
+  }
+}
+@media only screen and (min-width: @largeMonitorBreakpoint) and (max-width: @largestLargeMonitor) {
+  .ui.page.grid.snug {
+    padding-left: @snugLargeMonitorWidth;
+    padding-right: @snugLargeMonitorWidth;
+  }
+}
+@media only screen and (min-width: @widescreenMonitorBreakpoint) {
+  .ui.page.grid.snug {
+    padding-left: @snugWidescreenMonitorWidth;
+    padding-right: @snugWidescreenMonitorWidth;
+  }
+}
+
+/*-----------------------
+       Divided Grid
+-------------------------*/
+
+.ui[class*="vertically divided"].grid.snug > .column:not(.row),
+.ui[class*="vertically divided"].grid.snug > .row > .column {
+  margin-top: (@snugRowSpacing / 2);
+  margin-bottom: (@snugRowSpacing / 2);
+}
+
+/* Vertically Divided */
+.ui.snug[class*="vertically divided"].grid > .row:before {
+  width: ~"calc(100% - "@snugGutterWidth~")";
+  margin: 0% (@snugGutterWidth / 2);
+}
+
+/*----------------------
+         Celled
+-----------------------*/
+
+.ui.snug.celled.grid {
+  margin: @snugCelledMargin;
+}
+
+.ui.snug.celled.grid > .column:not(.row),
+.ui.snug.celled.grid > .row > .column {
+  padding: @snugCelledRelaxedPadding;
+}
+
+/*----------------------
+         Colored
+-----------------------*/
+
+.ui.grid > .row > .red.column,
+.ui.grid > .row > .orange.column,
+.ui.grid > .row > .yellow.column,
+.ui.grid > .row > .olive.column,
+.ui.grid > .row > .green.column,
+.ui.grid > .row > .teal.column,
+.ui.grid > .row > .blue.column,
+.ui.grid > .row > .violet.column,
+.ui.grid > .row > .purple.column,
+.ui.grid > .row > .pink.column,
+.ui.grid > .row > .brown.column,
+.ui.grid > .row > .grey.column,
+.ui.grid > .row > .black.column {
+  margin-top: -(@snugRowSpacing / 2);
+  margin-bottom: -(@snugRowSpacing / 2);
+  padding-top: -(@snugGutterWidth / 2);
+  padding-bottom: -(@snugGutterWidth / 2);
+}
+
+/*-------------------
+      Doubling
+--------------------*/
+
+/* Tablet Only */
+@media only screen and (min-width: @tabletBreakpoint) and (max-width: @largestTabletScreen) {
+  .ui.grid > .doubling.row > .column,
+  .ui.doubling.grid > .row > .column {
+    padding-top: (@snugRowSpacing / 2) !important;
+    padding-bottom: (@snugRowSpacing / 2) !important;
+  }
+}
+
+/* Mobile Only */
+@media only screen and (max-width: @largestMobileScreen) {
+  .ui.grid > .doubling.row > .column,
+  .ui.doubling.grid > .row > .column {
+    padding-top: (@snugRowSpacing / 2) !important;
+    padding-bottom: (@snugRowSpacing / 2) !important;
+  }
+}
+
+/*-------------------
+      Stackable
+--------------------*/
+
+@media only screen and (max-width: @largestMobileScreen) {
+  .ui.snug.stackable.grid > .row > .wide.column,
+  .ui.snug.stackable.grid > .wide.column,
+  .ui.snug.stackable.grid > .column.grid > .column,
+  .ui.snug.stackable.grid > .column.row > .column,
+  .ui.snug.stackable.grid > .row > .column,
+  .ui.snug.stackable.grid > .column:not(.row),
+  .ui.snug.grid > .stackable.stackable.row > .column {
+    padding: (@snugStackableRowSpacing / 2) (@snugStackableGutter / 2) !important;
+  }
+
+  /* Don't pad inside segment or nested grid */
+  .ui.snug.grid .ui.snug.stackable.grid,
+  .ui.segment:not(.vertical) .ui.snug.stackable.page.grid {
+    margin-left: -(@snugStackableGutter / 2) !important;
+    margin-right: -(@snugStackableGutter / 2) !important;
+  }
+
+  .ui.snug.stackable.celled.grid > .column:not(.row),
+  .ui.snug.stackable.divided:not(.vertically).grid > .column:not(.row),
+  .ui.snug.stackable.celled.grid > .row > .column,
+  .ui.snug.stackable.divided:not(.vertically).grid > .row > .column {
+    padding-top: @stackableRowSpacing !important;
+    padding-bottom: @stackableRowSpacing !important;
+  }
+}

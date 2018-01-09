@@ -18,79 +18,82 @@ body {
 	}
 }
 
-	#pageHeader {
-		min-height: 425px;
-		//padding
-	}
+#pageHeader {
+	min-height: 425px;
+}
 
-	#navBar .toggle.item {
-		display: none;
-	}
+#navBar .toggle.item {
+	display: none;
+}
 
-	#contactTable {
-		width: 500px;
-		margin-left: auto;
-		margin-right: auto;
+#contactTable {
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid black;
+	border-collapse: collapse;
+	th, td, tr {
+		padding: 6px;
 		border: 1px solid black;
-		border-collapse: collapse;
-		th, td, tr {
-			padding: 6px;
-			border: 1px solid black;
-		}
-		th {
-			font-size: 1.1em;
-		}
-	} 
-	
-	#aboutTable {
-		margin: auto;
-		max-width: 900px;
-		border: 0px solid black;
-		tr, td {
-			border: 0px;
-		}
 	}
-	
-	.centeredImage img {
-		display: block;
-		margin-top: 2em;
-		margin-bottom: 2em;
-		margin-left: auto;
-		margin-right: auto;
+	th {
+		font-size: 1.1em;
 	}
-	
-	#mainContent {
-	}
+} 
 
-	#treatmentInfo {
-		text-align: center;
-		font-size: 1.5em;
-		font-weight: bold;
-		background-color: $primary;
-		padding: 0.8em;
+#aboutTable {
+	margin: auto;
+	max-width: 900px;
+	border: 0px solid black;
+	tr, td {
+		border: 0px;
 	}
-	
-	#footer { 
-		margin: 3em 0 0;
-		padding: 3em 0 2em;
-	}
+}
 
-	//utility classes
+.centeredImage img {
+	display: block;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	margin-left: auto;
+	margin-right: auto;
+}
 
-	.text-overlay {
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		width: 100%;
-		padding: 10px 15px;
-		text-align: center;
-	}
+#mainContent {
+}
 
-	.word-wrap {
-		overflow-wrap: break-word;
-		word-wrap: break-word;
-		word-break: break-word;
-	}
+#treatmentInfo {
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: bold;
+	background-color: $primary;
+	padding: 0.8em;
+}
+
+#footer { 
+	margin: 3em 0 0;
+	padding: 3em 0 2em;
+}
+
+body .ui.dropdown.item.active.visible {
+	border-style: none;
+}
+
+//utility classes
+
+.text-overlay {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 10px 15px;
+	text-align: center;
+}
+
+.word-wrap {
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	word-break: break-word;
+}
 
 /* Media queries */
 

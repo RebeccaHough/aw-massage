@@ -21,3 +21,8 @@
   font-weight: @menuHeaderFontWeight;
   text-transform: @menuHeaderTextTransform;
 }
+
+/* Show users that menu dropdowns aren't clickable */
+.ui.menu .ui.dropdown {
+    cursor: default !important;
+}

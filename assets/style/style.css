@@ -75,16 +75,8 @@ body {
 
 /* Media queries */
 @media only screen and (max-width: 700px) {
-  #pageHeader {
-    min-height: 400px; }
-    #pageHeader h1 {
-      font-size: 2em; }
-    #pageHeader h2 {
-      font-size: 1.5em; }
-
-  #navBar a {
+  #navBar a, #navBar div.ui.dropdown {
     display: none; }
-
   #navBar a.toggle.item {
     display: block; } }
 

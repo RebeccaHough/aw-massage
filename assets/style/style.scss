@@ -98,21 +98,14 @@ body {
 /* Media queries */
 
 @media only screen and (max-width: 700px) {
-	#pageHeader {
-		min-height: 400px;
-		h1 {
-			font-size: 2em; //TODO
+	#navBar {
+		//hide clickable menu items and non-clickable dropdown
+		a, div.ui.dropdown {
+			display: none;
+		} 
+		//show mobile sidebar menu opener
+		a.toggle.item {
+			display: block;
 		}
-		h2 {
-			font-size: 1.5em; //TODO
-		}
-	}
-	//hide menu
-	#navBar a {
-		display: none;
-	}
-	//show mobile sidebar menu opener
-	#navBar a.toggle.item {
-		display: block;
 	}
 }

@@ -2,7 +2,13 @@
 /node_modules
 
 # images
-/assets/images/*
+# but keep logo and favicon
+/assets/images/**
+!/assets/images/logo.png
+!/assets/images/favicons
+
+/assets/images/favicons/*
+!/assets/images/favicons/favicon.ico
 
 # compilery things for sass
 /assets/style/.sass-cache

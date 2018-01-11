@@ -14,7 +14,7 @@ body {
 		list-style-type: none;
 	}
 	h2 {
-		color: $primary;
+		//color: $primary;
 	}
 }
 
@@ -24,6 +24,10 @@ body {
 
 #navBar .toggle.item {
 	display: none;
+}
+
+#treatments {
+	margin: 25px 0;
 }
 
 #contactTable {
@@ -72,10 +76,6 @@ body {
 #footer { 
 	margin: 3em 0 0;
 	padding: 3em 0 2em;
-}
-
-body .ui.dropdown.item.active.visible {
-	border-style: none;
 }
 
 //utility classes

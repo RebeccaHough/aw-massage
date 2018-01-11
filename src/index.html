@@ -3,7 +3,7 @@
 	<head>
 		<title>AW Massage</title>
 		<meta content="text/html" http-equiv="content-type">
-		<meta content="author" name="D Waterman">
+		<meta content="author" name="D Waterman, E Waterman, RCH">
 		<meta content="description" name="Massage Website">
 		<link rel="stylesheet" href="../assets/style/style.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -33,9 +33,10 @@
 	</head>
 	<body>
 		<!-- TODO check behaviour with skrollr -->
+		<!-- Mobile Menu -->
 		<div id="navSidebar" class="ui vertical inverted sidebar menu left toggleable">
 			<a class="toggle item"><i class="sidebar icon"></i>&nbsp;</a>
-			<a class="active item" href="index.html">Home</a>
+			<a class="current item" href="index.html">Home</a>
 			<a class="item" href="treatments.html">Treatments</a>
 			<a class="item" href="whattoexpect.html">What To Expect</a>
 			<a class="item" href="about.html">About Aase</a>
@@ -57,12 +58,12 @@
 				data-bottom-top="transform: translate3d(0px, -80%, 0px);"
 				data-top-bottom="transform: translate3d(0px, 80%, 0px);">
 			</div>
-		</div>
-
-		<!-- Main Content -->
+		</div>-->
 
 		<div id="skrollr-body" class="pusher">
+			<!-- Header -->
 			<div id="pageHeader" class="ui inverted vertical center aligned segment">
+				<!-- Navigation Bar -->
 				<div id="navBar" class="ui inverted secondary pointing main menu">
 					<div class="ui container">
 						<a class="toggle item"><i class="sidebar icon"></i></a>
@@ -93,7 +94,7 @@
 					<h2 class="ui purple header">"A happy mind is medicine, no better prescription exists."</h2>
 				</div>
 			</div>
-
+			<!-- Main Content -->
 			<div id="mainContent" class="ui text container">
 				<br>
 				<p style="font-size: 1.2em;"><strong>AW Massage</strong> provides a bespoke professional massage in Rowledge, or alternatively in the comfort of your own home.</p>
@@ -106,7 +107,7 @@
 				
 				<p><b>To achieve the most effective result, I incorporate techniques from the following types of massage:</b></p>
 			</div>
-
+			<!-- Treatments cards -->
 			<div class="ui container">
 				<div id="treatments" class="ui three column centered snug stackable grid">
 					<div class="row">
@@ -232,19 +233,19 @@
 					So set aside some 'me-time' and book an appointment with AW massage on <span style="text-decoration: underline"><strong>07784740591</strong></span>.
 				</p>
 			</div>
-			
 			<img class="ui centered medium image" src="../assets/images/logo.png" style="padding-top: 20px">
-			
+			<!-- Footer -->
 			<div id="footer" class="ui inverted vertical segment">
 				<div class="ui container">
 					<div class="ui center aligned inverted divided stackable grid">
 						<div class="three wide left aligned column">
 							<h4 class="ui inverted header">Massages Offered</h4>
 							<div class="ui inverted link list">
-								<a href="#" class="item">Swedish</a>
-								<a href="#" class="item">Deep Tissue</a>
-								<a href="#" class="item">Advanced Clinical</a>
-								<a href="#" class="item">Hot Stone Fusion Massage</a>
+								<a class="item" href="treatments.html#swedishMassage">Swedish</a>
+								<a class="item" href="treatments.html#deepTissueMassage">Deep Tissue</a>
+								<a class="item" href="treatments.html#advancedClinicalMassage">Advanced Clinical</a>
+								<a class="item" href="treatments.html#hotStoneMassage">Hot Stone Fusion</a>
+								<a class="item" href="treatments.html#scarTissueMassage">Scar Tissue Release</a>
 							</div>
 						</div> 
 						<div class="four wide left aligned column">
@@ -298,6 +299,7 @@
 				</div>
 			</div>
 		</div>
+		<!-- Scripts -->
 		<script src="script.js"></script>	
 		<!--<script type="text/javascript" src="skrollr.min.js"></script>	
 		<script type="text/javascript">

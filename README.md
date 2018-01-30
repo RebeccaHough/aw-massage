@@ -34,6 +34,10 @@ $ gulp watch
 ```
 in the project's 'semantic' directory to recompile on file change
 
+## SUI gulp build fix
+
+If css fails to build, comment out `compressedStream = stream.pipe(clone());` in semantic/tasks/build/css.js
+
 ## Useful stuff to note about Semantic UI
 
 Semantic applies styles in this order:
@@ -52,6 +56,4 @@ site/*/*.overrides files are for changes that can't be made by a simple variable
 Please add any modified semantic UI files to the .gitignore with a '!'
 
 ## Please note
-When changing anything to do with semantic, please ensure that you also recompile styles.scss
-
 Site images are not kept in this repo.

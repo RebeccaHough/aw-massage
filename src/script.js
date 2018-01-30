@@ -10,6 +10,7 @@ $('#treatments .image').dimmer({
 $('.ui.dropdown').dropdown({
     on: 'hover'
 });
+$('.ui.accordion').accordion();
 
 /*if($('.ui.dropdown').getAttribute('data-value') == 'undefined') {
 

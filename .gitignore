@@ -25,6 +25,7 @@
 !/semantic/dist/semantic.min.js
 
 /semantic/src/**
+!/semantic/src/theme.config
 !/semantic/src/themes/
 
 /semantic/src/themes/**

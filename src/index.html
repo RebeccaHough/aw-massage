@@ -1,9 +1,10 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>Home | AW Massage</title>
 		<!-- Meta -->
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<meta content="text/html" http-equiv="content-type">
 		<meta content="author" name="D Waterman, E Waterman, RCH">
 		<meta content="description" name="Massage Website">
@@ -11,99 +12,78 @@
 		<link rel="shortcut icon" href="../assets/images/favicons/favicon.ico" type="image/x-icon">
 		<link rel="icon" href="../assets/images/favicons/favicon.ico" type="image/x-icon">
 		<!-- Stylesheets -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 		<link rel="stylesheet" href="../assets/style/style.css">
-		<!-- jQuery -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<!-- Semantic UI JS -->
-		<script src="../semantic/dist/semantic.min.js"></script>
-		<!--<style>
-			.parallax-image-wrapper {
-				position:fixed;
-				left:0;
-				width:100%;
-				overflow:hidden;
-			}
-			.parallax-image-wrapper-100 {
-				height:100%;
-				top:-100%;
-			}
-			.parallax-image {
-				display:none;
-				position:absolute;
-				bottom:0;
-				left:0;
-				width:100%;
-				background-repeat:no-repeat;
-				background-position:center;
-				background-size:cover;
-			}
-		</style>-->
+		<!-- Scripts -->
+		<!-- Bootstrap JS includes -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<!-- Site script -->
+		<script src="script.js"></script>	
 	</head>
 	<body>
-		<!-- TODO check behaviour with skrollr -->
-		<!-- Mobile Menu -->
-		<div id="navSidebar" class="ui vertical inverted sidebar menu left toggleable">
-			<a class="toggle item"><i class="sidebar icon"></i>&nbsp;</a>
-			<a class="current item" href="index.html">Home</a>
-			<a class="item" href="treatments.html">Treatments</a>
-			<a class="item" href="whattoexpect.html">What To Expect</a>
-			<a class="item" href="about.html">About Aase</a>
-			<a class="item" href="contact.html">Contact</a>
-			<a class="item" href="feedback.html">Feedback</a>
+		<!-- Navigation Bar -->
+		<nav id="navBar" class="navbar navbar-expand-md navbar-light d-print">
+			<div class="container">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">Home</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Treatments
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="#">All treatements offered</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="treatments.html#swedishMassage">Swedish Massage</a>
+								<a class="dropdown-item" href="treatments.html#deepTissueMassage">Deep Tissue Massage</a>
+								<a class="dropdown-item" href="treatments.html#advancedClinicalMassage">Advanced Clinical Massage</a>
+								<a class="dropdown-item" href="treatments.html#hotStoneMassage">Hot Stone Fusion Massage</a>
+								<a class="dropdown-item" href="treatments.html#scarTissueMassage">Scar Tissue Release Massage</a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="whattoexpect.html">What To Expect</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-brand" href="#">
+								<img class="large centered image" src="../assets/images/logo.png" width="60" height="30" alt="AW Massage Logo">
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="about.html">About Aase</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contact.html">Contact</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="feedback.html">Feedback</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Header -->
+		<div id="pageHeader" class="jumbotron jumbotron-fluid">
+			<div class="container">
+				<img src="../assets/images/logo.png" height="350px">
+				<h1 class="display-4">AW Massage</h1>
+				<hr class="my-4">
+				<p class="lead">"A happy mind is medicine, no better prescription exists."</p>
+			</div>
 		</div>
 
-		<!-- TODO Fixed mobile menu here --
-
-		<div 
-		class="parallax-image-wrapper parallax-image-wrapper-100"
-		data-anchor-target="#pageHeader + .gap"
-		data-bottom-top="transform:translate3d(0px, 200%, 0px)"
-		data-top-bottom="transform:translate3d(0px, 0%, 0px)">
-			<div 
-				class="parallax-image parallax-image-100"
-				style="background-image:url(assets/images/logo.png)"
-				data-anchor-target="#pageHeader + .gap"
-				data-bottom-top="transform: translate3d(0px, -80%, 0px);"
-				data-top-bottom="transform: translate3d(0px, 80%, 0px);">
-			</div>
-		</div>-->
-
-		<div id="skrollr-body" class="pusher">
-			<!-- Header -->
-			<div id="pageHeader" class="ui inverted vertical center aligned segment">
-				<!-- Navigation Bar -->
-				<div id="navBar" class="ui inverted secondary pointing main menu">
-					<div class="ui container">
-						<a class="toggle item"><i class="sidebar icon"></i></a>
-						<a class="current item" href="index.html">Home</a>
-						<div class="ui dropdown link item">
-							<div class="text">Treatments</div>
-							<i class="dropdown icon"></i>
-							<div class="menu">
-								<a href="treatments.html">
-									<div class="header">All treatments offered</div>
-								</a>
-								<a class="item" href="treatments.html#swedishMassage">Swedish Massage</a>
-								<a class="item" href="treatments.html#deepTissueMassage">Deep Tissue Massage</a>
-								<a class="item" href="treatments.html#advancedClinicalMassage">Advanced Clinical Massage</a>
-								<a class="item" href="treatments.html#hotStoneMassage">Hot Stone Fusion Massage</a>
-								<a class="item" href="treatments.html#scarTissueMassage">Scar Tissue Release Massage</a>
-							</div> 
-						</div>
-						<a class="item" href="whattoexpect.html">What To Expect</a>
-						<a class="item" href="about.html">About Aase</a>
-						<a class="item" href="contact.html">Contact</a>
-						<a class="item" href="feedback.html">Feedback</a>
-					</div>
-				</div>
-				<div class="ui container">
-					<img class="ui large centered image" src="../assets/images/logo.png">
-					<h1 class="ui inverted header">AW Massage</h1>
-					<h2 class="ui purple header">"A happy mind is medicine, no better prescription exists."</h2>
-				</div>
-			</div>
-			<!-- Main Content -->
-			<div id="mainContent" class="ui text container">
+		<!-- Main Content -->
+		<div id="mainContent" class="container-fluid">
+			<div class="container">
 				<br>
 				<p style="font-size: 1.2em;"><strong>AW Massage</strong> provides a bespoke professional massage in Rowledge, or alternatively in the comfort of your own home.</p>
 				
@@ -111,207 +91,167 @@
 				
 				<p>A regular massage not only <i>feels good</i> but is actually good for you. Massage therapy has been practised for thousands of years in many different cultures for its healing effect.</p>
 				
-				<p>Stress is one of the greatest causes of illness in our society today. Studies have shown the effectiveness of massage therapy in reducing stress. The <a class="ui link" href="http://www.healingheartpower.com/article1.html">human touch</a> should not be underestimated for its soothing and healing properties.</p>
-				
-				<p><b>To achieve the most effective result, I incorporate techniques from the following types of massage:</b></p>
+				<p>Stress is one of the greatest causes of illness in our society today. Studies have shown the effectiveness of massage therapy in reducing stress. The <a class=" link" href="http://www.healingheartpower.com/article1.html">human touch</a> should not be underestimated for its soothing and healing properties.</p>
 			</div>
-			<!-- Treatments cards -->
-			<div class="ui container">
-				<div id="treatments" class="ui three column centered snug stackable grid">
+		</div>
+
+		<!-- Treatments Summary -->
+		<div class="container-fluid">
+			<div class="container">
+				<p><b>To achieve the most effective result, I incorporate techniques from the following types of massage:</b></p>
+				<!-- Treatments Cards -->
+				<div id="treatments">
 					<div class="row">
-						<div class="column">
-							<a href="treatments.html#swedishMassage">
-								<div class="ui blurring dimmable image">
-									<div class="ui dimmer">
-										<div class="content">
-											<div class="center">
-												<div class="ui inverted button">See more</div>
-											</div>
-										</div>
-									</div>
-									<img class="ui image" src="../assets/images/logo.png">
-									<div class="text-overlay">
-										<h3 class="ui header">Swedish Massage</h3>
-										Helps you to unwind and relax.
-									</div>
+						<div class="col">
+							<div class="card" style="width: 18rem;">
+								<img src="../assets/images/logo.png" class="card-img-top">
+								<div class="card-body">
+									<h5 class="card-title">Swedish Massage</h5>
+									<p class="card-text">Helps you to unwind and relax.</p>
+									<a href="treatments.html#swedishMassage" class="btn btn-primary">See more</a>
 								</div>
-							</a>
+							</div>
 						</div>
-						<div class="column">
-							<a href="treatments.html#deepTissueMassage">
-								<div class="ui blurring dimmable image">
-									<div class="ui dimmer">
-										<div class="content">
-											<div class="center">
-												<div class="ui inverted button">See more</div>
-											</div>
-										</div>
-									</div>
-									<img class="ui image" src="../assets/images/logo.png">
-									<div class="text-overlay">
-										<h3 class="ui header">Deep Tissue Massage</h3>
-										Releases deeper tension.
-									</div>
+						<div class="col">
+							<div class="card" style="width: 18rem;">
+								<img src="../assets/images/logo.png" class="card-img-top">
+								<div class="card-body">
+									<h5 class="card-title">Deep Tissue Massage</h5>
+									<p class="card-text">Releases deeper tension.</p>
+									<a href="treatments.html#deepTissueMassage" class="btn btn-primary">See more</a>
 								</div>
-							</a>
+							</div>
 						</div>
-						<div class="column">
-							<a href="treatments.html#hotStoneMassage">
-								<div class="ui blurring dimmable image">
-									<div class="ui dimmer">
-										<div class="content">
-											<div class="center">
-												<div class="ui inverted button">See more</div>
-											</div>
-										</div>
-									</div>
-									<img class="ui image" src="../assets/images/logo.png">
-									<div class="text-overlay">
-										<h3 class="ui header">Hot Stone Massage</h3>
-										Treats chronic pain and sports injuries, or offers the ultimate treatment of luxury.
-									</div>
+						<div class="col">
+							<div class="card" style="width: 18rem;">
+								<img src="../assets/images/logo.png" class="card-img-top">
+								<div class="card-body">
+									<h5 class="card-title">Hot Stone Massage</h5>
+									<p class="card-text">Treats chronic pain and sports injuries, or offers the ultimate treatment of luxury.</p>
+									<a href="treatments.html#advancedClinicalMassage" class="btn btn-primary">See more</a>
 								</div>
-							</a>
+							</div>
 						</div>
 					</div>
 					<div class="row">
-						<div class="column">
-							<a href="treatments.html#advancedClinicalMassage">
-								<div class="ui blurring dimmable image">
-									<div class="ui dimmer">
-										<div class="content">
-											<div class="center">
-												<div class="ui inverted button">See more</div>
-											</div>
-										</div>
-									</div>
-									<img class="ui image" src="../assets/images/logo.png">
-									<div class="text-overlay">
-										<h3 class="ui header">Advanced Clinical Massage</h3>
-										Treats sports injuries and relieves chronic or persistent pain.
-									</div>
+						<div class="col">
+							<div class="card" style="width: 18rem;">
+								<img src="../assets/images/logo.png" class="card-img-top">
+								<div class="card-body">
+									<h5 class="card-title">Advanced Clinical Massage</h5>
+									<p class="card-text">Treats sports injuries and relieves chronic or persistent pain.</p>
+									<a href="treatments.html#hotStoneMassage" class="btn btn-primary">See more</a>
 								</div>
-							</a>
+							</div>
 						</div>
-						<div class="column">
-							<a href="treatments.html#swedishMassage">
-								<div class="ui blurring dimmable image">
-									<div class="ui dimmer">
-										<div class="content">
-											<div class="center">
-												<div class="ui inverted button">See more</div>
-											</div>
-										</div>
-									</div>
-									<img class="ui image" src="../assets/images/logo.png">
-									<div class="text-overlay">
-										<h3 class="ui header">Scar Tissue Massage</h3>
-										Helps improve appearance of scars, decrease pain and enhance range of motion.
-									</div>
+						<div class="col">
+							<div class="card" style="width: 18rem;">
+								<img src="../assets/images/logo.png" class="card-img-top">
+								<div class="card-body">
+									<h5 class="card-title">Scar Tissue Massage</h5>
+									<p class="card-text">Helps improve appearance of scars, decrease pain and enhance range of motion.</p>
+									<a href="treatments.html#scarTissueMassage" class="btn btn-primary">See more</a>
 								</div>
-							</a>
+							</div>
 						</div>
-						<div class="column">
-							<a href="treatments.html#swedishMassage">
-								<div class="ui blurring dimmable image">
-									<div class="ui dimmer">
-										<div class="content">
-											<div class="center">
-												<div class="ui inverted button">See more</div>
-											</div>
-										</div>
-									</div>
-									<img class="ui image" src="../assets/images/logo.png">
-									<div class="text-overlay">
-										<h3 class="ui header">Swedish Massage</h3>
-										Helps you to unwind and relax.
-									</div>
+						<div class="col">
+							<div class="card" style="width: 18rem;">
+								<img src="../assets/images/logo.png" class="card-img-top">
+								<div class="card-body">
+									<h5 class="card-title">Scar Tissue Massage</h5>
+									<p class="card-text">Helps improve appearance of scars, decrease pain and enhance range of motion.</p>
+									<a href="treatments.html#scarTissueMassage" class="btn btn-primary">See more</a>
 								</div>
-							</a>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-
-			<div class="ui text container">
+				<!-- Treatments Contact-->
 				<p>
 					Each treatment is tailored to your requirements and preferences, leaving you revitalised and refreshed and in a happier frame of mind.
 				</p>
 				<p>
 					So set aside some 'me-time' and book an appointment with AW massage on <span style="text-decoration: underline"><strong>07784740591</strong></span>.
 				</p>
+				<button>Contact us</button>
 			</div>
-			<img class="ui centered medium image" src="../assets/images/logo.png" style="padding-top: 20px">
-			<!-- Footer -->
-			<div id="footer" class="ui inverted vertical segment">
-				<div class="ui container">
-					<div class="ui center aligned inverted divided stackable grid">
-						<div class="three wide left aligned column">
-							<h4 class="ui inverted header">Massages Offered</h4>
-							<div class="ui inverted link list">
-								<a class="item" href="treatments.html#swedishMassage">Swedish</a>
-								<a class="item" href="treatments.html#deepTissueMassage">Deep Tissue</a>
-								<a class="item" href="treatments.html#advancedClinicalMassage">Advanced Clinical</a>
-								<a class="item" href="treatments.html#hotStoneMassage">Hot Stone Fusion</a>
-								<a class="item" href="treatments.html#scarTissueMassage">Scar Tissue Release</a>
-							</div>
-						</div> 
-						<div class="four wide left aligned column">
-							<h4 class="ui inverted header">Contact Us</h4>
-							<div class="ui inverted link list">
-								<div class="item">
-									<i class="user outline icon"></i>
-									<div class="content">
-										Aase Waterman
-									</div>
-								</div>
-								<div class="item">
-									<i class="marker icon"></i>
-									<div class="content">
-										Rowledge, Surrey
-									</div>
-								</div>
-								<div class="item">
-									<i class="text telephone icon"></i>
-									<div class="content">
-										07784740591
-									</div>
-								</div>
-								<div class="item">
-									<i class="mail icon"></i>
-									<div class="content word-wrap">
-										<a href="mailto:aase@aquaman.plus.com">aase@aquaman.plus.com</a>
-									</div>
-								</div>
-							</div>
+		</div>
+
+		<!-- Testimonals Carousel -->
+		<div class="container-fluid">
+			<div class="container">
+				<p>"Every time Aase visits, my back, which is my main problem, feels so much looser and less achy. Her new techniques really help my muscles and I would thoroughly recommend her services." <br>
+				<b>Katie</b></p>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<div id="footer" class="container-fluid bg-dark">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-3">
+						<h4 class="inverted header">Massages Offered</h4>
+						<div class="list-group">
+							<a class="list-group-item" href="treatments.html#swedishMassage">Swedish</a>
+							<a class="list-group-item" href="treatments.html#deepTissueMassage">Deep Tissue</a>
+							<a class="list-group-item" href="treatments.html#advancedClinicalMassage">Advanced Clinical</a>
+							<a class="list-group-item" href="treatments.html#hotStoneMassage">Hot Stone Fusion</a>
+							<a class="list-group-item" href="treatments.html#scarTissueMassage">Scar Tissue Release</a>
 						</div>
-						<div class="seven wide left aligned column">
-							<h4 class="ui inverted header">About Aase</h4>
-							<div class="sub inverted header">Aase is a professionally trained, CTHA-certified massage therapist who works in and around Rowledge.</div>
+					</div> 
+					<div class="col-sm-4">
+						<h4 class=" inverted header">Contact Us</h4>
+						<div class="list-group">
+							<div class="list-group-item">
+								<i class="user outline icon"></i>
+								<div class="content">
+									Aase Waterman
+								</div>
+							</div>
+							<div class="list-group-item">
+								<i class="marker icon"></i>
+								<div class="content">
+									Rowledge, Surrey
+								</div>
+							</div>
+							<div class="list-group-item">
+								<i class="text telephone icon"></i>
+								<div class="content">
+									07784740591
+								</div>
+							</div>
+							<div class="list-group-item">
+								<i class="mail icon"></i>
+								<div class="content word-wrap">
+									<a href="mailto:aase@aquaman.plus.com">aase@aquaman.plus.com</a>
+								</div>
+							</div>
 						</div>
 					</div>
-					<div class="ui inverted section divider"></div>
-					<div class="ui center aligned container">
-						<img src="../assets/images/logo.png" class="ui centered medium image" alt="AW Massage Logo">
-						<h5 class="inverted header">Copyright <i class="copyright icon"></i> 2017 AW Massage</h5>
-						<div class="ui horizontal inverted small divided list">
-							<div class="item">Rowledge</div>
-							<div class="item">Farnham</div> 
-							<div class="item">Frensham</div>
-							<div class="item">Alton</div>
-							<div class="item">Crondall</div>
-							<div class="item">Bentley</div>
-							<div class="item">Churt</div>
-						</div>
+					<div class="col-sm-5">
+						<h4 class=" inverted header">About Aase</h4>
+						<div class="sub inverted header">Aase is a professionally trained, CTHA-certified massage therapist who works in and around Rowledge.</div>
+					</div>
+				</div>
+				<div class="divider"></div>
+				<div class="row">
+					<img src="../assets/images/logo.png" height="100" alt="AW Massage Logo">
+				</div>
+				<div class="row">
+					<h5 class="inverted header">Copyright <i class="copyright icon"></i> 2017 AW Massage</h5>
+				</div>
+				<div class="row">
+					<div class="list-group list-group-horizontal">
+						<div class="list-group-item">Rowledge</div>
+						<div class="list-group-item">Farnham</div> 
+						<div class="list-group-item">Frensham</div>
+						<div class="list-group-item">Alton</div>
+						<div class="list-group-item">Crondall</div>
+						<div class="list-group-item">Bentley</div>
+						<div class="list-group-item">Churt</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<!-- Scripts -->
-		<script src="script.js"></script>	
-		<!--<script type="text/javascript" src="skrollr.min.js"></script>	
-		<script type="text/javascript">
-			var s = skrollr.init();
-		</script>-->
 	</body>
 </html>

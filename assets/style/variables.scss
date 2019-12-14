@@ -1,4 +1,5 @@
 /* Site variables for AW Massage wesbsite*/
+@import "./fonts.scss";
 
 /* Brand colours */
 $primary: #441B70; //#704d9a; #3E206A;
@@ -23,6 +24,9 @@ $accent-dark: #7F7406;  //#554D00
 /* Font styling */
 
 //for use with 'font-family'
+$font-heading: PlayfairReg, serif;
+$font-logo: TangerineBold, cursive, sans-serif;
+
 $font-stack: "Calibri Light", Calibri, Verdana, Arial, sans-serif;
 $font-stack-titles: Segoe Script, cursive, sans-serif;
 

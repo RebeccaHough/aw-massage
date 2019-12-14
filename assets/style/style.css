@@ -1,8 +1,30 @@
 /* Cascading Style Sheet for AW Massage Website */
 /* Site variables for AW Massage wesbsite*/
+/* Playfair Display */
+@import "../../semantic/dist/semantic.min.css";
+@font-face {
+  font-family: PlayfairReg;
+  src: url(../fonts/PlayfairDisplay/PlayfairDisplay-Regular.otf);
+}
+@font-face {
+  font-family: PlayfairBold;
+  src: url(../fonts/PlayfairDisplay/PlayfairDisplay-Bold.otf);
+}
+@font-face {
+  font-family: PlayfairItal;
+  src: url(../fonts/PlayfairDisplay/PlayfairDisplay-Italic.otf);
+}
+/* Tangerine */
+@font-face {
+  font-family: TangerineReg;
+  src: url(../fonts/Tangerine/Tangerine_Regular.ttf);
+}
+@font-face {
+  font-family: TangerineBold;
+  src: url(../fonts/Tangerine/Tangerine_Bold.ttf);
+}
 /* Brand colours */
 /* Font styling */
-@import url(../../semantic/dist/semantic.min.css);
 body {
   font-family: "Calibri Light", Calibri, Verdana, Arial, sans-serif;
   font-size: 1em;
@@ -10,55 +32,99 @@ body {
   line-height: 1.166;
   margin: 0px;
   padding: 0px;
-  background: #e0e0e0; }
-  body ul {
-    list-style-type: none; }
+  background: #e0e0e0;
+}
+body ul {
+  list-style-type: none;
+}
+/* Temporary logo styling */
+.logo-image {
+  margin-left: 10px;
+  height: 65px;
+  padding: 10px 10px 0 10px;
+}
 
+.logo-text {
+  font-family: TangerineBold, cursive, sans-serif;
+  margin-top: -2px;
+  text-align: center;
+  font-size: 2rem;
+  color: #441B70;
+}
+
+/* Navigation */
+#mainNavbar {
+  font-size: 1.12rem;
+  background: #ffffff;
+}
+
+#mainNavbarContent {
+  justify-content: center;
+  font-family: PlayfairReg, serif;
+}
+#mainNavbarContent > ul {
+  align-items: center;
+}
+#mainNavbarContent > ul li {
+  padding: 10px;
+}
+#mainNavbarContent > ul li :hover {
+  color: #704d9a;
+}
+
+/* Carousel */
 #pageHeader {
-  min-height: 425px; }
-
-#navBar .toggle.item {
-  display: none; }
+  min-height: 425px;
+}
 
 #treatments {
-  margin: 25px 0; }
+  margin: 25px 0;
+}
 
 #contactTable {
   width: 500px;
   margin-left: auto;
   margin-right: auto;
   border: 1px solid black;
-  border-collapse: collapse; }
-  #contactTable th, #contactTable td, #contactTable tr {
-    padding: 6px;
-    border: 1px solid black; }
-  #contactTable th {
-    font-size: 1.1em; }
+  border-collapse: collapse;
+}
+#contactTable th, #contactTable td, #contactTable tr {
+  padding: 6px;
+  border: 1px solid black;
+}
+#contactTable th {
+  font-size: 1.1em;
+}
 
 #aboutTable {
   margin: auto;
   max-width: 900px;
-  border: 0px solid black; }
-  #aboutTable tr, #aboutTable td {
-    border: 0px; }
+  border: 0px solid black;
+}
+#aboutTable tr, #aboutTable td {
+  border: 0px;
+}
 
 .centeredImage img {
   display: block;
   margin-top: 2em;
   margin-bottom: 2em;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+}
 
 #treatmentInfo {
   text-align: center;
   font-size: 1.5em;
   font-weight: bold;
-  background-color: #704d9a;
-  padding: 0.8em; }
+  background-color: #441B70;
+  padding: 0.8em;
+}
 
 #footer {
   margin: 3em 0 0;
-  padding: 3em 0 2em; }
+  padding: 3em 0 2em;
+}
 
 .text-overlay {
   position: absolute;
@@ -66,18 +132,23 @@ body {
   left: 0;
   width: 100%;
   padding: 10px 15px;
-  text-align: center; }
+  text-align: center;
+}
 
 .word-wrap {
   overflow-wrap: break-word;
   word-wrap: break-word;
-  word-break: break-word; }
+  word-break: break-word;
+}
 
 /* Media queries */
 @media only screen and (max-width: 700px) {
   #navBar a, #navBar div.ui.dropdown {
-    display: none; }
+    display: none;
+  }
   #navBar a.toggle.item {
-    display: block; } }
+    display: block;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

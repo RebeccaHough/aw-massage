@@ -24,16 +24,23 @@
 	</head>
 	<body>
 		<!-- Navigation Bar -->
-		<nav id="navBar" class="navbar navbar-expand-md navbar-light d-print">
-			<div class="container">
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<nav id="mainNavbar" class="navbar navbar-expand-md navbar-light d-print sticky-top">
+			<div class="container flex-column">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="mainNavbarContent" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 				</button>
 
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<div id="navLogo" class="nav-item d-flex justify-content-center">
+					<a href="/">
+						<img class="logo-image" src="../assets/images/logo.png" alt="AW Massage Logo"/>
+						<div class="logo-text">AW Massage</div>
+					</a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="mainNavbarContent">
 					<ul class="navbar-nav">
 						<li class="nav-item">
-							<a class="nav-link" href="index.html">Home</a>
+							<a class="nav-link" href="/">Home</a>
 						</li>
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -51,11 +58,6 @@
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="whattoexpect.html">What To Expect</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-brand" href="#">
-								<img class="large centered image" src="../assets/images/logo.png" width="60" height="30" alt="AW Massage Logo">
-							</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="about.html">About Aase</a>
@@ -191,7 +193,7 @@
 				<div class="row">
 					<div class="col-sm-3">
 						<h4 class="inverted header">Massages Offered</h4>
-						<div class="list-group">
+						<div class="list-group list-group-flush">
 							<a class="list-group-item" href="treatments.html#swedishMassage">Swedish</a>
 							<a class="list-group-item" href="treatments.html#deepTissueMassage">Deep Tissue</a>
 							<a class="list-group-item" href="treatments.html#advancedClinicalMassage">Advanced Clinical</a>
@@ -201,7 +203,7 @@
 					</div> 
 					<div class="col-sm-4">
 						<h4 class=" inverted header">Contact Us</h4>
-						<div class="list-group">
+						<div class="list-group list-group-flush">
 							<div class="list-group-item">
 								<i class="user outline icon"></i>
 								<div class="content">
@@ -241,15 +243,15 @@
 					<h5 class="inverted header">Copyright <i class="copyright icon"></i> 2017 AW Massage</h5>
 				</div>
 				<div class="row">
-					<div class="list-group list-group-horizontal">
-						<div class="list-group-item">Rowledge</div>
-						<div class="list-group-item">Farnham</div> 
-						<div class="list-group-item">Frensham</div>
-						<div class="list-group-item">Alton</div>
-						<div class="list-group-item">Crondall</div>
-						<div class="list-group-item">Bentley</div>
-						<div class="list-group-item">Churt</div>
-					</div>
+					<ul class="list-group list-group-horizontal list-group-flush">
+						<li class="list-group-item">Rowledge</li>
+						<li class="list-group-item">Farnham</li> 
+						<li class="list-group-item">Frensham</li>
+						<li class="list-group-item">Alton</li>
+						<li class="list-group-item">Crondall</li>
+						<li class="list-group-item">Bentley</li>
+						<li class="list-group-item">Churt</li>
+					</ul>
 				</div>
 			</div>
 		</div>

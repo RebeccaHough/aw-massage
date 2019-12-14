@@ -18,12 +18,43 @@ body {
 	}
 }
 
-#pageHeader {
-	min-height: 425px;
+/* Temporary logo styling */
+.logo-image {
+	margin-left: 10px; //15
+	height: 65px;
+	padding: 10px 10px 0 10px;
+}
+.logo-text {
+	font-family: $font-logo;
+	margin-top: -2px;
+	text-align: center;
+	font-size: 2rem; //2.3
+	color: $primary; //grey;
 }
 
-#navBar .toggle.item {
-	display: none;
+/* Navigation */
+#mainNavbar {
+	font-size: 1.12rem;
+	background: #ffffff;
+}
+
+#mainNavbarContent {
+	justify-content: center;
+	font-family: $font-heading;
+	> ul {
+		align-items: center;
+		li {
+			padding: 10px;
+			:hover {
+				color: #704d9a;
+			}
+		}
+	}
+}
+
+/* Carousel */
+#pageHeader {
+	min-height: 425px;
 }
 
 #treatments {

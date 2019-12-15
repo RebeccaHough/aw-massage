@@ -7,6 +7,11 @@
 !/assets/images/logo.png
 !/assets/images/favicons
 
+# fonts
+/assets/fonts/111235-admin-ui/**
+!/assets/fonts/111235-admin-ui/font/
+!/assets/fonts/111235-admin-ui/font/**
+
 /assets/images/favicons/*
 !/assets/images/favicons/favicon.ico
 
@@ -32,6 +37,3 @@
 !/semantic/src/themes/awmassage
 
 !/semantic/src/themes/awmassage/**
-
-# todo list
-todo.txt

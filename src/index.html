@@ -13,6 +13,8 @@
 		<link rel="icon" href="../assets/images/favicons/favicon.ico" type="image/x-icon">
 		<!-- Stylesheets -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<!-- Icons -->
+		<link rel="stylesheet" type="text/css" href="../assets/fonts/111235-admin-ui/font/flaticon.css"> 
 		<link rel="stylesheet" href="../assets/style/style.css">
 		<!-- Scripts -->
 		<!-- Bootstrap JS includes -->
@@ -187,7 +189,7 @@
 
 		<div id="contact" class="jumbotron jumbotron-fluid">
 			<div class="container">
-				<h1 class="display-4">So set aside some <span class="highlight">me-time...</span></h1>
+				<h1 class="display-4">So set aside some <span class="highlight-font">me-time...</span></h1>
 				<hr class="my-4">
 				<p class="lead">...And book your appointment now, on <a href="tel:07784740591">07784740591</a>.</p>
 				<button class="btn btn-primary btn-large" href="./contact.html">Contact us</button>
@@ -195,48 +197,57 @@
 		</div>
 
 		<!-- Testimonals Carousel -->
-		<div class="container-fluid">
+		<div id="testimonals" class="container-fluid">
 			<div class="container">
-				<div id="testimonalsCarousel" class="carousel slide" data-ride="carousel">
-					<ol class="carousel-indicators">
-						<li data-target="#testimonalsCarousel" data-slide-to="0" class="active"></li>
-						<li data-target="#testimonalsCarousel" data-slide-to="1"></li>
-						<li data-target="#testimonalsCarousel" data-slide-to="2"></li>
-					</ol>
-					<div class="carousel-inner">
-						<div class="carousel-item active">
-							<img src="../assets/images/leaf-on-wood.jpg" class="d-block w-100" alt="...">
-							<div class="carousel-caption d-none d-md-block">
-								<h5>First slide label</h5>
-								<p>"Every time Aase visits, my back, which is my main problem, feels so much looser and less achy. Her new techniques really help my muscles and I would thoroughly recommend her services." <br>
-									<b>Katie</b></p>
+				<div class="row">
+					<h3>What our customers say:</h3>
+				</div>
+				<div class="row">
+					<div class="col-1">
+						<i class="flaticon-left-quote left-quote"></i>
+					</div>
+					<div class="col">
+						<div id="testimonalsCarousel" class="carousel slide" data-ride="carousel">
+							<ol class="carousel-indicators">
+								<li data-target="#testimonalsCarousel" data-slide-to="0" class="active"></li>
+								<li data-target="#testimonalsCarousel" data-slide-to="1"></li>
+								<li data-target="#testimonalsCarousel" data-slide-to="2"></li>
+							</ol>
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<p>
+										"Every time Aase visits, my back, which is my main problem, feels so much looser and less achy. Her new techniques really help my muscles and I would thoroughly recommend her services." <br>
+										<b> - Katie</b>
+									</p>
+								</div>
+								<div class="carousel-item">
+									<p>
+										"Every time Aase visits, my back, which is my main problem, feels so much looser and less achy. Her new techniques really help my muscles and I would thoroughly recommend her services." <br>
+										<b> - Katie</b>
+									</p>
+								</div>
+								<div class="carousel-item">
+									<p>
+										"Every time Aase visits, my back, which is my main problem, feels so much looser and less achy. Her new techniques really help my muscles and I would thoroughly recommend her services." <br>
+										<b> - Katie</b>
+									</p>
+								</div>
 							</div>
 						</div>
-						<div class="carousel-item">
-							<img src="../assets/images/leaf-on-wood.jpg" class="d-block w-100" alt="...">
-							<div class="carousel-caption d-none d-md-block">
-								<h5>Second slide label</h5>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-							</div>
-						</div>
-						<div class="carousel-item">
-							<img src="../assets/images/leaf-on-wood.jpg" class="d-block w-100" alt="...">
-							<div class="carousel-caption d-none d-md-block">
-								<h5>Third slide label</h5>
-								<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-							</div>
-						</div>
+					</div>
+					<div class="col-1">
+						<i class="flaticon-right-quotation-sign right-quote"></i>
 					</div>
 				</div>
 			</div>
 		</div>
 
 		<!-- Footer -->
-		<div id="footer" class="container-fluid bg-dark">
+		<div id="footer" class="container-fluid">
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-3">
-						<h4 class="inverted header">Massages Offered</h4>
+					<div class="col-sm-4">
+						<h4>Massages Offered</h4>
 						<div class="list-group list-group-flush">
 							<a class="list-group-item" href="treatments.html#swedishMassage">Swedish</a>
 							<a class="list-group-item" href="treatments.html#deepTissueMassage">Deep Tissue</a>
@@ -246,48 +257,45 @@
 						</div>
 					</div> 
 					<div class="col-sm-4">
-						<h4 class=" inverted header">Contact Us</h4>
+						<h4>Contact Us</h4>
 						<div class="list-group list-group-flush">
 							<div class="list-group-item">
-								<i class="user outline icon"></i>
+								<i class="flaticon-user-filled-person-shape"></i>
 								<div class="content">
 									Aase Waterman
 								</div>
 							</div>
 							<div class="list-group-item">
-								<i class="marker icon"></i>
+								<i class="flaticon-placeholder-filled-point"></i>
 								<div class="content">
 									Rowledge, Surrey
 								</div>
 							</div>
 							<div class="list-group-item">
-								<i class="text telephone icon"></i>
+								<i class="flaticon-telephone-auricular"></i>
 								<div class="content">
 									07784740591
 								</div>
 							</div>
 							<div class="list-group-item">
-								<i class="mail icon"></i>
+								<i class="flaticon-new-email-filled-closed-envelope-back"></i>
 								<div class="content word-wrap">
 									<a href="mailto:aase@aquaman.plus.com">aase@aquaman.plus.com</a>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-sm-5">
-						<h4 class=" inverted header">About Aase</h4>
-						<div class="sub inverted header">Aase is a professionally trained, CTHA-certified massage therapist who works in and around Rowledge.</div>
+					<div class="col-sm-4">
+						<h4>About Aase</h4>
+						<p>Aase is a professionally trained, CTHA-certified massage therapist who works in and around Rowledge.</p>
 					</div>
 				</div>
-				<div class="divider"></div>
-				<div class="row">
+				<hr class="my-4 white">
+				<div class="row copyright">
 					<img src="../assets/images/logo.png" height="100" alt="AW Massage Logo">
-				</div>
-				<div class="row">
-					<h5 class="inverted header">Copyright <i class="copyright icon"></i> 2017 AW Massage</h5>
-				</div>
-				<div class="row">
-					<ul class="list-group list-group-horizontal list-group-flush">
+					<h5>Copyright &copy; 2017 AW Massage</h5>
+					<p>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>, licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY.</a></p>
+					<ul class="list-group list-group-horizontal list-group-flush bar-list">
 						<li class="list-group-item">Rowledge</li>
 						<li class="list-group-item">Farnham</li> 
 						<li class="list-group-item">Frensham</li>

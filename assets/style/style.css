@@ -101,8 +101,19 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
 }
 
 /* Testimonals carousel */
+#testimonals .left-quote {
+  font-size: 30px;
+}
+#testimonals .right-quote {
+  font-size: 30px;
+}
+
 #testimonalsCarousel {
-  background: url("../images/leaf-on-wood.jpg") no-repeat scroll center;
+  padding: 100px 20px;
+}
+#testimonalsCarousel .carousel-indicators li {
+  background-color: #441B70;
+  height: 4px;
 }
 
 #treatmentsHeader {
@@ -162,7 +173,22 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
 }
 
 #footer {
+  background-color: #000000;
+  color: #ffffff;
   padding: 3em 0 2em;
+}
+#footer .copyright {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+#footer .copyright img {
+  align-self: center;
+}
+#footer .copyright ul {
+  display: flex;
+  justify-content: center;
 }
 
 /* Utility classes */
@@ -181,13 +207,25 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
   word-break: break-word;
 }
 
-.highlight {
+.bar-list {
+  list-style-type: none;
+}
+
+.highlight-font {
   font-family: PlayfairItal, serif;
   color: #441B70;
 }
 
-.logoFontSpan {
+.primary-font {
+  color: #441B70;
+}
+
+.logo-font {
   font-family: TangerineBold, cursive, sans-serif;
+}
+
+[class^=flaticon-] {
+  color: #441B70;
 }
 
 /* Bootstap overrides */

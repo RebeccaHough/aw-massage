@@ -1,0 +1,25 @@
+general
+    clean modern font - all caps for nav and titles looks good
+    colour scheme - what goes where
+theming
+    favour thin white rounded edges on boxes, transparent centre
+    light colours, grey green purple
+nav
+    sort mobile nav
+    fancy sticky 'gets smaller' transitions
+    maybe make it translucent
+main
+footer
+    text/icons too small
+    not black
+    make more eyecatching; easier to read contact info
+
+home
+    
+    design cards for massages
+    add carousel for testimonals
+contact
+    add form
+
+production
+    don't ship all of admin-ui?

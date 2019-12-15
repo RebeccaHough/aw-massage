@@ -21,22 +21,26 @@
 }
 @font-face {
   font-family: TangerineBold;
-  src: url(../fonts/Tangerine/Tangerine_Bold.ttf);
+  src: url("../fonts/Tangerine/Tangerine_Bold.ttf");
 }
 /* Brand colours */
 /* Font styling */
 body {
   font-family: "Calibri Light", Calibri, Verdana, Arial, sans-serif;
-  font-size: 1em;
-  color: black;
+  font-size: 1.15em;
+  color: rgba(0, 0, 0, 0.65);
   line-height: 1.166;
   margin: 0px;
   padding: 0px;
-  background: #e0e0e0;
+  background: #ffffff;
 }
 body ul {
   list-style-type: none;
 }
+body h1, body h2, body h3, body h4, body h5, body h6 {
+  font-family: PlayfairReg, serif;
+}
+
 /* Temporary logo styling */
 .logo-image {
   margin-left: 10px;
@@ -56,6 +60,7 @@ body ul {
 #mainNavbar {
   font-size: 1.12rem;
   background: #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 #mainNavbarContent {
@@ -72,13 +77,48 @@ body ul {
   color: #704d9a;
 }
 
-/* Carousel */
+/* Header */
 #pageHeader {
   min-height: 425px;
+  background: url("../images/leaf-on-wood.jpg") no-repeat scroll center;
+  background-size: cover;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 0;
 }
 
-#treatments {
-  margin: 25px 0;
+#companyHeader {
+  background-color: #441B70;
+  font-family: PlayfairReg, serif;
+  font-weight: initial;
+  color: #ffffff;
+  text-align: center;
+}
+
+#mainContent img {
+  width: 250px;
+  margin-left: 10px;
+}
+
+/* Testimonals carousel */
+#testimonalsCarousel {
+  background: url("../images/leaf-on-wood.jpg") no-repeat scroll center;
+}
+
+#treatmentsHeader {
+  background: url("../images/forest-fog.jpg") no-repeat fixed center;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 2rem;
+}
+#treatmentsHeader hr {
+  border-color: #ffffff;
+}
+
+#contact {
+  background-color: #E7DB6B;
+  text-align: center;
+  margin-bottom: 0;
 }
 
 #contactTable {
@@ -122,10 +162,10 @@ body ul {
 }
 
 #footer {
-  margin: 3em 0 0;
   padding: 3em 0 2em;
 }
 
+/* Utility classes */
 .text-overlay {
   position: absolute;
   bottom: 0;
@@ -139,6 +179,37 @@ body ul {
   overflow-wrap: break-word;
   word-wrap: break-word;
   word-break: break-word;
+}
+
+.highlight {
+  font-family: PlayfairItal, serif;
+  color: #441B70;
+}
+
+.logoFontSpan {
+  font-family: TangerineBold, cursive, sans-serif;
+}
+
+/* Bootstap overrides */
+.btn-primary {
+  background: #441B70;
+  border: none;
+}
+.btn-primary:hover, .btn-primary:active {
+  background: #71509C;
+  border: none;
+}
+
+.lead {
+  font-family: PlayfairReg, serif;
+  font-size: 1.3rem;
+}
+.lead.italics {
+  font-family: PlayfairItal, serif;
+}
+
+hr.white {
+  border-color: #ffffff;
 }
 
 /* Media queries */

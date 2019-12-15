@@ -74,35 +74,45 @@
 		</nav>
 
 		<!-- Header -->
-		<div id="pageHeader" class="jumbotron jumbotron-fluid">
+		<div id="pageHeader" class="jumbotron jumbotron-fluid d-flex align-items-center">
 			<div class="container">
-				<img src="../assets/images/logo.png" height="350px">
-				<h1 class="display-4">AW Massage</h1>
-				<hr class="my-4">
-				<p class="lead">"A happy mind is medicine, no better prescription exists."</p>
+				<h1 class="display-4">Relax your mind</h1>
+				<hr class="my-4 white">
+				<p class="lead italics">A happy mind is medicine, no better prescription exists.</p>
+			</div>
+		</div>
+
+		<div id="companyHeader" class="jumbotron jumbotron-fluid d-flex align-items-center">
+			<div class="container">
+				<h3>AW Massage provides a bespoke professional massage in Rowledge, or alternatively in the comfort of your own home.</h3>
 			</div>
 		</div>
 
 		<!-- Main Content -->
 		<div id="mainContent" class="container-fluid">
-			<div class="container">
-				<br>
-				<p style="font-size: 1.2em;"><strong>AW Massage</strong> provides a bespoke professional massage in Rowledge, or alternatively in the comfort of your own home.</p>
-				
-				<p>Our <i>modern</i> and <i>hectic</i> lifestyle can take its toll on our body and mind leaving us feeling <i>stressed, tired</i> and <i>exhausted</i>. We need to take care of ourself and keep in good health.</p>
-				
-				<p>A regular massage not only <i>feels good</i> but is actually good for you. Massage therapy has been practised for thousands of years in many different cultures for its healing effect.</p>
-				
-				<p>Stress is one of the greatest causes of illness in our society today. Studies have shown the effectiveness of massage therapy in reducing stress. The <a class=" link" href="http://www.healingheartpower.com/article1.html">human touch</a> should not be underestimated for its soothing and healing properties.</p>
+			<div class="container d-flex">
+				<div>
+					<p>Our hectic modern lifestyle can take its toll on our body and mind leaving us feeling stressed, tired and exhausted. We need to take care of ourself and keep in good health.</p>
+					
+					<p>A regular massage not only <i>feels good</i> but is actually good for you. Massage therapy has been practised for thousands of years in many different cultures for its healing effect.</p>
+					
+					<p>Stress is one of the greatest causes of illness in our society today. Studies have shown the effectiveness of massage therapy in reducing stress. The <a class=" link" href="http://www.healingheartpower.com/article1.html">human touch</a> should not be underestimated for its soothing and healing properties.</p>
+				</div>
+				<div><img src="../assets/images/bath-sqr.jpg"/></div>
 			</div>
 		</div>
 
 		<!-- Treatments Summary -->
+		<div id="treatmentsHeader" class="jumbotron jumbotron-fluid">
+			<div class="container">
+				<h1 class="display-4">Massages Offered</h1>
+				<hr class="my-4 white">
+			</div>
+		</div>
 		<div class="container-fluid">
 			<div class="container">
-				<p><b>To achieve the most effective result, I incorporate techniques from the following types of massage:</b></p>
 				<!-- Treatments Cards -->
-				<div id="treatments">
+				<div id="treatmentsCards">
 					<div class="row">
 						<div class="col">
 							<div class="card" style="width: 18rem;">
@@ -172,18 +182,52 @@
 				<p>
 					Each treatment is tailored to your requirements and preferences, leaving you revitalised and refreshed and in a happier frame of mind.
 				</p>
-				<p>
-					So set aside some 'me-time' and book an appointment with AW massage on <span style="text-decoration: underline"><strong>07784740591</strong></span>.
-				</p>
-				<button>Contact us</button>
+			</div>
+		</div>
+
+		<div id="contact" class="jumbotron jumbotron-fluid">
+			<div class="container">
+				<h1 class="display-4">So set aside some <span class="highlight">me-time...</span></h1>
+				<hr class="my-4">
+				<p class="lead">...And book your appointment now, on <a href="tel:07784740591">07784740591</a>.</p>
+				<button class="btn btn-primary btn-large" href="./contact.html">Contact us</button>
 			</div>
 		</div>
 
 		<!-- Testimonals Carousel -->
 		<div class="container-fluid">
 			<div class="container">
-				<p>"Every time Aase visits, my back, which is my main problem, feels so much looser and less achy. Her new techniques really help my muscles and I would thoroughly recommend her services." <br>
-				<b>Katie</b></p>
+				<div id="testimonalsCarousel" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#testimonalsCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#testimonalsCarousel" data-slide-to="1"></li>
+						<li data-target="#testimonalsCarousel" data-slide-to="2"></li>
+					</ol>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="../assets/images/leaf-on-wood.jpg" class="d-block w-100" alt="...">
+							<div class="carousel-caption d-none d-md-block">
+								<h5>First slide label</h5>
+								<p>"Every time Aase visits, my back, which is my main problem, feels so much looser and less achy. Her new techniques really help my muscles and I would thoroughly recommend her services." <br>
+									<b>Katie</b></p>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img src="../assets/images/leaf-on-wood.jpg" class="d-block w-100" alt="...">
+							<div class="carousel-caption d-none d-md-block">
+								<h5>Second slide label</h5>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img src="../assets/images/leaf-on-wood.jpg" class="d-block w-100" alt="...">
+							<div class="carousel-caption d-none d-md-block">
+								<h5>Third slide label</h5>
+								<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 

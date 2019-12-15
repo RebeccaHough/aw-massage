@@ -3,18 +3,18 @@
 @import "../../semantic/dist/semantic.min.css";
 
 body {
-	font-family: $font-stack;
-	font-size: 1em;
-	color: black;
+	font-family: $font-body;
+	font-size: 1.15em;
+	color: rgba(0,0,0,.65);;
 	line-height: 1.166;
 	margin: 0px;
 	padding: 0px;
-	background: $secondary;
+	background: #ffffff;
 	ul { 
 		list-style-type: none;
 	}
-	h2 {
-		//color: $primary;
+	h1, h2, h3, h4, h5, h6 {
+		font-family: $font-heading;
 	}
 }
 
@@ -36,6 +36,7 @@ body {
 #mainNavbar {
 	font-size: 1.12rem;
 	background: #ffffff;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 #mainNavbarContent {
@@ -52,13 +53,50 @@ body {
 	}
 }
 
-/* Carousel */
+/* Header */
 #pageHeader {
 	min-height: 425px;
+	background: url('../images/leaf-on-wood.jpg') no-repeat scroll center;
+	background-size: cover;
+	color: #ffffff;
+	text-align: center;
+	margin-bottom: 0;
 }
 
-#treatments {
-	margin: 25px 0;
+#companyHeader {
+	background-color: $primary;
+	font-family: $font-heading;
+	font-weight: initial;
+	color: #ffffff;
+	text-align: center;
+}
+
+#mainContent {
+	img {
+		width: 250px;
+		margin-left: 10px;
+	}
+}
+
+/* Testimonals carousel */
+#testimonalsCarousel {
+	background: url('../images/leaf-on-wood.jpg') no-repeat scroll center;
+}
+
+#treatmentsHeader {
+	background: url('../images/forest-fog.jpg') no-repeat fixed center;
+	color: #ffffff;
+	text-align: center;
+	margin-top: 2rem;
+	hr {
+		border-color: #ffffff;
+	}
+}
+
+#contact {
+	background-color: $accent-light;
+	text-align: center;
+	margin-bottom: 0;
 }
 
 #contactTable {
@@ -105,11 +143,10 @@ body {
 }
 
 #footer { 
-	margin: 3em 0 0;
 	padding: 3em 0 2em;
 }
 
-//utility classes
+/* Utility classes */
 
 .text-overlay {
 	position: absolute;
@@ -125,6 +162,38 @@ body {
 	word-wrap: break-word;
 	word-break: break-word;
 }
+
+.highlight {
+	font-family: $font-heading-italics;
+	color: $primary;
+}
+
+.logoFontSpan {
+	font-family: $font-logo;
+}
+
+/* Bootstap overrides */
+
+.btn-primary {
+	background: $primary;
+	border: none;
+	&:hover, &:active {
+		background: $primary-light;
+		border: none;
+	}
+}
+
+.lead {
+	font-family: $font-heading;
+	font-size: 1.3rem;
+	&.italics {
+		font-family: $font-heading-italics;
+	}
+}
+hr.white {
+	border-color: #ffffff;
+}
+
 
 /* Media queries */
 

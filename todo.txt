@@ -1,25 +1,34 @@
-general
-    clean modern font - all caps for nav and titles looks good
-    colour scheme - what goes where
-theming
-    favour thin white rounded edges on boxes, transparent centre
-    light colours, grey green purple
+
+---- General ----
+
+theming/design
+    get light green accent colour
+    get body font
+    design buttons
+
 nav
     sort mobile nav
+    make nav  :hover darker
+    on desktop, treatments dropdown on hover
+        large clothes-shop-like menu 
     fancy sticky 'gets smaller' transitions
     maybe make it translucent
-main
+    fix: stops following after 1 viewport-height's worth of scrolling
+
 footer
-    text/icons too small
-    not black
-    make more eyecatching; easier to read contact info
+    make places list look like ' Place | Place | Place '
+    put AW Massage in logo font?
+    make not black; make more eyecatching; easier to read contact info
+
+---- Pages ----
 
 home
-    
     design cards for massages
-    add carousel for testimonals
+
 contact
     add form
 
+---- Misc ----
+
 production
-    don't ship all of admin-ui?
+    check we're not shipping all of admin-ui

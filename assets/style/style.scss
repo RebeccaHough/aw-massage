@@ -1,10 +1,10 @@
 /* Cascading Style Sheet for AW Massage Website */
 @import "./variables.scss";
-@import "../../semantic/dist/semantic.min.css";
+//@import "../../semantic/dist/semantic.min.css"; //todo: remove
 
 body {
 	font-family: $font-body;
-	font-size: 1.15em;
+	font-size: 1.15rem;
 	color: rgba(0,0,0,.65);;
 	line-height: 1.166;
 	margin: 0px;
@@ -12,15 +12,69 @@ body {
 	background: #ffffff;
 	ul { 
 		list-style-type: none;
-	}
+	}	
 	h1, h2, h3, h4, h5, h6 {
 		font-family: $font-heading;
+		margin: 0;
+		line-height: 1.3rem;
+		padding: 0;
+		font-weight: 700;
+	}
+	h1 { font-size: 2rem }
+	h2 { font-size: 1.7rem }
+	h3 { font-size: 1.3rem }
+	h4 { font-size: 1.1rem }
+	h5 { font-size: 1rem }
+	h6 { font-size: .9rem }
+	p { 
+		line-height: 1.43em; 
+		&:last-child { 
+			margin-bottom: 0;
+		}
+	}
+	a {
+		color: $primary;
+		text-decoration: none;
+		&:hover {
+			color: $primary-dark;
+		}
 	}
 }
 
-/* Temporary logo styling */
+/* Navigation */
+$nav-transition-time: 1s;
+#mainNavbar {
+	padding: .5rem 0;
+	font-size: 1.12rem;
+	background: #ffffff;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	transition: all $nav-transition-time linear 0s; //todo: turn this off on mobile
+	.logo-image {
+		transition: all $nav-transition-time linear 0s; //todo: turn this off on mobile
+	}
+}
+
+#mainNavbarContent {
+	justify-content: center;
+	font-family: $font-heading;
+	> ul {
+		align-items: center;
+		li {
+			padding: 10px;
+			a {
+				transition: all .3s ease 0s; //ease colour on hover
+			}
+			a:hover {
+				color: $primary-dark;
+			}
+		}
+	}
+}
+
+/* Logo styling in navbar (temp)*/ 
+//todo extend to be reusable with sass, make height and padding ratios
 .logo-image {
-	margin-left: 10px; //15
+	margin-left: 10px;
 	height: 65px;
 	padding: 10px 10px 0 10px;
 }
@@ -32,26 +86,42 @@ body {
 	color: $primary; //grey;
 }
 
-/* Navigation */
-#mainNavbar {
-	font-size: 1.12rem;
-	background: #ffffff;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+/* For navbar logo text only*/
+.fade-in {
+	animation: fadein-text $nav-transition-time linear forwards;
+	-webkit-animation:  fadein-text $nav-transition-time linear forwards;
 }
 
-#mainNavbarContent {
-	justify-content: center;
-	font-family: $font-heading;
-	> ul {
-		align-items: center;
-		li {
-			padding: 10px;
-			:hover {
-				color: #704d9a;
-			}
-		}
-	}
+.fade-out {
+	animation: fadeout-text $nav-transition-time linear forwards;
+	-webkit-animation: fadeout-text $nav-transition-time linear forwards;
 }
+
+//note: an inconsistent keyframe-percent%:font-size ratio will result in animation appearing to change speed; please calculate ratios correctly
+@keyframes fadein-text {
+	0% {opacity: 0; font-size: 0; flex:0;}
+	80% {opacity: 0; font-size: 1.6rem; flex: 1;}
+	100% {opacity: 1; font-size: 2rem; flex: 1;}
+}
+
+@-webkit-keyframes fadein-text {
+	0% {opacity: 0; font-size: 0; flex:0;}
+	80% {opacity: 0; font-size: 1.6rem; flex: 1;}
+	100% {opacity: 1; font-size: 2rem; flex: 1;}
+}
+
+@keyframes fadeout-text {
+	0% {opacity: 1; flex: 1;}
+	25% {opacity: 0; font-size: 1.5rem;}
+	100% {opacity: 0; font-size: 0; flex: 0;}
+}
+
+@-webkit-keyframes fadeout-text {
+	0% {opacity: 1; flex: 1}
+	25% {opacity: 0; font-size: 1.5rem;}
+	100% {opacity: 0; font-size: 0; flex:0;}
+}
+
 
 /* Header */
 #pageHeader {

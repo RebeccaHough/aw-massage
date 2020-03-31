@@ -1,7 +1,6 @@
 /* Cascading Style Sheet for AW Massage Website */
 /* Site variables for AW Massage wesbsite*/
 /* Playfair Display */
-@import "../../semantic/dist/semantic.min.css";
 @font-face {
   font-family: PlayfairReg;
   src: url(../fonts/PlayfairDisplay/PlayfairDisplay-Regular.otf);
@@ -27,7 +26,7 @@
 /* Font styling */
 body {
   font-family: "Calibri Light", Calibri, Verdana, Arial, sans-serif;
-  font-size: 1.15em;
+  font-size: 1.15rem;
   color: rgba(0, 0, 0, 0.65);
   line-height: 1.166;
   margin: 0px;
@@ -39,9 +38,73 @@ body ul {
 }
 body h1, body h2, body h3, body h4, body h5, body h6 {
   font-family: PlayfairReg, serif;
+  margin: 0;
+  line-height: 1.3rem;
+  padding: 0;
+  font-weight: 700;
+}
+body h1 {
+  font-size: 2rem;
+}
+body h2 {
+  font-size: 1.7rem;
+}
+body h3 {
+  font-size: 1.3rem;
+}
+body h4 {
+  font-size: 1.1rem;
+}
+body h5 {
+  font-size: 1rem;
+}
+body h6 {
+  font-size: 0.9rem;
+}
+body p {
+  line-height: 1.43em;
+}
+body p:last-child {
+  margin-bottom: 0;
+}
+body a {
+  color: #441B70;
+  text-decoration: none;
+}
+body a:hover {
+  color: #2B0B56;
 }
 
-/* Temporary logo styling */
+/* Navigation */
+#mainNavbar {
+  padding: 0.5rem 0;
+  font-size: 1.12rem;
+  background: #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: all 1s linear 0s;
+}
+#mainNavbar .logo-image {
+  transition: all 1s linear 0s;
+}
+
+#mainNavbarContent {
+  justify-content: center;
+  font-family: PlayfairReg, serif;
+}
+#mainNavbarContent > ul {
+  align-items: center;
+}
+#mainNavbarContent > ul li {
+  padding: 10px;
+}
+#mainNavbarContent > ul li a {
+  transition: all 0.3s ease 0s;
+}
+#mainNavbarContent > ul li a:hover {
+  color: #2B0B56;
+}
+
+/* Logo styling in navbar (temp)*/
 .logo-image {
   margin-left: 10px;
   height: 65px;
@@ -56,27 +119,81 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
   color: #441B70;
 }
 
-/* Navigation */
-#mainNavbar {
-  font-size: 1.12rem;
-  background: #ffffff;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+/* For navbar logo text only*/
+.fade-in {
+  animation: fadein-text 1s linear forwards;
+  -webkit-animation: fadein-text 1s linear forwards;
 }
 
-#mainNavbarContent {
-  justify-content: center;
-  font-family: PlayfairReg, serif;
-}
-#mainNavbarContent > ul {
-  align-items: center;
-}
-#mainNavbarContent > ul li {
-  padding: 10px;
-}
-#mainNavbarContent > ul li :hover {
-  color: #704d9a;
+.fade-out {
+  animation: fadeout-text 1s linear forwards;
+  -webkit-animation: fadeout-text 1s linear forwards;
 }
 
+@keyframes fadein-text {
+  0% {
+    opacity: 0;
+    font-size: 0;
+    flex: 0;
+  }
+  80% {
+    opacity: 0;
+    font-size: 1.6rem;
+    flex: 1;
+  }
+  100% {
+    opacity: 1;
+    font-size: 2rem;
+    flex: 1;
+  }
+}
+@-webkit-keyframes fadein-text {
+  0% {
+    opacity: 0;
+    font-size: 0;
+    flex: 0;
+  }
+  80% {
+    opacity: 0;
+    font-size: 1.6rem;
+    flex: 1;
+  }
+  100% {
+    opacity: 1;
+    font-size: 2rem;
+    flex: 1;
+  }
+}
+@keyframes fadeout-text {
+  0% {
+    opacity: 1;
+    flex: 1;
+  }
+  25% {
+    opacity: 0;
+    font-size: 1.5rem;
+  }
+  100% {
+    opacity: 0;
+    font-size: 0;
+    flex: 0;
+  }
+}
+@-webkit-keyframes fadeout-text {
+  0% {
+    opacity: 1;
+    flex: 1;
+  }
+  25% {
+    opacity: 0;
+    font-size: 1.5rem;
+  }
+  100% {
+    opacity: 0;
+    font-size: 0;
+    flex: 0;
+  }
+}
 /* Header */
 #pageHeader {
   min-height: 425px;

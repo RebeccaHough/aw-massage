@@ -38,7 +38,6 @@ body ul {
 }
 body h1, body h2, body h3, body h4, body h5, body h6 {
   font-family: PlayfairReg, serif;
-  margin: 0;
   line-height: 1.3rem;
   padding: 0;
   font-weight: 700;
@@ -70,9 +69,11 @@ body p:last-child {
 body a {
   color: #441B70;
   text-decoration: none;
+  font-weight: bold;
 }
 body a:hover {
-  color: #2B0B56;
+  color: #9990bd;
+  text-decoration: none;
 }
 
 /* Navigation */
@@ -117,6 +118,7 @@ body a:hover {
   text-align: center;
   font-size: 2rem;
   color: #441B70;
+  font-weight: normal;
 }
 
 /* For navbar logo text only*/
@@ -205,11 +207,14 @@ body a:hover {
 }
 
 #companyHeader {
-  background-color: #441B70;
+  background-color: #9990bd;
   font-family: PlayfairReg, serif;
   font-weight: initial;
   color: #ffffff;
   text-align: center;
+}
+#companyHeader h3 {
+  margin-bottom: 0;
 }
 
 #mainContent img {
@@ -237,14 +242,18 @@ body a:hover {
   background: url("../images/forest-fog.jpg") no-repeat fixed center;
   color: #ffffff;
   text-align: center;
-  margin-top: 2rem;
+  margin: 0;
 }
 #treatmentsHeader hr {
   border-color: #ffffff;
 }
 
+#treatmentsDesc {
+  margin-bottom: 2rem;
+}
+
 #contact {
-  background-color: #E7DB6B;
+  background-color: #ccc5e8;
   text-align: center;
   margin-bottom: 0;
 }
@@ -290,7 +299,7 @@ body a:hover {
 }
 
 #footer {
-  background-color: #000000;
+  background-color: #9990bd;
   color: #ffffff;
   padding: 3em 0 2em;
 }
@@ -324,8 +333,66 @@ body a:hover {
   word-break: break-word;
 }
 
-.bar-list {
+.text-container {
+  padding: 4rem 0;
+}
+
+.quote-container {
+  padding: 4rem 7rem;
+}
+
+ul.bar-list {
+  display: block;
+  margin: 1em 0;
+  padding: 0;
   list-style-type: none;
+}
+ul.bar-list li {
+  display: block;
+  padding: 0.45rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.85);
+}
+ul.bar-list li:first-child {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
+}
+ul.bar-list li:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+ul.bar-list li i {
+  margin: 0;
+  padding: 0;
+  padding-right: 0.3em;
+  vertical-align: top;
+  -webkit-transition: color 0.1s ease;
+  transition: color 0.1s ease;
+}
+
+.horizontal-bar-list {
+  padding: 0;
+}
+.horizontal-bar-list li {
+  display: inline-block;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 0.6;
+  border-left: 1px solid rgba(255, 255, 255, 0.85);
+}
+.horizontal-bar-list li:first-child {
+  border-left: none;
+}
+.horizontal-bar-list li:not(:first-child) {
+  padding-left: 0.5em;
+}
+.horizontal-bar-list li:not(:last-child) {
+  padding-right: 0.5em;
+}
+.horizontal-bar-list i {
+  vertical-align: middle;
+  margin: 0;
+  padding: 0 0.25em 0 0;
 }
 
 .highlight-font {

@@ -84,14 +84,14 @@
 			</div>
 		</div>
 
-		<div id="companyHeader" class="jumbotron jumbotron-fluid d-flex align-items-center">
+		<div id="companyHeader" class="text-container container-fluid d-flex align-items-center">
 			<div class="container">
 				<h3>AW Massage provides a bespoke professional massage in Rowledge, or alternatively in the comfort of your own home.</h3>
 			</div>
 		</div>
 
 		<!-- Main Content -->
-		<div id="mainContent" class="container-fluid">
+		<div id="mainContent" class="text-container container-fluid">
 			<div class="container d-flex">
 				<div>
 					<p>Our hectic modern lifestyle can take its toll on our body and mind leaving us feeling stressed, tired and exhausted. We need to take care of ourself and keep in good health.</p>
@@ -104,15 +104,21 @@
 			</div>
 		</div>
 
-		<!-- Treatments Summary -->
+		<!-- Treatments Header -->
 		<div id="treatmentsHeader" class="jumbotron jumbotron-fluid">
 			<div class="container">
 				<h1 class="display-4">Massages Offered</h1>
 				<hr class="my-4 white">
 			</div>
 		</div>
-		<div class="container-fluid">
+
+		<!-- Treatments Content -->
+		<div class="text-container container-fluid">
 			<div class="container">
+				<!-- Treatments Description -->
+				<p id="treatmentsDesc">
+					Each treatment is tailored to your requirements and preferences, leaving you revitalised and refreshed and in a happier frame of mind.
+				</p>
 				<!-- Treatments Cards -->
 				<div id="treatmentsCards">
 					<div class="row">
@@ -180,13 +186,10 @@
 						</div>
 					</div>
 				</div>
-				<!-- Treatments Contact-->
-				<p>
-					Each treatment is tailored to your requirements and preferences, leaving you revitalised and refreshed and in a happier frame of mind.
-				</p>
 			</div>
 		</div>
 
+		<!-- Contact -->
 		<div id="contact" class="jumbotron jumbotron-fluid">
 			<div class="container">
 				<h1 class="display-4">So set aside some <span class="highlight-font">me-time...</span></h1>
@@ -197,14 +200,14 @@
 		</div>
 
 		<!-- Testimonals Carousel -->
-		<div id="testimonals" class="container-fluid">
+		<div id="testimonals" class="quote-container container-fluid">
 			<div class="container">
 				<div class="row">
 					<h3>What our customers say:</h3>
 				</div>
 				<div class="row">
-					<div class="col-1">
-						<i class="flaticon-left-quote left-quote"></i>
+					<div class="col-1 d-flex">
+						<i class="flaticon-left-quote left-quote" style="margin-top: 2rem"></i>
 					</div>
 					<div class="col">
 						<div id="testimonalsCarousel" class="carousel slide" data-ride="carousel">
@@ -235,8 +238,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-1">
-						<i class="flaticon-right-quotation-sign right-quote"></i>
+					<div class="col-1 d-flex align-items-end">
+						<i class="flaticon-right-quotation-sign right-quote" style="margin-bottom: 2rem"></i>
 					</div>
 				</div>
 			</div>
@@ -248,42 +251,46 @@
 				<div class="row">
 					<div class="col-sm-4">
 						<h4>Massages Offered</h4>
-						<div class="list-group list-group-flush">
-							<a class="list-group-item" href="treatments.html#swedishMassage">Swedish</a>
-							<a class="list-group-item" href="treatments.html#deepTissueMassage">Deep Tissue</a>
-							<a class="list-group-item" href="treatments.html#advancedClinicalMassage">Advanced Clinical</a>
-							<a class="list-group-item" href="treatments.html#hotStoneMassage">Hot Stone Fusion</a>
-							<a class="list-group-item" href="treatments.html#scarTissueMassage">Scar Tissue Release</a>
-						</div>
+						<ul class="bar-list">
+							<li><a href="treatments.html#swedishMassage">Swedish</a></li>
+							<li><a href="treatments.html#deepTissueMassage">Deep Tissue</a></li>
+							<li><a href="treatments.html#advancedClinicalMassage">Advanced Clinical</a></li>
+							<li><a href="treatments.html#hotStoneMassage">Hot Stone Fusion</a></li>
+							<li><a href="treatments.html#scarTissueMassage">Scar Tissue Release</a></li>
+						</ul>
 					</div> 
 					<div class="col-sm-4">
 						<h4>Contact Us</h4>
-						<div class="list-group list-group-flush">
-							<div class="list-group-item">
-								<i class="flaticon-user-filled-person-shape"></i>
+						<ul class="bar-list">
+							<li>
 								<div class="content">
+									<i class="flaticon-user-filled-person-shape"></i>
 									Aase Waterman
 								</div>
-							</div>
-							<div class="list-group-item">
-								<i class="flaticon-placeholder-filled-point"></i>
+							</li>
+							<li>
 								<div class="content">
+									<i class="flaticon-placeholder-filled-point"></i>
 									Rowledge, Surrey
 								</div>
-							</div>
-							<div class="list-group-item">
-								<i class="flaticon-telephone-auricular"></i>
+							</li>
+							<li>
 								<div class="content">
-									07784740591
+									<a href="tel:07784740591">
+										<i class="flaticon-telephone-auricular"></i>
+										07784740591
+									</a>
 								</div>
-							</div>
-							<div class="list-group-item">
-								<i class="flaticon-new-email-filled-closed-envelope-back"></i>
+							</li>
+							<li>
 								<div class="content word-wrap">
-									<a href="mailto:aase@aquaman.plus.com">aase@aquaman.plus.com</a>
+									<a href="mailto:aase@aquaman.plus.com">
+										<i class="flaticon-new-email-filled-closed-envelope-back"></i>
+										aase@aquaman.plus.com
+									</a>
 								</div>
-							</div>
-						</div>
+							</li>
+						</ul>
 					</div>
 					<div class="col-sm-4">
 						<h4>About Aase</h4>
@@ -295,14 +302,14 @@
 					<img src="../assets/images/logo.png" height="100" alt="AW Massage Logo">
 					<h5>Copyright &copy; 2017 AW Massage</h5>
 					<p>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>, licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY.</a></p>
-					<ul class="list-group list-group-horizontal list-group-flush bar-list">
-						<li class="list-group-item">Rowledge</li>
-						<li class="list-group-item">Farnham</li> 
-						<li class="list-group-item">Frensham</li>
-						<li class="list-group-item">Alton</li>
-						<li class="list-group-item">Crondall</li>
-						<li class="list-group-item">Bentley</li>
-						<li class="list-group-item">Churt</li>
+					<ul class="horizontal-bar-list">
+						<li>Rowledge</li>
+						<li>Farnham</li> 
+						<li>Frensham</li>
+						<li>Alton</li>
+						<li>Crondall</li>
+						<li>Bentley</li>
+						<li>Churt</li>
 					</ul>
 				</div>
 			</div>

@@ -2,7 +2,7 @@
 ---- General ----
 
 theming/design
-    get light green accent colour
+    get light green accent colour/or gold
     get body font
     design buttons
 
@@ -16,9 +16,9 @@ nav
     fix: stops following after 1 viewport-height's worth of scrolling
 
 footer
-    make places list look like ' Place | Place | Place '
     put AW Massage in logo font?
-    make not black; make more eyecatching; easier to read contact info
+    increase contrast for hover colour for a
+    dim the white lines/font
 
 ---- Pages ----
 

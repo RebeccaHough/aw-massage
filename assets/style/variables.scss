@@ -3,23 +3,26 @@
 
 /* Brand colours */
 $primary: #441B70; //#704d9a; #3E206A;
-$secondary: #e0e0e0;
-
-$nav-bar-colour: #bababa;
-
 $primary-light: #71509C; //#553184;
 $primary-dark: #2B0B56; //#553184;
+$primary-grey: #e8e3ed;
 
-$secondary-todo: #242473;
-$secondary-todo-light: #5858A1; //#393988
-$secondary-todo-dark: #111159;  //#06063B
+$secondary: #b6add9;
+$secondary-light: #ccc5e8;
+$secondary-dark: #9990bd; //9f97be
 
 $accent: #A4981F; 
 $accent-light: #E7DB6B;  //#C2B63D
 $accent-dark: #7F7406;  //#554D00
 
-//$dark-background: #000000;
-//$light-background: #ffffff;
+$grey: #bababa;
+$grey-light: #e0e0e0;
+$grey-dark: #999999; //a3a3a3
+$grey-very-dark: #464646; //a3a3a3
+
+$white: #ffffff;
+
+$nav-bar-colour: $grey;
 
 /* Font styling */
 
@@ -33,17 +36,8 @@ $font-logo: TangerineBold, cursive, sans-serif;
 $font-body: "Calibri Light", Calibri, Verdana, Arial, sans-serif;
 
 //for use with 'color'
-$font-colour-subtle: #999999;
+$font-colour-subtle: $grey-dark;
 //$link-color: #f07f40;
-
-//for use with 'font-size'
-$font-small: 12px;
-$font-medium: 16px;
-$font-mediumx: 18px;
-$font-mediumxx: 22px;
-$font-large: 25px;
-$font-largex: 28px;
-$font-extra-large: 38px;
 
 //@mixin name {
     //$var: $eg;

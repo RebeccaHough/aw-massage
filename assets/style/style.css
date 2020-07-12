@@ -288,24 +288,12 @@ body a:hover {
   text-align: center;
 }
 
-#treatmentsSlider {
-  display: flex;
-}
-#treatmentsSlider .tab-list-group {
-  display: flex;
-  flex-direction: column;
-  padding-left: 0;
-  margin-bottom: 0;
-}
-#treatmentsSlider .tab-list-item {
-  position: relative;
-  display: block;
-  padding: 0.75rem 1.25rem;
-  margin-bottom: -1px;
+.list-group-flush:first-child .list-group-item:first-child {
   border-top: 1px solid rgba(0, 0, 0, 0.125);
 }
-#treatmentsSlider .tab-list-item:last-of-type {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+
+#treatmentsSlider {
+  display: flex;
 }
 #treatmentsSlider .btn {
   margin: 20px 0;
@@ -313,11 +301,11 @@ body a:hover {
 #treatmentsSlider #sliderTitle {
   flex: 1;
 }
-#treatmentsSlider #sliderTitle .tab-list-item.active {
+#treatmentsSlider #sliderTitle .list-group-item.active {
   color: #441B70;
-  background-color: #fff;
+  background-color: white;
   border-color: rgba(0, 0, 0, 0.125);
-  border-right: 3px solid #441B70;
+  border-right: 4px solid #441B70;
 }
 #treatmentsSlider #sliderImage {
   padding: 0 10px 0 20px;

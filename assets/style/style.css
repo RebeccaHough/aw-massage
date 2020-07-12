@@ -246,18 +246,27 @@ body a:hover {
   margin-left: 10px;
 }
 
-/* Testimonals carousel */
-#testimonals .left-quote {
+/* Testimonials carousel */
+#testimonials {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/page-1_parallax03.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: white;
+  text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.3);
+}
+#testimonials .left-quote {
   font-size: 30px;
 }
-#testimonals .right-quote {
+#testimonials .right-quote {
   font-size: 30px;
 }
 
-#testimonalsCarousel {
+#testimonialsCarousel {
   padding: 100px 20px;
 }
-#testimonalsCarousel .carousel-indicators li {
+#testimonialsCarousel .carousel-indicators li {
   background-color: #441B70;
   height: 4px;
 }

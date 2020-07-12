@@ -31,7 +31,7 @@ body {
   line-height: 1.166;
   margin: 0px;
   padding: 0px;
-  background: #ffffff;
+  background: white;
 }
 body ul {
   list-style-type: none;
@@ -83,7 +83,7 @@ body a:hover {
 }
 #contactBar *, #contactBar a {
   font-family: PlayfairReg, serif;
-  color: #ffffff;
+  color: white;
   font-weight: 100;
   transition: all 0.3s ease 0s;
 }
@@ -104,7 +104,7 @@ body a:hover {
 #mainNavbar {
   padding: 0.5rem 0;
   font-size: 1.12rem;
-  background: #ffffff;
+  background: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: all 1s linear 0s;
 }
@@ -223,9 +223,11 @@ body a:hover {
 /* Header */
 #pageHeader {
   min-height: 425px;
-  background: url("../images/leaf-on-wood.jpg") no-repeat scroll center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../images/head-massage.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 30%;
   background-size: cover;
-  color: #ffffff;
+  color: white;
   text-align: center;
   margin-bottom: 0;
 }
@@ -234,7 +236,7 @@ body a:hover {
   background-color: #9990bd;
   font-family: PlayfairReg, serif;
   font-weight: initial;
-  color: #ffffff;
+  color: white;
   text-align: center;
 }
 #companyHeader h3 {
@@ -248,7 +250,7 @@ body a:hover {
 
 /* Testimonials carousel */
 #testimonials {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/page-1_parallax03.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/consultation.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -273,12 +275,12 @@ body a:hover {
 
 #treatmentsHeader {
   background: url("../images/forest-fog.jpg") no-repeat fixed center;
-  color: #ffffff;
+  color: white;
   text-align: center;
   margin: 0;
 }
 #treatmentsHeader hr {
-  border-color: #ffffff;
+  border-color: white;
 }
 
 #treatmentsDesc {
@@ -333,7 +335,7 @@ body a:hover {
 
 #footer {
   background-color: #9990bd;
-  color: #ffffff;
+  color: white;
   padding: 3em 0 2em;
 }
 #footer .copyright {
@@ -464,7 +466,7 @@ ul.bar-list li i {
 }
 
 hr.white {
-  border-color: #ffffff;
+  border-color: white;
 }
 
 /* Media queries */

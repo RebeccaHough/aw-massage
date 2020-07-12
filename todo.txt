@@ -9,11 +9,14 @@ theming/design
 nav
     sort mobile nav
     make nav  :hover darker
-    on desktop, treatments dropdown on hover
-        large clothes-shop-like menu 
-    fancy sticky 'gets smaller' transitions
     maybe make it translucent
-    fix: stops following after 1 viewport-height's worth of scrolling
+    services/treatments dropdown
+        large clothes website-style with image
+         on desktop, dropdown on hover
+
+jumbotron
+    image
+    text
 
 footer
     put AW Massage in logo font?
@@ -28,7 +31,14 @@ home
 contact
     add form
 
+---- Mobile ----
+
+--- Polish ---
+
+    fading-in/moving-in load
+
 ---- Misc ----
 
 production
     check we're not shipping all of admin-ui
+    what do 404 pages look like

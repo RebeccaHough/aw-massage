@@ -303,9 +303,10 @@ body a:hover {
 }
 #treatmentsSlider #sliderTitle .list-group-item.active {
   color: #441B70;
+  font-weight: bold;
   background-color: white;
   border-color: rgba(0, 0, 0, 0.125);
-  border-right: 4px solid #441B70;
+  box-shadow: 4px 0 0 0 #441B70;
 }
 #treatmentsSlider #sliderImage {
   padding: 0 10px 0 20px;

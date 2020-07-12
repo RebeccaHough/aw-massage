@@ -232,9 +232,11 @@ $nav-transition-time: 1s;
 		flex: 1;
 		.list-group-item.active {
 			color: $primary;
+			font-weight: bold;
 			background-color: white;
 			border-color: rgba(0,0,0,.125);
-			border-right: 4px solid $primary;
+			box-shadow: 4px 0 0 0 $primary;
+			//border-right: 4px solid $primary;
 		}
 	}
 	#sliderImage {

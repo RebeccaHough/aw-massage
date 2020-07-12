@@ -20,8 +20,9 @@ jumbotron
 
 footer
     put AW Massage in logo font?
+    redesign; recolour
     increase contrast for hover colour for a
-    dim the white lines/font
+    dim the white lines/font OR remmove them
 
 ---- Pages ----
 
@@ -32,6 +33,10 @@ contact
     add form
 
 ---- Mobile ----
+
+--- Content --- 
+
+any mention of travelling to them?
 
 --- Polish ---
 

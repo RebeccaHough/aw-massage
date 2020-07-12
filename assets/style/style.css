@@ -76,6 +76,29 @@ body a:hover {
   text-decoration: none;
 }
 
+/* Contact Bar */
+#contactBar {
+  background-color: #9990bd;
+  padding: 5px 0;
+}
+#contactBar *, #contactBar a {
+  font-family: PlayfairReg, serif;
+  color: #ffffff;
+  font-weight: 100;
+}
+#contactBar * a:hover, #contactBar a a:hover {
+  color: #441B70;
+}
+#contactBar * a:hover i, #contactBar a a:hover i {
+  color: #441B70;
+}
+#contactBar .left, #contactBar .right {
+  display: inline;
+}
+#contactBar .right {
+  float: right;
+}
+
 /* Navigation */
 #mainNavbar {
   padding: 0.5rem 0;

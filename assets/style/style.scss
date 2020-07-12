@@ -42,6 +42,30 @@ body {
 	}
 }
 
+/* Contact Bar */
+#contactBar {
+	background-color: $secondary-dark;
+	padding: 5px 0;
+	//override <a>
+	*, a { 
+		font-family: $font-heading;
+		color: #ffffff;
+		font-weight: 100;
+		a:hover {
+			i {
+				color: $primary;
+			}
+			color: $primary;
+		}
+	}
+	.left, .right {
+		display: inline;
+	}
+	.right {
+		float: right;
+	}
+}
+
 /* Navigation */
 $nav-transition-time: 1s;
 #mainNavbar {

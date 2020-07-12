@@ -19,7 +19,7 @@ $ [sudo] gem install sass
 
 then use 
 ```
-$ sass --watch style.scss:style.css //input.scss -> output.css
+$ sass --watch assets/style/style.scss:assets/style/style.css //input.scss -> output.css
 ```
 in the project's directory to get sass to re-compile on file change
 

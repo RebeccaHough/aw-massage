@@ -298,6 +298,9 @@ body a:hover {
 #treatmentsSlider .btn {
   margin: 20px 0;
 }
+#treatmentsSlider h1, #treatmentsSlider h2, #treatmentsSlider h3, #treatmentsSlider h4, #treatmentsSlider h5, #treatmentsSlider h6 {
+  color: #441B70;
+}
 #treatmentsSlider #sliderTitle {
   flex: 1;
   max-width: 320px;

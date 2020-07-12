@@ -228,6 +228,9 @@ $nav-transition-time: 1s;
 	.btn {
 		margin: 20px 0;
 	}
+	h1, h2, h3, h4, h5, h6 {
+		color: $primary;
+	}
 	#sliderTitle {
 		flex: 1;
 		max-width: 320px;
@@ -237,7 +240,6 @@ $nav-transition-time: 1s;
 			background-color: white;
 			border-color: rgba(0,0,0,.125);
 			box-shadow: 4px 0 0 0 $primary;
-			//border-right: 4px solid $primary;
 		}
 	}
 	#sliderImage {

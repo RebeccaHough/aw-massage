@@ -274,6 +274,46 @@ body a:hover {
 
 #treatmentsDesc {
   margin-bottom: 2rem;
+  text-align: center;
+}
+
+#treatmentsSlider {
+  display: flex;
+}
+#treatmentsSlider .tab-list-group {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+#treatmentsSlider .tab-list-item {
+  position: relative;
+  display: block;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: -1px;
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+}
+#treatmentsSlider .tab-list-item:last-of-type {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+#treatmentsSlider .btn {
+  margin: 20px 0;
+}
+#treatmentsSlider #sliderTitle {
+  flex: 1;
+}
+#treatmentsSlider #sliderTitle .tab-list-item.active {
+  color: #441B70;
+  background-color: #fff;
+  border-color: rgba(0, 0, 0, 0.125);
+  border-right: 3px solid #441B70;
+}
+#treatmentsSlider #sliderImage {
+  padding: 0 10px 0 20px;
+}
+#treatmentsSlider #sliderContent {
+  flex: 1;
+  padding: 0 10px;
 }
 
 #contact {

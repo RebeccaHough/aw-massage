@@ -208,6 +208,48 @@ $nav-transition-time: 1s;
 
 #treatmentsDesc {
 	margin-bottom: 2rem;
+	text-align: center;
+}
+
+#treatmentsSlider {
+	display: flex;
+	.tab-list-group {
+		display: flex;
+		flex-direction: column;
+		padding-left: 0;
+		margin-bottom: 0;
+	}
+	.tab-list-item {
+		position: relative;
+		display: block;
+		padding: .75rem 1.25rem;
+		margin-bottom: -1px;
+		border-top: 1px solid rgba(0,0,0,.125);
+	}
+	.tab-list-item:last-of-type {
+		border-bottom: 1px solid rgba(0,0,0,.125);
+	}
+	.btn {
+		margin: 20px 0;
+	}
+	#sliderTitle {
+		flex: 1;
+		.tab-list-item.active {
+			//reset bootstrap active class
+			color: $primary;
+			background-color: #fff;
+			border-color: rgba(0,0,0,.125);
+			//custom styles
+			border-right: 3px solid $primary;
+		}
+	}
+	#sliderImage {
+		padding: 0 10px 0 20px;
+	}
+	#sliderContent {
+		flex: 1;
+		padding: 0 10px;
+	}
 }
 
 #contact {

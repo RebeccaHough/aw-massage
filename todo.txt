@@ -41,6 +41,7 @@ any mention of travelling to them?
 --- Polish ---
 
     fading-in/moving-in load
+    fonts - consider using all caps for headings
 
 ---- Misc ----
 

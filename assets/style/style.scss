@@ -51,6 +51,7 @@ body {
 		font-family: $font-heading;
 		color: #ffffff;
 		font-weight: 100;
+		transition: all .3s ease 0s;
 		a:hover {
 			i {
 				color: $primary;

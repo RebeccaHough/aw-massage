@@ -1,9 +1,0 @@
-/*******************************
-    User Variable Overrides
-*******************************/
-
-/* NOTE: menu.less altered to overcome strange interactions with dropdwons in menus; 'active' class renamed to 'current' */
-
-@borderRadius: 0px;
-@tabularBorderRadius: 0px;
-@dropdownMenuBorderRadius: 0px;

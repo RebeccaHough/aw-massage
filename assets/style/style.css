@@ -300,6 +300,7 @@ body a:hover {
 }
 #treatmentsSlider #sliderTitle {
   flex: 1;
+  max-width: 320px;
 }
 #treatmentsSlider #sliderTitle .list-group-item.active {
   color: #441B70;

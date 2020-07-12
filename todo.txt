@@ -41,6 +41,8 @@ any mention of travelling to them?
 --- Polish ---
 
     fading-in/moving-in load
+    fancy text offset from images - write animation
+    animate hr lines on load - start from center ( thicker, draw out both sides( thinner)
     fonts - consider using all caps for headings
 
 ---- Misc ----

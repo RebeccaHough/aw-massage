@@ -230,6 +230,7 @@ $nav-transition-time: 1s;
 	}
 	#sliderTitle {
 		flex: 1;
+		max-width: 320px;
 		.list-group-item.active {
 			color: $primary;
 			background-color: white;

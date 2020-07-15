@@ -48,4 +48,24 @@ window.onload = function() {
             }
         }
     }
+
+    //if on home page, automatically tab through treatments slider
+    if(document.getElementById('treatmentsSlider')) {
+        let tabs = ["list-swedish-massage", "list-deep-tissue-massage", "list-advanced-clinical-massage", "list-hot-stone-massage", "list-scar-tissue-massage"];
+        let activeIndex = 1;
+        let sliderInterval = setInterval(() => {
+            $('#sliderTitle #' + tabs[activeIndex]).tab('show');
+            activeIndex++;
+            if(activeIndex >= tabs.length) 
+                activeIndex = 0;
+        }, 3500)
+
+        //todo
+        //on hover disable interval
+        //clearInterval(sliderInterval);
+        //WILL NEED TO capture mouseenter, mouse leave events for treatmentsSlider
+        //on mouse leave, set activeIndex to current tab
+        //restart interval
+        //setInterval(sliderInterval); //do you need the milliseconds??
+    }
 };

@@ -252,9 +252,13 @@ $nav-transition-time: 1s;
 }
 
 #contact {
-	background-color: $secondary-light;
+	background-color: $secondary-dark;
+	color: white;
 	text-align: center;
 	margin-bottom: 0;
+	a:hover {
+		color: $primary-light;
+	}
 }
 
 #contactTable {
@@ -301,9 +305,13 @@ $nav-transition-time: 1s;
 }
 
 #footer { 
-	background-color: $secondary-dark;
-	color: white;
-	padding: 3em 0 2em;
+	background-color: white;
+	color: rgba(0, 0, 0, 0.5);
+	padding: 1.75em 0 1em;
+	a, a:hover {
+		color: rgba(0, 0, 0, 0.5);
+		font-weight: 100;
+	}
 	.copyright {
 		display: flex;
 		justify-content: center;
@@ -383,7 +391,7 @@ ul.bar-list {
 		margin: 0;
 		font-size: 1rem;
 		line-height: .6;
-		border-left: 1px solid rgba(255, 255, 255, .85);
+		border-left: 1px solid rgba(0, 0, 0, 0.5);
 		&:first-child {
 			border-left: none;
 		}
@@ -424,9 +432,14 @@ ul.bar-list {
 .btn-primary {
 	background: $primary;
 	border: none;
+	border-radius: 2px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
 	&:hover, &:active {
 		background: $primary-light;
 		border: none;
+	}
+	&:focus {
+		box-shadow: none;
 	}
 }
 

@@ -321,9 +321,13 @@ body a:hover {
 }
 
 #contact {
-  background-color: #ccc5e8;
+  background-color: #9990bd;
+  color: white;
   text-align: center;
   margin-bottom: 0;
+}
+#contact a:hover {
+  color: #71509C;
 }
 
 #contactTable {
@@ -367,9 +371,13 @@ body a:hover {
 }
 
 #footer {
-  background-color: #9990bd;
-  color: white;
-  padding: 3em 0 2em;
+  background-color: white;
+  color: rgba(0, 0, 0, 0.5);
+  padding: 1.75em 0 1em;
+}
+#footer a, #footer a:hover {
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 100;
 }
 #footer .copyright {
   display: flex;
@@ -446,7 +454,7 @@ ul.bar-list li i {
   margin: 0;
   font-size: 1rem;
   line-height: 0.6;
-  border-left: 1px solid rgba(255, 255, 255, 0.85);
+  border-left: 1px solid rgba(0, 0, 0, 0.5);
 }
 .horizontal-bar-list li:first-child {
   border-left: none;
@@ -484,10 +492,15 @@ ul.bar-list li i {
 .btn-primary {
   background: #441B70;
   border: none;
+  border-radius: 2px;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 .btn-primary:hover, .btn-primary:active {
   background: #71509C;
   border: none;
+}
+.btn-primary:focus {
+  box-shadow: none;
 }
 
 .lead {

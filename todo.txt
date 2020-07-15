@@ -5,45 +5,40 @@ theming/design
     get light green accent colour/or gold
     get body font
     design buttons
+        hold click makes them go blue
 
 nav
     sort mobile nav
-    make nav  :hover darker
-    maybe make it translucent
     services/treatments dropdown
         large clothes website-style with image
          on desktop, dropdown on hover
 
-jumbotron
-    image
-    text
-
 footer
-    put AW Massage in logo font?
-    redesign; recolour
-    increase contrast for hover colour for a
-    dim the white lines/font OR remmove them
+    remove horizontal white lines between list items
+    push content closer together on larger screen sizes
 
 ---- Pages ----
 
 home
     design cards for massages
+    remove parallax on massage offered
 
 contact
     add form
 
 ---- Mobile ----
 
---- Content --- 
+---- Content ---- 
 
-any mention of travelling to them?
+any mention of travelling to them? make location more obvious
 
---- Polish ---
+---- Polish ----
 
     fading-in/moving-in load
     fancy text offset from images - write animation
     animate hr lines on load - start from center ( thicker, draw out both sides( thinner)
     fonts - consider using all caps for headings
+    review copyright "flaticon.com" etc
 
 ---- Misc ----
 

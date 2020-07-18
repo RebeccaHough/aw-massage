@@ -1,3 +1,4 @@
+IMPORTANT need a tighter container for footer, company haeder and treatments slider
 
 ---- General ----
 
@@ -22,6 +23,11 @@ footer
 home
     design cards for massages
     remove parallax on massage offered
+    treatments slider
+        clicking too fast can lead to more than one tab been shown
+        clicking on a tab doesn't set the active index (i.e. the next tab to be shown isn't the one after the one they clicked on)
+        pause animation on mouse enter
+        restart animation on mouse leave
 
 contact
     add form

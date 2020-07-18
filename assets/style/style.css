@@ -514,6 +514,9 @@ ul.bar-list li i {
 hr.white {
   border-color: white;
 }
+.fancy-font {
+  font-family: TangerineBold, cursive, sans-serif;
+}
 
 /* Media queries */
 @media only screen and (max-width: 700px) {

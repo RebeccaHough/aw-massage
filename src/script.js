@@ -1,4 +1,4 @@
-window.onload = function() {
+$('document').ready(function() {
     var d = false; //debug: enable print statements
     
     //todo get scrollpos of bottom of jumbotron
@@ -14,7 +14,7 @@ window.onload = function() {
         collapseNavDesktop();
     }
     
-    window.onscroll = function() {collapseNavDesktop()};
+    window.onscroll = collapseNavDesktop;
     
     //when user scrolls down n px from the top of the document, resize the navbar
     function collapseNavDesktop() {
@@ -53,19 +53,35 @@ window.onload = function() {
     if(document.getElementById('treatmentsSlider')) {
         let tabs = ["list-swedish-massage", "list-deep-tissue-massage", "list-advanced-clinical-massage", "list-hot-stone-massage", "list-scar-tissue-massage"];
         let activeIndex = 1;
-        let sliderInterval = setInterval(() => {
+        let sliderInterval = setInterval(runTreatmentSlider, 3500);
+
+        function runTreatmentSlider(e) {
             $('#sliderTitle #' + tabs[activeIndex]).tab('show');
             activeIndex++;
             if(activeIndex >= tabs.length) 
                 activeIndex = 0;
-        }, 3500)
+        }
 
-        //todo
-        //on hover disable interval
-        //clearInterval(sliderInterval);
-        //WILL NEED TO capture mouseenter, mouse leave events for treatmentsSlider
-        //on mouse leave, set activeIndex to current tab
-        //restart interval
-        //setInterval(sliderInterval); //do you need the milliseconds??
+        document.getElementById('treatmentsSlider').onmouseenter = pauseTreatmentSlider;
+        document.getElementById('treatmentsSlider').onmousedown = pauseTreatmentSlider;
+        //document.getElementById('treatmentsSlider').onclick = pauseTreatmentSlider;
+        function pauseTreatmentSlider(e) {
+            clearInterval(sliderInterval);
+        }
+        
+        document.getElementById('treatmentsSlider').onmouseleave = resumeTreatmentSlider;
+        function resumeTreatmentSlider(e) {
+            sliderInterval = setInterval(runTreatmentSlider, 3500);
+        }
+
+        // Show each slide on hover, default parameter = tab index = active index
+        for (let tabsIndex = 0; tabsIndex < tabs.length; tabsIndex++) {
+            const name = tabs[tabsIndex];
+            document.getElementById(name).onmouseover = function(ev, index = tabsIndex) {
+                activeIndex = index;
+                $('#sliderTitle #' + tabs[activeIndex]).tab('show');
+            };
+        }
     }
-};
+});
+

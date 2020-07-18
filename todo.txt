@@ -17,6 +17,7 @@ nav
 footer
     remove horizontal white lines between list items
     push content closer together on larger screen sizes
+    padding and list wrap on mobile
 
 ---- Pages ----
 
@@ -28,6 +29,8 @@ home
         clicking on a tab doesn't set the active index (i.e. the next tab to be shown isn't the one after the one they clicked on)
         pause animation on mouse enter
         restart animation on mouse leave
+    treatments carousel
+        bottom right quote mark goes off screen on mobile
 
 contact
     add form

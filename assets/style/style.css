@@ -410,11 +410,21 @@ body a:hover {
 }
 
 .text-container {
-  padding: 4rem 0;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .quote-container {
-  padding: 4rem 7rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.container-tight, .container-extra-tight {
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 ul.bar-list {
@@ -514,11 +524,12 @@ ul.bar-list li i {
 hr.white {
   border-color: white;
 }
+
 .fancy-font {
   font-family: TangerineBold, cursive, sans-serif;
 }
 
-/* Media queries */
+/*#region Media queries */
 @media only screen and (max-width: 700px) {
   #navBar a, #navBar div.ui.dropdown {
     display: none;
@@ -527,5 +538,42 @@ hr.white {
     display: block;
   }
 }
+/*#region Bootstrap mobile-first responsive breakpoints */
+@media (min-width: 576px) {
+  .container-tight, .container-extra-tight {
+    max-width: 540px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+@media (min-width: 768px) {
+  .container-tight, .container-extra-tight {
+    max-width: 700px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+@media (min-width: 992px) {
+  .container-tight, .container-extra-tight {
+    max-width: 700px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+@media (min-width: 1200px) {
+  .container-tight, .container-extra-tight {
+    max-width: 900px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .container-extra-tight {
+    max-width: 800px;
+  }
+}
+/*#endregion*/
+/*#region Bootstrap desktop-first responsive breakpoints */
+/*#endregion*/
+/*#endregion*/
 
 /*# sourceMappingURL=style.css.map */

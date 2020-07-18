@@ -343,14 +343,32 @@ $nav-transition-time: 1s;
 	word-break: break-word;
 }
 
-//to be placed on container-fluid divs
+//to be placed on container-fluid divs; pads top and bottom ONLY
 .text-container {
-	padding: 4rem 0;
+	padding-top: 4rem;
+	padding-bottom: 4rem;
 }
 
 //to be placed on container-fluid divs
 .quote-container {
-	padding: 4rem 7rem; //todo responsivity
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+}
+
+//container with increased padding on larger screen sizes
+//use without .container
+//responsive and aligned with Bootstrap
+.container-tight {
+	width: 100%;
+	padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+//even more padding on extra large desktop sizes
+.container-extra-tight {
+	@extend .container-tight;
 }
 
 //between every li element, insert a bar
@@ -458,7 +476,7 @@ hr.white {
 }
 
 
-/* Media queries */
+/*#region Media queries */
 
 @media only screen and (max-width: 700px) {
 	#navBar {
@@ -472,3 +490,69 @@ hr.white {
 		}
 	}
 }
+
+/*#region Bootstrap mobile-first responsive breakpoints */
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+	.container-tight {
+		max-width: 540px;
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+	.container-tight {
+		max-width: 700px;
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+	.container-tight {
+		max-width: 700px;
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+ }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+	.container-tight {
+		max-width: 900px;
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+	.container-extra-tight {
+		max-width: 800px;
+	}
+ }
+
+/*#endregion*/
+
+/*#region Bootstrap desktop-first responsive breakpoints */
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {  }
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {  }
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {  }
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {  }
+
+// Extra large devices (large desktops)
+// No media query since the extra-large breakpoint has no upper bound on its width
+
+/*#endregion*/
+/*#endregion*/

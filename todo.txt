@@ -1,5 +1,3 @@
-IMPORTANT need a tighter container for footer, company haeder and treatments slider
-
 ---- General ----
 
 theming/design
@@ -15,20 +13,19 @@ nav
          on desktop, dropdown on hover
 
 footer
-    remove horizontal white lines between list items
-    push content closer together on larger screen sizes
-    padding and list wrap on mobile
 
 ---- Pages ----
 
 home
     design cards for massages
-    remove parallax on massage offered
     treatments slider
         clicking too fast can lead to more than one tab been shown
         clicking on a tab doesn't set the active index (i.e. the next tab to be shown isn't the one after the one they clicked on)
         pause animation on mouse enter
         restart animation on mouse leave
+        hover or click?
+        animations (css trans)
+        all purple, no bg colour change on click
     treatments carousel
         bottom right quote mark goes off screen on mobile
 
@@ -36,6 +33,8 @@ contact
     add form
 
 ---- Mobile ----
+
+switch to rem for font sizing
 
 ---- Content ---- 
 
@@ -46,7 +45,9 @@ any mention of travelling to them? make location more obvious
     fading-in/moving-in load
     fancy text offset from images - write animation
     animate hr lines on load - start from center ( thicker, draw out both sides( thinner)
-    fonts - consider using all caps for headings
+    fonts
+        consider using all caps for headings
+        size convert to rem
     review copyright "flaticon.com" etc
 
 ---- Misc ----

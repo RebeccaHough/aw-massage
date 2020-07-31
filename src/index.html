@@ -104,8 +104,19 @@
 
 		<div id="companyHeader" class="text-container container-fluid d-flex align-items-center">
 			<div class="container">
-				<h3 class="fancy-font">A bespoke, professional massage</h3>
-				<h3>At our massage center in Rowledge, or in the comfort of your own home.</h3>
+				<div class="off-center-wrapper">
+					<div class="row">
+						<div class="col-6">
+							<h3 class="fancy-font">A bespoke, professional massage</h3>
+						</div>
+						<div class="col-6"></div>
+					</div>
+					<div class="row">
+						<div class="col offset">
+							<h3>At our massage center in Rowledge, or in the comfort of your own home.</h3>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 
@@ -158,7 +169,7 @@
 						</a>
 					</div>
 					<div id="sliderImage">
-						<img height="100px" width="100px"/>
+						<img src="../assets/images/chakra.png"/>
 					</div>
 					<div id="sliderContent" class="tab-content">
 						<div class="tab-pane fade show active" id="content-swedish-massage" role="tabpanel" aria-labelledby="list-swedish-massage">
@@ -206,6 +217,25 @@
 								<button class="btn btn-primary btn-large" href="treatments.html#scarTissueMassage">See more</button>
 							</div>
 						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Opening Times -->
+		<div id="openingTimes" class="text-container container-fluid">
+			<div class="container-tight">
+				<div class="row">
+					<div class="col">
+						<h3>Opening Times:</h3>
+						<ul>
+							<li>Mon-Fri: 9AM to 5PM</li>
+							<li>Sat-Sun: Closed</li>
+						</ul>
+					</div>
+					<div class="col offset-square">
+						<div class="square"></div>
+						<img src="../assets/images/head-massage.jpg">
 					</div>
 				</div>
 			</div>
@@ -272,10 +302,10 @@
 		<!-- Footer -->
 		<div id="footer" class="container-fluid">
 			<div class="container-tight">
-				<div class="row">
+				<div class="row row-mobile-ow">
 					<div class="col-sm-4">
 						<h4>Massages Offered</h4>
-						<ul class="bar-list">
+						<ul class="list">
 							<li><a href="treatments.html#swedishMassage">Swedish</a></li>
 							<li><a href="treatments.html#deepTissueMassage">Deep Tissue</a></li>
 							<li><a href="treatments.html#advancedClinicalMassage">Advanced Clinical</a></li>
@@ -285,7 +315,7 @@
 					</div> 
 					<div class="col-sm-4">
 						<h4>Contact Us</h4>
-						<ul class="bar-list">
+						<ul class="list">
 							<li>
 								<div class="content">
 									<i class="flaticon-user-filled-person-shape"></i>
@@ -307,8 +337,8 @@
 								</div>
 							</li>
 							<li>
-								<div class="content word-wrap">
-									<a href="mailto:aase@aquaman.plus.com">
+								<div class="content">
+									<a href="mailto:aase@aquaman.plus.com" class=" word-wrap">
 										<i class="flaticon-new-email-filled-closed-envelope-back"></i>
 										aase@aquaman.plus.com
 									</a>
@@ -330,7 +360,7 @@
 							</script>
 							AW Massage
 						</h5>
-						<ul class="horizontal-bar-list" style="margin-top:10px">
+						<ul class="horizontal-bar-list">
 							<li>Rowledge</li>
 							<li>Farnham</li> 
 							<li>Frensham</li>

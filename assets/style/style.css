@@ -242,39 +242,21 @@ body a:hover {
 #companyHeader h3 {
   margin-bottom: 0;
 }
+#companyHeader h3.fancy-font {
+  font-size: 2.7rem;
+  line-height: 2.7rem;
+}
+#companyHeader .offset {
+  margin-left: 30vw;
+}
 
 #mainContent img {
   width: 250px;
   margin-left: 10px;
 }
 
-/* Testimonials carousel */
-#testimonials {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/consultation.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  color: white;
-  text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.3);
-}
-#testimonials .left-quote {
-  font-size: 30px;
-}
-#testimonials .right-quote {
-  font-size: 30px;
-}
-
-#testimonialsCarousel {
-  padding: 100px 20px;
-}
-#testimonialsCarousel .carousel-indicators li {
-  background-color: #441B70;
-  height: 4px;
-}
-
 #treatmentsHeader {
-  background: url("../images/forest-fog.jpg") no-repeat fixed center;
+  background: url("../images/forest-fog.jpg") no-repeat center;
   color: white;
   text-align: center;
   margin: 0;
@@ -305,6 +287,9 @@ body a:hover {
   flex: 1;
   max-width: 320px;
 }
+#treatmentsSlider #sliderTitle .list-group-item {
+  color: rgba(0, 0, 0, 0.65);
+}
 #treatmentsSlider #sliderTitle .list-group-item.active {
   color: #441B70;
   font-weight: bold;
@@ -314,10 +299,63 @@ body a:hover {
 }
 #treatmentsSlider #sliderImage {
   padding: 0 10px 0 20px;
+  display: flex;
+}
+#treatmentsSlider #sliderImage img {
+  align-self: center;
+  height: 200px;
 }
 #treatmentsSlider #sliderContent {
   flex: 1;
   padding: 0 10px;
+}
+
+#openingTimes {
+  background-color: #f4f4f4;
+}
+#openingTimes .offset-square {
+  position: relative;
+}
+#openingTimes .offset-square img {
+  position: relative;
+  height: 200px;
+}
+#openingTimes .offset-square .square {
+  position: absolute;
+  height: 200px;
+  width: 280px;
+  top: 0;
+  left: 15px;
+  margin: 15px 0 0 50px;
+  background-color: #b6add9;
+}
+
+/* Testimonials carousel */
+#testimonials {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/consultation.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: white;
+  text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.3);
+}
+#testimonials .left-quote {
+  font-size: 30px;
+}
+#testimonials .right-quote {
+  font-size: 30px;
+}
+
+#testimonialsCarousel {
+  padding: 100px 20px;
+}
+#testimonialsCarousel .carousel-indicators {
+  margin-bottom: 0;
+}
+#testimonialsCarousel .carousel-indicators li {
+  background-color: #441B70;
+  height: 4px;
 }
 
 #contact {
@@ -388,10 +426,6 @@ body a:hover {
 #footer .copyright img {
   align-self: center;
 }
-#footer .copyright ul {
-  display: flex;
-  justify-content: center;
-}
 
 /* Utility classes */
 .text-overlay {
@@ -404,9 +438,7 @@ body a:hover {
 }
 
 .word-wrap {
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-  word-break: break-word;
+  word-break: break-all;
 }
 
 .text-container {
@@ -415,8 +447,8 @@ body a:hover {
 }
 
 .quote-container {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 6rem;
+  padding-bottom: 3rem;
 }
 
 .container-tight, .container-extra-tight {
@@ -427,33 +459,35 @@ body a:hover {
   margin-left: auto;
 }
 
-ul.bar-list {
+ul.list {
   display: block;
   margin: 1em 0;
   padding: 0;
   list-style-type: none;
 }
-ul.bar-list li {
+ul.list li {
   display: block;
   padding: 0.45rem 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.85);
 }
-ul.bar-list li:first-child {
+ul.list li:first-child {
   margin-top: 0;
   padding-top: 0;
-  border-top: none;
 }
-ul.bar-list li:last-child {
+ul.list li:last-child {
   margin-bottom: 0;
   padding-bottom: 0;
 }
-ul.bar-list li i {
+ul.list li i {
   margin: 0;
   padding: 0;
-  padding-right: 0.3em;
+  padding-right: 0.4rem;
   vertical-align: top;
-  -webkit-transition: color 0.1s ease;
-  transition: color 0.1s ease;
+}
+ul.list.bar > li {
+  border-top: 1px solid rgba(255, 255, 255, 0.85);
+}
+ul.list.bar > li:first-child {
+  border-top: none;
 }
 
 .horizontal-bar-list {
@@ -573,6 +607,12 @@ hr.white {
 }
 /*#endregion*/
 /*#region Bootstrap desktop-first responsive breakpoints */
+@media (max-width: 575.98px) {
+  .row-mobile-ow {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
 /*#endregion*/
 /*#endregion*/
 

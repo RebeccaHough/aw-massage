@@ -13,6 +13,7 @@ nav
          on desktop, dropdown on hover
 
 footer
+    align about aase text with lists
 
 ---- Pages ----
 

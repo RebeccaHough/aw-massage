@@ -22,10 +22,27 @@
   font-family: TangerineBold;
   src: url("../fonts/Tangerine/Tangerine_Bold.ttf");
 }
+/* Amiri */
+@font-face {
+  font-family: AmiriReg;
+  src: url("../fonts/Amiri/Amiri-Regular.ttf");
+}
+@font-face {
+  font-family: AmiriBold;
+  src: url("../fonts/Amiri/Amiri-Bold.ttf");
+}
+@font-face {
+  font-family: AmiriItal;
+  src: url(../fonts/Amiri/Amiri-Italic.ttf);
+}
+@font-face {
+  font-family: AmiriBoldItal;
+  src: url("../fonts/Amiri/Amiri-BoldItalic.ttf");
+}
 /* Brand colours */
 /* Font styling */
 body {
-  font-family: "Calibri Light", Calibri, Verdana, Arial, sans-serif;
+  font-family: AmiriReg, "Times New Roman", Times, serif;
   font-size: 1.15rem;
   color: rgba(0, 0, 0, 0.65);
   line-height: 1.166;

@@ -1,17 +1,18 @@
-# Readme for aw-massage
+# AW Massage website
+Website for a local massage therapist.
 
 ## Sass setup
 Available at: http://sass-lang.com/install
 
 ### Mac
-Install Ruby, sass' dependency (pre-installed on mac), then run:
+Install Ruby (may come pre-installed), then run:
 ```
 $ [sudo] gem install sass
 ```
 
 ### Compiling
 ```
-$ sass --watch assets/style/style.scss:assets/style/style.css //input.scss -> output.css
+$ sass --watch assets/style/style.scss:assets/style/style.css
 ```
 in the project's directory to get sass to re-compile on file change.
 

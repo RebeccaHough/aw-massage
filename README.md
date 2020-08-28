@@ -1,6 +1,8 @@
 # AW Massage website
 Website for a local massage therapist.
 
+[Github pages link](https://rebeccahough.github.io/aw-massage/src/index.html)
+
 ## Sass setup
 Available at: http://sass-lang.com/install
 

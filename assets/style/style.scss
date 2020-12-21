@@ -77,6 +77,9 @@ $nav-transition-time: 1s;
 	.logo-image {
 		transition: all $nav-transition-time linear 0s; //todo: turn this off on mobile
 	}
+	#navLogo {
+		margin-bottom: 10px;
+	}
 }
 
 #mainNavbarContent {
@@ -148,6 +151,28 @@ $nav-transition-time: 1s;
 	100% {opacity: 0; font-size: 0; flex:0;}
 }
 
+/* Mobile menu */
+.mobileMenuToggle-wrapper {
+	position: relative;
+	width: 100%;
+}
+#mobileMenuToggle {
+	position: absolute;
+	bottom: -20px;
+	right: 0;
+	margin: 0 20px;
+	height: 25px;
+	width: 25px;
+
+	background-color: $primary;
+	color: $white !important;
+	border-radius: $border-radius;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+	
+	//todo center icon
+	text-align: center;
+	cursor: pointer;	
+}
 
 /* Header */
 #pageHeader {
@@ -156,7 +181,7 @@ $nav-transition-time: 1s;
 	background-repeat: no-repeat;
 	background-position: 50% 30%;
 	background-size: cover;
-	color: white;
+	color: $white;
 	text-align: center;
 	margin-bottom: 0;
 }
@@ -165,7 +190,7 @@ $nav-transition-time: 1s;
 	background-color: $secondary-dark;
 	font-family: $font-heading;
 	font-weight: initial;
-	color: white;
+	color: $white;
 	text-align: center;
 	h3 {
 		margin-bottom: 0;
@@ -487,7 +512,7 @@ ul.list {
 .btn-primary {
 	background: $primary;
 	border: none;
-	border-radius: 2px;
+	border-radius: $border-radius;
 	font-family: Georgia, 'Times New Roman', Times, serif;
 	&:hover, &:active {
 		background: $primary-light;
@@ -551,6 +576,15 @@ hr.white {
 		padding-right: 15px;
 		padding-left: 15px;
 	}
+	.mobileMenuToggle-wrapper, #mobileMenuToggle {
+		display: none;
+	}
+ }
+
+ @media (min-width: 768px) and (max-width: 991.98px) { 
+	#mainNavbarContent > ul li {
+		padding: 10px 3px;
+	}
  }
 
 // Large devices (desktops, 992px and up)
@@ -559,6 +593,9 @@ hr.white {
 		max-width: 700px;
 		padding-right: 15px;
 		padding-left: 15px;
+	}
+	#mainNavbarContent > ul li {
+		padding: 10px;
 	}
  }
 

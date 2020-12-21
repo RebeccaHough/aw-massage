@@ -41,6 +41,7 @@
 }
 /* Brand colours */
 /* Font styling */
+/* Buttons and mobile menu toggle */
 body {
   font-family: AmiriReg, "Times New Roman", Times, serif;
   font-size: 1.15rem;
@@ -127,6 +128,9 @@ body a:hover {
 }
 #mainNavbar .logo-image {
   transition: all 1s linear 0s;
+}
+#mainNavbar #navLogo {
+  margin-bottom: 10px;
 }
 
 #mainNavbarContent {
@@ -237,6 +241,27 @@ body a:hover {
     flex: 0;
   }
 }
+/* Mobile menu */
+.mobileMenuToggle-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+#mobileMenuToggle {
+  position: absolute;
+  bottom: -20px;
+  right: 0;
+  margin: 0 20px;
+  height: 25px;
+  width: 25px;
+  background-color: #441B70;
+  color: #ffffff !important;
+  border-radius: 2px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  text-align: center;
+  cursor: pointer;
+}
+
 /* Header */
 #pageHeader {
   min-height: 425px;
@@ -244,7 +269,7 @@ body a:hover {
   background-repeat: no-repeat;
   background-position: 50% 30%;
   background-size: cover;
-  color: white;
+  color: #ffffff;
   text-align: center;
   margin-bottom: 0;
 }
@@ -253,7 +278,7 @@ body a:hover {
   background-color: #9990bd;
   font-family: PlayfairReg, serif;
   font-weight: initial;
-  color: white;
+  color: #ffffff;
   text-align: center;
 }
 #companyHeader h3 {
@@ -603,12 +628,25 @@ hr.white {
     padding-right: 15px;
     padding-left: 15px;
   }
+
+  .mobileMenuToggle-wrapper, #mobileMenuToggle {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #mainNavbarContent > ul li {
+    padding: 10px 3px;
+  }
 }
 @media (min-width: 992px) {
   .container-tight, .container-extra-tight {
     max-width: 700px;
     padding-right: 15px;
     padding-left: 15px;
+  }
+
+  #mainNavbarContent > ul li {
+    padding: 10px;
   }
 }
 @media (min-width: 1200px) {

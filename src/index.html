@@ -12,9 +12,11 @@
 		<link rel="shortcut icon" href="../assets/images/favicons/favicon.ico" type="image/x-icon">
 		<link rel="icon" href="../assets/images/favicons/favicon.ico" type="image/x-icon">
 		<!-- Stylesheets -->
+		<!-- Bootstrap -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 		<!-- Icons -->
 		<link rel="stylesheet" type="text/css" href="../assets/fonts/111235-admin-ui/font/flaticon.css"> 
+		<!-- Site CSS -->
 		<link rel="stylesheet" href="../assets/style/style.css">
 		<!-- Scripts -->
 		<!-- Bootstrap JS includes -->
@@ -46,19 +48,16 @@
 		<!-- Navigation Bar -->
 		<nav id="mainNavbar" class="navbar navbar-expand-md navbar-light d-print sticky-top">
 			<div class="container flex-column">
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="mainNavbarContent" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-				</button>
-
-				<div id="navLogo" class="nav-item d-flex justify-content-center">
+				<!-- Brand Logo -->
+				<div id="navLogo" class="nav-item d-flex justify-content-center navbar-brand">
 					<a href="/">
 						<img class="logo-image" src="../assets/images/logo.png" alt="AW Massage Logo"/>
 						<div class="logo-text">AW Massage</div>
 					</a>
 				</div>
-
-				<div class="collapse navbar-collapse" id="mainNavbarContent">
-					<ul class="navbar-nav">
+				<!-- Menu -->
+				<div class="collapse" id="mainNavbarContent">
+					<ul class="navbar navbar-nav">
 						<li class="nav-item">
 							<a class="nav-link" href="/">Home</a>
 						</li>
@@ -89,6 +88,12 @@
 							<a class="nav-link" href="feedback.html">Feedback</a>
 						</li>
 					</ul>
+				</div>
+				<!-- Mobile Menu Toggle -->
+				<div class="mobileMenuToggle-wrapper">
+					<div id="mobileMenuToggle" class="navbar-toggler collapsed" role="button" data-toggle="collapse" data-target="#mainNavbarContent" aria-controls="mainNavbarContent" aria-expanded="false" aria-label="Toggle navigation">
+						^
+					</div>
 				</div>
 			</div>
 		</nav>

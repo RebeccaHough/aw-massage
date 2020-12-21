@@ -8,6 +8,9 @@ theming/design
 
 nav
     sort mobile nav
+        fix dropdown on mobile
+        add chevron to toggler
+        animate chevron turning up or down
     services/treatments dropdown
         large clothes website-style with image
          on desktop, dropdown on hover

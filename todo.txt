@@ -15,24 +15,10 @@ nav
         large clothes website-style with image
          on desktop, dropdown on hover
 
-footer
-    align about aase text with lists
-    add top padding to logo on mobile
-
 ---- Pages ----
 
 home
     design cards for massages
-    treatments slider
-        clicking too fast can lead to more than one tab been shown
-        clicking on a tab doesn't set the active index (i.e. the next tab to be shown isn't the one after the one they clicked on)
-        pause animation on mouse enter
-        restart animation on mouse leave
-        hover or click?
-        animations (css trans)
-        all purple, no bg colour change on click
-    treatments carousel
-        bottom right quote mark goes off screen on mobile
 
 contact
     add form

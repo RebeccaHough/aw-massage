@@ -382,7 +382,8 @@ $nav-transition-time: 1s;
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
-		text-align: center;
+        text-align: center;
+        margin-top: 10px;
 		img {
 			align-self: center;
 		}
@@ -504,6 +505,10 @@ ul.list {
 
 .logo-font {
 	font-family: $font-logo;
+}
+
+.rtl {
+    direction: rtl;
 }
 
 [class^="flaticon-"] {

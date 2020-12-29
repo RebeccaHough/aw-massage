@@ -467,6 +467,7 @@ body a:hover {
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  margin-top: 10px;
 }
 #footer .copyright img {
   align-self: center;
@@ -571,6 +572,10 @@ ul.list.bar > li:first-child {
 
 .logo-font {
   font-family: TangerineBold, cursive, sans-serif;
+}
+
+.rtl {
+  direction: rtl;
 }
 
 [class^=flaticon-] {

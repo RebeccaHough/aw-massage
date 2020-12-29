@@ -332,6 +332,9 @@ body a:hover {
 #treatmentsSlider #sliderTitle .list-group-item {
   color: rgba(0, 0, 0, 0.65);
 }
+#treatmentsSlider #sliderTitle .list-group-item-action:focus {
+  background-color: white;
+}
 #treatmentsSlider #sliderTitle .list-group-item.active {
   color: #441B70;
   font-weight: bold;

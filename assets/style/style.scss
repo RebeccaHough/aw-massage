@@ -241,7 +241,7 @@ $nav-transition-time: 1s;
 }
 
 .list-group-flush:first-child .list-group-item:first-child {
-	border-top: 1px solid rgba(0,0,0,.125);;
+	border-top: 1px solid rgba(0,0,0,.125);
 }
 #treatmentsSlider {
 	display: flex;
@@ -257,6 +257,9 @@ $nav-transition-time: 1s;
 		.list-group-item {
 			color: rgba(0, 0, 0, 0.65);
 		}
+        .list-group-item-action:focus {
+            background-color: white;
+        }
 		.list-group-item.active {
 			color: $primary;
 			font-weight: bold;
@@ -392,7 +395,8 @@ $nav-transition-time: 1s;
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
-		text-align: center;
+        text-align: center;
+        margin-top: 10px;
 		img {
 			align-self: center;
 		}
@@ -514,6 +518,10 @@ ul.list {
 
 .logo-font {
 	font-family: $font-logo;
+}
+
+.rtl {
+    direction: rtl;
 }
 
 [class^="flaticon-"] {

@@ -118,9 +118,10 @@ $('document').ready(function() {
      * If on index page, automatically tab through treatments slider
      */
     if(document.getElementById('treatmentsSlider')) {
+        const sliderTime = 2000;
         let tabs = ["list-swedish-massage", "list-deep-tissue-massage", "list-advanced-clinical-massage", "list-hot-stone-massage", "list-scar-tissue-massage"];
         let activeIndex = 1;
-        let sliderInterval = setInterval(runTreatmentSlider, 3500);
+        let sliderInterval = setInterval(runTreatmentSlider, sliderTime);
 
         function runTreatmentSlider(e) {
             $('#sliderTitle #' + tabs[activeIndex]).tab('show');
@@ -128,6 +129,12 @@ $('document').ready(function() {
             if(activeIndex >= tabs.length) 
                 activeIndex = 0;
         }
+
+        // $('#sliderTitle .list-group-item').on('shown.bs.tab', function(event) {});
+        $('#sliderTitle .list-group-item').on('hidden.bs.tab', function(event) {
+            var showIndex = tabs.findIndex((id) => id === event.relatedTarget.id);
+            activeIndex = showIndex;
+        });
 
         document.getElementById('treatmentsSlider').onmouseenter = pauseTreatmentSlider;
         document.getElementById('treatmentsSlider').onmousedown = pauseTreatmentSlider;
@@ -138,16 +145,7 @@ $('document').ready(function() {
         
         document.getElementById('treatmentsSlider').onmouseleave = resumeTreatmentSlider;
         function resumeTreatmentSlider(e) {
-            sliderInterval = setInterval(runTreatmentSlider, 3500);
-        }
-
-        // Show each slide on hover, default parameter = tab index = active index
-        for (let tabsIndex = 0; tabsIndex < tabs.length; tabsIndex++) {
-            const name = tabs[tabsIndex];
-            document.getElementById(name).onmouseover = function(ev, index = tabsIndex) {
-                activeIndex = index;
-                $('#sliderTitle #' + tabs[activeIndex]).tab('show');
-            };
+            sliderInterval = setInterval(runTreatmentSlider, sliderTime);
         }
     }
     //#endregion index

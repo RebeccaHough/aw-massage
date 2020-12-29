@@ -346,6 +346,9 @@ body a:hover {
 #treatmentsSlider #sliderTitle .list-group-item {
   color: rgba(0, 0, 0, 0.65);
 }
+#treatmentsSlider #sliderTitle .list-group-item-action:focus {
+  background-color: white;
+}
 #treatmentsSlider #sliderTitle .list-group-item.active {
   color: #441B70;
   font-weight: bold;
@@ -478,6 +481,7 @@ body a:hover {
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  margin-top: 10px;
 }
 #footer .copyright img {
   align-self: center;
@@ -582,6 +586,10 @@ ul.list.bar > li:first-child {
 
 .logo-font {
   font-family: TangerineBold, cursive, sans-serif;
+}
+
+.rtl {
+  direction: rtl;
 }
 
 [class^=flaticon-] {

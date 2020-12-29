@@ -3,8 +3,6 @@
 theming/design
     get light green accent colour/or gold
     get body font
-    design buttons
-        hold click makes them go blue
 
 nav
     sort mobile nav

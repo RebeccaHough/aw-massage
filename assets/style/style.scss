@@ -534,13 +534,19 @@ ul.list {
 	background: $primary;
 	border: none;
 	border-radius: $border-radius;
-	font-family: Georgia, 'Times New Roman', Times, serif;
+
+	font-family: $font-button;
+	font-size: $button-font-size;
+
 	&:hover, &:active {
-		background: $primary-light;
-		border: none;
+		background: $primary-light !important;
+		border: none !important;
 	}
-	&:focus {
-		box-shadow: none;
+	&:focus, &:focus-within {
+		box-shadow: 0 0 0 .2rem $primary-very-light !important;
+	}
+	&:focus-within {
+		box-shadow: none !important;
 	}
 }
 

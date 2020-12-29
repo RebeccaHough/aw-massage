@@ -4,6 +4,7 @@
 /* Brand colours */
 $primary: #441B70; //#704d9a; #3E206A;
 $primary-light: #71509C; //#553184;
+$primary-very-light: #8670a1; //#553184;
 $primary-dark: #2B0B56; //#553184;
 $primary-grey: #e8e3ed;
 
@@ -27,21 +28,22 @@ $nav-bar-colour: $grey;
 /* Font styling */
 
 //for use with 'font-family'
-$font-heading: PlayfairReg, serif;
-$font-heading-bold: PlayfairReg, serif;
-$font-heading-italics: PlayfairItal, serif;
+$font-heading: PlayfairReg, Georgia, 'Times New Roman', Times, serif;
+$font-heading-bold: PlayfairReg, Georgia, 'Times New Roman', Times, serif;
+$font-heading-italics: PlayfairItal, Georgia, 'Times New Roman', Times, serif;
 
-$font-logo: TangerineBold, cursive, sans-serif;
+$font-logo: TangerineBold, 'Brush Script MT', cursive, sans-serif;
 
-$font-body: AmiriReg, "Times New Roman", Times, serif;
+$font-body: AmiriReg, Georgia, 'Times New Roman', Times, serif;
+$font-button: Georgia, 'Times New Roman', Times, serif;
 
 //for use with 'color'
 $font-colour-subtle: $grey-dark;
-//$link-color: #f07f40;
 
 //@mixin name {
     //$var: $eg;
 //}
 
 /* Buttons and mobile menu toggle */
-$border-radius: 2px;
+$border-radius: 4px;
+$button-font-size: 1.05rem;

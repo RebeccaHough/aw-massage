@@ -1,35 +1,76 @@
 $('document').ready(function() {
+    /* Variables */
     var debug = false; //debug: enable print statements
-    
     //todo get scrollpos of bottom of jumbotron
     var scrollBoundary = 200;
 
-    //show desktop menu when mobile menu button disappears
-    //nb: this is to overcome the navbar-collapse class preventing mobile menu open
-    //and close animations; I can't figure out why this is happening
-    //nb: navbar-collapse keeps the menu open on desktop
+    /* Setup functions */
+    //run on window resize
+    window.onresize = toggleNavbarClass;
+    //run once on load
+    toggleNavbarClass();
+    //run on scroll
+    window.onscroll = collapseNavLogo;
+
+    /* Index Page */
+    //#region index
+
+    /* Menu functions */
+    //#region menu
+
+    /**
+     * Show desktop menu when mobile menu button disappears
+     * nb: this is to overcome the navbar-collapse class preventing mobile menu open
+     * and close animations; I can't figure out why this is happening
+     * nb: navbar-collapse keeps the menu open on desktop
+    */
     function toggleNavbarClass() {
-        const toggler = document.getElementById("mobileMenuToggle");
         const navbar = document.getElementById("mainNavbarContent");
-        const togglerDisplay = window.getComputedStyle(toggler).display;
-
-        if(debug) console.log('[toggleNavbarClass] toggle display value: ',  togglerDisplay);
-        if(debug) console.log('[toggleNavbarClass] navbar classes: ', navbar.classList);
-
-        if(togglerDisplay == "none") {
+        if(!isMobileMenu) {
             navbar.classList.add("navbar-collapse"); 
         } else {
             navbar.classList.remove("navbar-collapse"); 
         }
-
         if(debug) console.log('[toggleNavbarClass] navbar classes: ', navbar.classList);
     }
 
-    window.onresize = toggleNavbarClass;
-    //run once on load
-    toggleNavbarClass();
-    
-    //when user scrolls down n px from the top of the document, resize the navbar
+    /**
+     * Animate the mobile menu arrow up and down when the menu is opened/closed
+     */
+    function animateNavToggleArrow(e) {
+        if(!isMobileMenu()) return;
+
+        const arrowWrapper = document.getElementById("mobileMenuToggle").querySelector('.icon-rotate-wrapper');
+        const navbar = document.getElementById("mainNavbarContent");
+        //if mobile menu is open
+        if(navbar.classList.contains('show')) {
+            //animate arrow up
+            arrowWrapper.classList.remove('rotateUp');
+            arrowWrapper.classList.add('rotateDown');
+        }
+        //if mobile menu is closed
+        else { 
+            //animate arrow down
+            arrowWrapper.classList.remove('rotateDown');
+            arrowWrapper.classList.add('rotateUp');
+        }
+    }
+    //attach to toggle
+    document.getElementById('mobileMenuToggle').onclick = animateNavToggleArrow;
+
+    /**
+     * Returns true if the mobile menu is showing, false otherwise
+     */
+    function isMobileMenu() {
+        const toggler = document.getElementById("mobileMenuToggle");
+        const togglerDisplay = window.getComputedStyle(toggler).display;
+        if(debug) console.log('[isMobileMenu] mobileMenuToggle display value: ',  togglerDisplay);
+        return togglerDisplay != "none";
+    }
+
+    /**
+     * When user scrolls down n px from the top of the document, shrink the navbar
+     */
     function collapseNavLogo() {
         if(debug) console.log(collapsed);
 
@@ -62,8 +103,6 @@ $('document').ready(function() {
         }
     }
 
-    window.onscroll = collapseNavLogo;
-
     //set inital nav logo state (collapsed or not)
     var collapsed = document.body.scrollTop > scrollBoundary || document.documentElement.scrollTop > scrollBoundary;
     if(debug) console.log("[collapseNavLogo] collapsed = " + collapsed);
@@ -72,8 +111,12 @@ $('document').ready(function() {
         collapsed = false; 
         collapseNavLogo();
     }
+    
+    //#endregion menu
 
-    //if on home page, automatically tab through treatments slider
+    /**
+     * If on index page, automatically tab through treatments slider
+     */
     if(document.getElementById('treatmentsSlider')) {
         let tabs = ["list-swedish-massage", "list-deep-tissue-massage", "list-advanced-clinical-massage", "list-hot-stone-massage", "list-scar-tissue-massage"];
         let activeIndex = 1;
@@ -107,5 +150,8 @@ $('document').ready(function() {
             };
         }
     }
+    //#endregion index
+
+    /* Other Pages */
 });
 

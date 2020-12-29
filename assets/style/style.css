@@ -242,7 +242,7 @@ body a:hover {
   }
 }
 /* Mobile menu */
-.mobileMenuToggle-wrapper {
+.mobile-menu-toggle-wrapper {
   position: relative;
   width: 100%;
 }
@@ -252,20 +252,34 @@ body a:hover {
   bottom: -20px;
   right: 0;
   margin: 0 20px;
-  height: 25px;
-  width: 25px;
-  background-color: #441B70;
-  color: #ffffff !important;
+  padding: 7px 7px 3px 7px;
+  background: #441B70;
   border-radius: 2px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
-  text-align: center;
   cursor: pointer;
+}
+#mobileMenuToggle .icon-rotate-wrapper {
+  transition: all 0.6s ease-in-out;
+}
+#mobileMenuToggle .icon-rotate-wrapper i {
+  color: #ffffff !important;
+}
+
+.rotateDown {
+  transform: rotate3d(0, 0, 0, 0);
+  margin: 0;
+}
+
+.rotateUp {
+  transform: rotate3d(1, 0, 0, 180deg);
+  margin-top: -4px;
+  margin-bottom: 4px;
 }
 
 /* Header */
 #pageHeader {
   min-height: 425px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../images/head-massage.jpg);
+  background-image: linear-gradient(rgba(136, 51, 51, 0.35), rgba(0, 0, 0, 0.35)), url(../images/head-massage.jpg);
   background-repeat: no-repeat;
   background-position: 50% 30%;
   background-size: cover;

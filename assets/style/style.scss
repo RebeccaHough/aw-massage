@@ -284,18 +284,34 @@ $nav-transition-time: 1s;
 
 #openingTimes {
 	background-color: $grey-light;
+	overflow: hidden;
+	.opening-text {
+		margin: auto; 
+		padding-right: 30px;
+		ul {
+			margin-bottom: 1.5rem;
+		}
+	}
 	.offset-square {
 		position: relative;
+		display: flex;
+		margin: auto;
 		img {
 			position: relative; //stay on top
 			height: 200px;
+			margin: auto;
 		}
 		.square {
+			position: relative;
+			margin: auto;
+		}
+		.square::before {
 			position: absolute;
+			content: '';
 			height: 200px;
-			width: 280px;
+			width: 260px;
 			top: 0;
-			left: 15px; //accommodate for col padding
+			left: 0;
 			margin: 15px 0 0 50px; //offset amount
 			background-color: $secondary;
 		}

@@ -371,20 +371,36 @@ body a:hover {
 
 #openingTimes {
   background-color: #f4f4f4;
+  overflow: hidden;
+}
+#openingTimes .opening-text {
+  margin: auto;
+  padding-right: 30px;
+}
+#openingTimes .opening-text ul {
+  margin-bottom: 1.5rem;
 }
 #openingTimes .offset-square {
   position: relative;
+  display: flex;
+  margin: auto;
 }
 #openingTimes .offset-square img {
   position: relative;
   height: 200px;
+  margin: auto;
 }
 #openingTimes .offset-square .square {
+  position: relative;
+  margin: auto;
+}
+#openingTimes .offset-square .square::before {
   position: absolute;
+  content: "";
   height: 200px;
-  width: 280px;
+  width: 260px;
   top: 0;
-  left: 15px;
+  left: 0;
   margin: 15px 0 0 50px;
   background-color: #b6add9;
 }

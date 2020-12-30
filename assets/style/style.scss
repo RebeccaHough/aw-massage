@@ -402,7 +402,7 @@ $nav-transition-time: 1s;
 #footer { 
 	background-color: white;
 	color: rgba(0, 0, 0, 0.5);
-	padding: 1.75em 0 1em;
+	padding: 2.5rem 0 1rem 0;
 	a, a:hover {
 		color: rgba(0, 0, 0, 0.5);
 		font-weight: 100;
@@ -668,6 +668,14 @@ hr.white {
 		margin-right: 0;
 		margin-left: 0;
 	}
+	#footer {
+		.row-wrapper {
+			margin-bottom: 15px;
+		}
+		.about {
+			margin: 0 15px;
+		}
+	} 
  }
 
 // Small devices (landscape phones, less than 768px)

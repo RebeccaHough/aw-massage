@@ -26,7 +26,7 @@ $('document').ready(function() {
     */
     function toggleNavbarClass() {
         const navbar = document.getElementById("mainNavbarContent");
-        if(!isMobileMenu) {
+        if(!isMobileMenu()) {
             navbar.classList.add("navbar-collapse"); 
         } else {
             navbar.classList.remove("navbar-collapse"); 
@@ -72,12 +72,12 @@ $('document').ready(function() {
      * When user scrolls down n px from the top of the document, shrink the navbar
      */
     function collapseNavLogo() {
-        if(debug) console.log(collapsed);
+        if(debug) console.log('[collapseNavLogo] collapsed: ' + collapsed);
 
         if (document.body.scrollTop > scrollBoundary || document.documentElement.scrollTop > scrollBoundary) {
             if(!collapsed) {
                 collapsed = true;
-                if(debug) console.log(collapsed);
+                if(debug) console.log('[collapseNavLogo] collapsed: ' + collapsed);
                 //scrolled down (collapse menu)
                 document.getElementById("mainNavbar").style.padding = "0 0";
                 document.getElementById("navLogo").querySelector('.logo-image').style.height = "50px";
@@ -90,7 +90,7 @@ $('document').ready(function() {
         } else {
             if(collapsed) {
                 collapsed = false;
-                if(debug) console.log(collapsed);
+                if(debug) console.log('[collapseNavLogo] collapsed: ' + collapsed);
                 //scroll at top (expand menu)
                 document.getElementById("mainNavbar").style.padding = ".5rem 0";
                 document.getElementById("navLogo").querySelector('.logo-image').style.height = "65px";
@@ -105,7 +105,7 @@ $('document').ready(function() {
 
     //set inital nav logo state (collapsed or not)
     var collapsed = document.body.scrollTop > scrollBoundary || document.documentElement.scrollTop > scrollBoundary;
-    if(debug) console.log("[collapseNavLogo] collapsed = " + collapsed);
+    if(debug) console.log("[collapseNavLogo] collapsed: " + collapsed);
     //if logo should start collapsed, run collapse animation once
     if(collapsed) {
         collapsed = false; 

@@ -45,6 +45,11 @@ body {
 #contactBar {
 	background-color: $secondary-dark;
 	padding: 5px 0;
+	.container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+	}
 	//override <a>
 	*, a { 
 		font-family: $font-heading;
@@ -58,12 +63,7 @@ body {
 			color: $primary;
 		}
 	}
-	.left, .right {
-		display: inline;
-	}
-	.right {
-		float: right;
-	}
+
 }
 
 /* Navigation */
@@ -609,6 +609,9 @@ hr.white {
 		max-width: 540px;
 		padding-right: 15px;
 		padding-left: 15px;
+	}
+	#contactBar .container {
+		justify-content: space-between;
 	}
  }
 

@@ -1,20 +1,9 @@
----- General ----
-
-theming/design
-    get light green accent colour/or gold
-    get body font
-
-nav
-    sort mobile nav
-        fix dropdown on mobile
-    services/treatments dropdown
-        large clothes website-style with image
-         on desktop, dropdown on hover
-
 ---- Pages ----
 
 home
-    design cards for massages
+    main content
+        reduce amount of text
+        make text wrap around img
 
 contact
     add form

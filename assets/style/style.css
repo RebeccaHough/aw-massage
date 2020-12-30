@@ -99,6 +99,11 @@ body a:hover {
   background-color: #9990bd;
   padding: 5px 0;
 }
+#contactBar .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
 #contactBar *, #contactBar a {
   font-family: PlayfairReg, Georgia, "Times New Roman", Times, serif;
   color: white;
@@ -110,12 +115,6 @@ body a:hover {
 }
 #contactBar * a:hover i, #contactBar a a:hover i {
   color: #441B70;
-}
-#contactBar .left, #contactBar .right {
-  display: inline;
-}
-#contactBar .right {
-  float: right;
 }
 
 /* Navigation */
@@ -662,6 +661,10 @@ hr.white {
     max-width: 540px;
     padding-right: 15px;
     padding-left: 15px;
+  }
+
+  #contactBar .container {
+    justify-content: space-between;
   }
 }
 @media (min-width: 768px) {

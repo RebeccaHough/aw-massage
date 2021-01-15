@@ -6,17 +6,15 @@ Website for a local massage therapist.
 ## Sass setup
 Available at: http://sass-lang.com/install
 
-### Mac
-Install Ruby (may come pre-installed), then run:
-```
-$ [sudo] gem install sass
-```
-
 ### Compiling
+Run:
 ```
-$ sass --watch assets/style/style.scss:assets/style/style.css
+sass --watch assets/style/style.scss:assets/style/style.css
 ```
-in the project's directory to get sass to re-compile on file change.
+in the project directory to get sass to re-compile on file change.
+
+## Icons
+To view all available admin-ui icons, open [/assets/fonts/11235-admin-ui/font/flaticon](./assets/fonts/11235-admin-ui/font/flaticon.html) in your browser.
 
 ## Please note
 Site images are not kept in this repo.

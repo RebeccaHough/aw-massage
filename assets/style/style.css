@@ -41,6 +41,7 @@
 }
 /* Brand colours */
 /* Font styling */
+/* Mixins */
 /* Buttons and mobile menu toggle */
 body {
   font-family: AmiriReg, Georgia, "Times New Roman", Times, serif;
@@ -94,6 +95,18 @@ body a:hover {
   text-decoration: none;
 }
 
+/* Announcement Banner */
+#banner {
+  background-color: #ffd700;
+  padding: 12px 0;
+  color: #464646;
+  text-align: center;
+}
+#banner .container {
+  display: flex;
+  justify-content: center;
+}
+
 /* Contact Bar */
 #contactBar {
   background-color: #9990bd;
@@ -106,7 +119,7 @@ body a:hover {
 }
 #contactBar *, #contactBar a {
   font-family: PlayfairReg, Georgia, "Times New Roman", Times, serif;
-  color: white;
+  color: #ffffff;
   font-weight: 100;
   transition: all 0.3s ease 0s;
 }
@@ -288,18 +301,23 @@ body a:hover {
 }
 
 #companyHeader {
-  background-color: #9990bd;
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+  background: linear-gradient(40deg, #9990bd, #8e70af);
   font-family: PlayfairReg, Georgia, "Times New Roman", Times, serif;
   font-weight: initial;
   color: #ffffff;
   text-align: center;
 }
-#companyHeader h3 {
+#companyHeader h1 {
   margin-bottom: 0;
 }
-#companyHeader h3.fancy-font {
-  font-size: 2.7rem;
-  line-height: 2.7rem;
+#companyHeader h1.fancy-font {
+  font-size: 4rem;
+  line-height: 4.7rem;
+}
+#companyHeader p {
+  font-style: italic;
 }
 #companyHeader .offset {
   margin-left: 30vw;
@@ -311,7 +329,7 @@ body a:hover {
 }
 
 #treatmentsHeader {
-  background: url("../images/forest-fog.jpg") no-repeat center;
+  background: linear-gradient(40deg, #9990bd, #8e70af);
   color: white;
   text-align: center;
   margin: 0;

@@ -41,6 +41,18 @@ body {
 	}
 }
 
+/* Announcement Banner */
+#banner {
+    background-color: $alert;
+    padding: 12px 0;
+    color: $grey-very-dark;
+    text-align: center;
+    .container {
+        display: flex;
+        justify-content: center;
+    }
+}
+
 /* Contact Bar */
 #contactBar {
 	background-color: $secondary-dark;
@@ -53,7 +65,7 @@ body {
 	//override <a>
 	*, a { 
 		font-family: $font-heading;
-		color: white;
+		color: $white;
 		font-weight: 100;
 		transition: all .3s ease 0s;
 		a:hover {
@@ -200,18 +212,23 @@ $nav-transition-time: 1s;
 }
 
 #companyHeader {
-	background-color: $secondary-dark;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+	background: $secondary-gradient;
 	font-family: $font-heading;
 	font-weight: initial;
 	color: $white;
 	text-align: center;
-	h3 {
+	h1 {
 		margin-bottom: 0;
 		&.fancy-font {
-			font-size: 2.7rem;
-			line-height: 2.7rem;
+            font-size: 4rem;
+            line-height: 4.7rem;
 		}
 	}
+    p {
+        font-style: italic;
+    }
 	.offset {
 		margin-left: 30vw;
 	}
@@ -225,7 +242,7 @@ $nav-transition-time: 1s;
 }
 
 #treatmentsHeader {
-	background: url('../images/forest-fog.jpg') no-repeat center;
+	background: $secondary-gradient;
 	//background-color: $secondary;
 	color: white;
 	text-align: center;

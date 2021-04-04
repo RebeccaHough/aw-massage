@@ -11,10 +11,13 @@ $primary-grey: #e8e3ed;
 $secondary: #b6add9;
 $secondary-light: #ccc5e8;
 $secondary-dark: #9990bd; //9f97be
+$secondary-very-dark: #8e70af; //9f97be
 
 $accent: #A4981F; 
 $accent-light: #E7DB6B;  //#C2B63D
 $accent-dark: #7F7406;  //#554D00
+
+$alert: #ffd700;
 
 $grey: #bababa;
 $grey-light: #f4f4f4;
@@ -40,9 +43,12 @@ $font-button: Georgia, 'Times New Roman', Times, serif;
 //for use with 'color'
 $font-colour-subtle: $grey-dark;
 
+/* Mixins */
 //@mixin name {
     //$var: $eg;
 //}
+
+$secondary-gradient: linear-gradient(40deg, $secondary-dark, $secondary-very-dark);
 
 /* Buttons and mobile menu toggle */
 $border-radius: 4px;

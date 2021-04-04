@@ -1,3 +1,8 @@
+---- General ----
+nav
+    mobile
+        fix toggler being vertically off-centre when nav logo collapses
+
 ---- Pages ----
 
 home
@@ -7,8 +12,14 @@ home
         reduce amount of text
         make text wrap around img
 
+treatments
+    jump links  
+        add offset to account for sticky-top menu
+
 contact
     add form
+    add picture of inside/outside of studio?
+    change the alt text of Phone.jpg to something more meaningful
 
 ---- Mobile ----
 
@@ -27,6 +38,7 @@ any mention of travelling to them? make location more obvious
         consider using all caps for headings
         size convert to rem
     review copyright "flaticon.com" etc
+    ensure it's obvious which page you're viewing (since we aren't highlighting this in the nav)
 
 ---- Misc ----
 

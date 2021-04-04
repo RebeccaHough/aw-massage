@@ -12,8 +12,9 @@ $('document').ready(function() {
     //run on scroll
     window.onscroll = collapseNavLogo;
 
-    /* Index Page */
-    //#region index
+    /* All Pages */
+    //#region all
+    //#endregion
 
     /* Menu functions */
     //#region menu
@@ -113,6 +114,9 @@ $('document').ready(function() {
     }
     
     //#endregion menu
+
+    /* Index Page */
+    //#region index
 
     /**
      * If on index page, automatically tab through treatments slider

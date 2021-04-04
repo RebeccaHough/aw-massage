@@ -1,281 +1,346 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>Treatments | AW Massage</title>
 		<!-- Meta -->
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<meta content="text/html" http-equiv="content-type">
-		<meta content="author" name="D Waterman, E Waterman, RCH">
+		<meta content="author" name="RCH, ELW">
 		<meta content="description" name="Massage Website">
 		<!-- Favicon -->
 		<link rel="shortcut icon" href="../assets/images/favicons/favicon.ico" type="image/x-icon">
 		<link rel="icon" href="../assets/images/favicons/favicon.ico" type="image/x-icon">
 		<!-- Stylesheets -->
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<!-- Icons -->
+		<link rel="stylesheet" type="text/css" href="../assets/fonts/111235-admin-ui/font/flaticon.css"> 
+		<!-- Site CSS -->
 		<link rel="stylesheet" href="../assets/style/style.css">
-		<!-- jQuery -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<!-- Scripts -->
+		<!-- Bootstrap JS includes -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<!-- Site script -->
+		<script src="script.js"></script>	
 	</head>
-	
 	<body>
-		<!-- Menu links
-			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-				<a class="dropdown-item" href="#">All treatements offered</a>
-				<div class="dropdown-divider"></div>
-				<a class="dropdown-item" href="treatments.html#swedishMassage">Swedish Massage</a>
-				<a class="dropdown-item" href="treatments.html#deepTissueMassage">Deep Tissue Massage</a>
-				<a class="dropdown-item" href="treatments.html#advancedClinicalMassage">Advanced Clinical Massage</a>
-				<a class="dropdown-item" href="treatments.html#hotStoneMassage">Hot Stone Fusion Massage</a>
-				<a class="dropdown-item" href="treatments.html#scarTissueMassage">Scar Tissue Release Massage</a>
-			</div>
-		-->
-		<!-- Mobile Menu -->
-		<div id="navSidebar" class="ui vertical inverted sidebar menu left toggleable">
-			<a class="toggle item"><i class="sidebar icon"></i>&nbsp;</a>
-			<a class="item" href="index.html">Home</a>
-			<a class="current item" href="treatments.html">Treatments</a>
-			<a class="item" href="whattoexpect.html">What To Expect</a>
-			<a class="item" href="about.html">About Aase</a>
-			<a class="item" href="contact.html">Contact</a>
-			<a class="item" href="feedback.html">Feedback</a>
-		</div>
-		<!-- Header -->
-		<div id="pageHeader" class="ui inverted vertical center aligned segment">
-			<!-- Navigation Bar -->
-			<div id="navBar" class="ui inverted secondary pointing main menu">
-				<div class="ui container">
-					<a class="toggle item"><i class="sidebar icon"></i></a>
-					<a class="item" href="index.html">Home</a>
-					<div class="ui dropdown link current item">
-						<div class="text">Treatments</div>
-						<i class="dropdown icon"></i>
-						<div class="menu">
-							<a href="treatments.html">
-								<div class="header">All treatments offered</div>
-							</a>
-							<a class="item" href="treatments.html#swedishMassage">Swedish Massage</a>
-							<a class="item" href="treatments.html#deepTissueMassage">Deep Tissue Massage</a>
-							<a class="item" href="treatments.html#advancedClinicalMassage">Advanced Clinical Massage</a>
-							<a class="item" href="treatments.html#hotStoneMassage">Hot Stone Fusion Massage</a>
-							<a class="item" href="treatments.html#scarTissueMassage">Scar Tissue Release Massage</a>
-						</div> 
-					</div>
-					<a class="item" href="whattoexpect.html">What To Expect</a>
-					<a class="item" href="about.html">About Aase</a>
-					<a class="item" href="contact.html">Contact</a>
-					<a class="item" href="feedback.html">Feedback</a>
+		<!-- Contact Bar -->
+		<div id="contactBar">
+			<div class="container">
+				<div class="left">
+					<a href="tel:07784740591">
+						<i class="flaticon-telephone-auricular"></i>
+						07784740591
+					</a>
+				</div>
+				<div class="right">
+					<a href="mailto:aase@aquaman.plus.com">
+						<i class="flaticon-new-email-filled-closed-envelope-back"></i>
+						aase@aquaman.plus.com
+					</a>
 				</div>
 			</div>
-			<div class="ui container">
-				<img class="ui large centered image" src="../assets/images/logo.png">
-				<h1 class="ui inverted header">AW Massage</h1>
-				<h2 class="ui purple header">"A happy mind is medicine, no better prescription exists."</h2>
+		</div>
+
+		<!-- Navigation Bar -->
+		<nav id="mainNavbar" class="navbar navbar-expand-md navbar-light d-print sticky-top">
+			<div class="container flex-column">
+				<!-- Brand Logo -->
+				<div id="navLogo" class="nav-item d-flex justify-content-center navbar-brand">
+					<a href="/">
+						<img class="logo-image" src="../assets/images/logo.png" alt="AW Massage Logo"/>
+						<div class="logo-text">AW Massage</div>
+					</a>
+				</div>
+				<!-- Menu -->
+				<div class="collapse" id="mainNavbarContent">
+					<ul class="navbar navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="treatments.html">Treatments</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="whattoexpect.html">What To Expect</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="about.html">About Aase</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contact.html">Contact</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="feedback.html">Feedback</a>
+						</li>
+					</ul>
+				</div>
+				<!-- Mobile Menu Toggle -->
+				<div class="mobile-menu-toggle-wrapper">
+					<div id="mobileMenuToggle" class="navbar-toggler collapsed" role="button" data-toggle="collapse" data-target="#mainNavbarContent" aria-controls="mainNavbarContent" aria-expanded="false" aria-label="Toggle navigation">
+						<div class="icon-rotate-wrapper">
+							<i class="flaticon-down-arrow-angle"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Header -->
+		<div id="pageHeader" class="jumbotron jumbotron-fluid d-flex align-items-center">
+			<div class="container">
+				<h1 class="display-4">Treatments</h1>
+				<hr class="my-4 white">
+				<p class="lead italics">A happy mind is medicine, no better prescription exists.</p>
 			</div>
 		</div>
-		<!-- Picture -->
-		<div style="text-align:center; margin-top: 2em;	margin-bottom: 2em;">
-			<img src="WebsiteImages/MassageShoulder.jpg" alt="Massage Picture 6" style="width: 355px; height: 266px;">
-			<img src="WebsiteImages/MassageHand.jpg" alt="Massage Hand Picture" style="width: 355px; height: 266px;">
+
+		<div id="companyHeader" class="text-container container-fluid d-flex align-items-center">
+			<div class="container">
+				<p>Any treatment will be tailored to your individual requirements. If you want specific areas focused upon, for example, tense shoulders, simply specify this during consultation.</p>
+			
+				<p>Regular treatments will help improvements last and allow you to retain the relaxed feeling.</p>
+			</div>
+		</div>
+
+		<div id="treatmentsSummary" class="text-container container-fluid">
+			<div class="container">
+				<p>Treatments offered:</p>
+				<ul class="nav justify-content-center">
+					<li class="nav-item">
+						<a href="#swedishMassage">Swedish Massage</a>
+					</li>
+					<li class="nav-item">
+						<a href="#deepTissueMassage">Deep Tissue Massage</a>
+					</li>
+					<li class="nav-item">
+						<a href="#advancedClinicalMassage">Advanced Clinical Massage</a>
+					</li>
+					<li class="nav-item">
+						<a href="#hotStoneMassage">Hot Stone Fusion Massage</a>
+					</li>
+					<li class="nav-item">
+						<a href="#scarTissueMassage">Scar Tissue Release Massage</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- Costs -->
+		<div id="costs" class="container-fluid">
+			<div class="container">
+				<h1>Treatments cost: &pound;42 for 60 minutes | &pound;60 for 90 minutes</h1>
+			</div>
 		</div>
 		
 		<!-- Main Content -->
-		<div id="mainContent" class="ui text container">
-			<p>Any treatment will be tailored to your individual requirements. If you want specific areas focused upon, for example tense shoulders, just specify this during consultation.</p>
-			
-			<p>Regular treatments will help improvement last and retain the relaxed feeling.</p>
-			
-			<br><br>
-			<h1 id="treatmentInfo"><strong>Treatments cost: <b>&pound;42</b> for 60 minutes | <b>&pound;60</b> for 90 minutes</strong></h1>
-			<br><br>
-			
-			<h2 id="swedishMassage">Swedish Massage</h2>
-			
-			<p>This is the most common and well-known type of massage, sometimes called the classic massage. The therapist starts the massage with superficial strokes to relax the client and to accept the feeling of the therapist's hands. Then firmer pressure is applied using different types of movements to manipulate the tissue. Massage oil is used to facilitate the stroke applied. It relaxes and promotes a feeling of wellbeing. If you have tense and tight muscles or just feeling stressed and tired, this is an excellent treatment.</p>
-			
-			<p><b>The benefits are:</b></p>
-			
-			<ul>
-				<li>Helps relaxations and relieves stress</li>
-				<li>Boosts blood circulation, increasing flow of oxygen and nutrients to cells and tissue</li>
-				<li>Restore flexibility to muscles and joints</li>
-				<li>Relieves muscular tension</li>
-				<li>Stimulates the lymphatic flow, thus elimination of toxins</li>
-				<li>Reduces pain by stimulating release of endorphins - natural painkiller</li>
-				<li>Improves skin tone</li>
-				<li>Improves sleep</li>
-				<li>Relieves stress-related conditions such as headaches and migraines</li>
-				<li>Strengthens your immune system</li>
-			</ul>
-			
-			<br>
-			
-			<h2 id="deepTissueMassage">Deep Tissue Massage</h2>
-			
-			<p>Deep tissue is designed to release tension in the muscle and fascia. To access the deeper layers of muscle the forearm, knuckles and elbow are used to relax, lengthen and release holding patterns. The alleviation of pain, bringing about better posture, more flexibility, and fluid movement - these are all potential goals that are possible to achieve with deep tissue skills. People who experience chronic pain, or do lots of sports, or have sustained physical injuries would benefit from this treatment. Due to its deep and focused work it has a longer lasting effect.</p>
-			
-			<p><b>The benefits are:</b></p>
-			
-			<ul>
-				<li>Encourages deep relaxation</li>
-				<li>Relieves chronic tension, breaks up adhesions caused by micro-scarring</li>
-				<li>Enhance function of muscles and joints</li>
-				<li>Aids the healing process</li>
-			</ul>
-			
-			<!-- GIF Picture -->
-			<div class="centeredImage">
-				<img src="WebsiteImages/RotatingImages.gif" alt="Picture Slideshow" style="width: 225px; height: 300px;">
+		<div id="mainContent" class="text-container container-fluid">
+			<div class="container">
+				<h2 id="swedishMassage">Swedish Massage</h2>
+				
+				<p>This is the most common and well-known type of massage, sometimes called the classic massage. The therapist starts the massage with superficial strokes to relax the client and to accept the feeling of the therapist's hands. Then firmer pressure is applied using different types of movements to manipulate the tissue. Massage oil is used to facilitate the stroke applied. It relaxes and promotes a feeling of wellbeing. If you have tense and tight muscles or just feeling stressed and tired, this is an excellent treatment.</p>
+				
+				<p><b>The benefits are:</b></p>
+				
+				<ul>
+					<li>Helps relaxations and relieves stress</li>
+					<li>Boosts blood circulation, increasing flow of oxygen and nutrients to cells and tissue</li>
+					<li>Restore flexibility to muscles and joints</li>
+					<li>Relieves muscular tension</li>
+					<li>Stimulates the lymphatic flow, thus elimination of toxins</li>
+					<li>Reduces pain by stimulating release of endorphins - natural painkiller</li>
+					<li>Improves skin tone</li>
+					<li>Improves sleep</li>
+					<li>Relieves stress-related conditions such as headaches and migraines</li>
+					<li>Strengthens your immune system</li>
+				</ul>
+				
+				<h2 id="deepTissueMassage">Deep Tissue Massage</h2>
+				
+				<p>Deep tissue is designed to release tension in the muscle and fascia. To access the deeper layers of muscle the forearm, knuckles and elbow are used to relax, lengthen and release holding patterns. The alleviation of pain, bringing about better posture, more flexibility, and fluid movement - these are all potential goals that are possible to achieve with deep tissue skills. People who experience chronic pain, or do lots of sports, or have sustained physical injuries would benefit from this treatment. Due to its deep and focused work it has a longer lasting effect.</p>
+				
+				<p><b>The benefits are:</b></p>
+				
+				<ul>
+					<li>Encourages deep relaxation</li>
+					<li>Relieves chronic tension, breaks up adhesions caused by micro-scarring</li>
+					<li>Enhance function of muscles and joints</li>
+					<li>Aids the healing process</li>
+				</ul>
+				
+				<h2 id="advancedClinicalMassage">Advanced Clinical Massage</h2>
+				
+				<p>Advanced clinical massage is designed to assist the healing process and to target muscle imbalance and dysfunction. It incorporates various techniques during a treatment to give the most effective result possible. The aim is to get people painfree or reduce it significantly. This will improve the quality of life, increase range of motion, improve posture and wellbeing. <br>
+				This treatment requires a firm pressure but it is also very therapeutic. The focus will be in areas with tenderness or tender spots, as well as other relevant areas, to release tension. Most conditions can benefit from clinical massage, whether they are chronic or persistant pain. <br>
+				Remember that pain conditions will not usually go away in one session. For the best results it is recommended to have regular massage treatments to help with your wellbeing.</p>
+				
+				<p><b>Techniques used in advanced clinical massage:</b></p>
+				
+				<ul>
+					<li>Sports massage</li>
+					<li>Myofascial release</li>
+					<li>Trigger point therapy</li>
+					<li>Amma fusion (shiatsu)</li>
+					<li>Sports stretching - PNF, AIS, passive</li>
+					<li>Deep tissue work </li>
+				</ul>
+				
+				<br>
+				
+				<h2 id="hotStoneMassage">Hot Stone Fusion Massage</h2>
+				
+				<p>Hot stone massage offers a fusion of specialised Eastern and Western advanced stone techniques. Soothing stones are incorporated into the massage to treat sport injuries, chronic pain or just as the ultimate luxury treatment.</p>
+				
+				<p><b>Therapeutic effects of heat:</b></p>
+				
+				<ul>
+					<li>Very effective for injury rehabitation and chronic pain.</li>
+					<li>Has a 'feel good' factor about it and takes relaxation to the 'next level' which makes it easier to work deeply in a gentle and more effective way.</li>
+					<li>Reduces muscle tightness which is often the primary cause of pain and pain referring trigger points.</li>
+					<li>Increases circulation thus bringing fresh blood and nutrients to the affected area. This helps stimulate tissue repair.</li>
+					<li>Alters the sensation of pain as it stimulates the sensory receptors in the skin and reduces the transmission of pain signals to the brain.</li>
+				</ul>
+				
+				<p><b>Cold stones (hydrotherapy) is an ideal treatment for acute injuries:</b></p>
+				
+				<ul>
+					<li>To prevent and reduce swelling</li>
+					<li>Decrease inflammation</li>
+					<li>Decrease pain</li>
+					<li>Reduce muscle soreness</li>
+					<li>Increase mobility</li>
+					<li>Decrease spasm</li>
+					<li>Heal quicker</li>
+				</ul>
+				
+				<p><b>Hot and cold contrast applications:</b></p>
+				
+				<p>These cause dilation and constriction of the blood vessels and lymph vessels which creates a 'pumping action' that increases circulation and improves many of the neurological responses that will create the best environment for healing. Contrast bathing is effective for long term chronic pain.</p>
+				
+				<p>The combination of different approaches within a treatment will gain maximum results. <br>
+				Self care is an important part of treatment, in addition to massage; exercise and movement is recommended to reduce pain and improve function.</p>
+				
+				<br>
+				
+				<h2 id="scarTissueMassage">Scar Tissue Release Massage</h2>
+				
+				<p>Our body has an amazing ability to heal itself but sometimes after an injury, illness, surgery or other medical treatments scar tissue and adhesions are formed. The inflammatory process and the  production of scar tissue is part of the healing. However, if these scars are not treated, they may lead to future long term problems. <br>
+				Scars are often the underlying course of chronic pain or lack of mobility. Symptoms can include physical imbalance, postural misalignment and muscle atrophy.</p>
+				
+				<p>Scar tissue work through massage can be a very effective way of helping to treat and relieve these symptoms by decreasing pain, improving range of motion of a joint and  improving appearance.</p>
+				
+				<p>Sometimes a physical scar can hide other emotional issues where massage can also be of benefit. <br>
+				Treatments can usually start 6-8 weeks after healing but will vary from client to client. If in doubt please check with your doctor/surgeon. A minimum of 6 treatments are required depending on the depth and width of the scar and how old it is. With newer scars the techniques will be more gentle and only last a few minutes. A combination of techniques is normally recommended, these include  <u>heat, myofascial release and stretching</u>.</p>
+				
+				<p><b>Scar tissue and adhesions that can be worked on:</b> <br>
+				(but are not limited to the following)</p>
+				
+				<ul>
+					<li>Caesarean</li>
+					<li>Hysterectomy</li>
+					<li>Masectomy</li>
+					<li>Back and hip surgery</li>
+					<li>Burns</li>
+					<li>Appendectomy</li>
+					<li>Thyroidectomy</li>
+					<li>Falls and accidents</li>
+				</ul>
 			</div>
-			
-			<h2 id="advancedClinicalMassage">Advanced Clinical Massage</h2>
-			
-			<p>Advanced clinical massage is designed to assist the healing process and to target muscle imbalance and dysfunction. It incorporates various techniques during a treatment to give the most effective result possible. The aim is to get people painfree or reduce it significantly. This will improve the quality of life, increase range of motion, improve posture and wellbeing. <br>
-			This treatment requires a firm pressure but it is also very therapeutic. The focus will be in areas with tenderness or tender spots, as well as other relevant areas, to release tension. Most conditions can benefit from clinical massage, whether they are chronic or persistant pain. <br>
-			Remember that pain conditions will not usually go away in one session. For the best results it is recommended to have regular massage treatments to help with your wellbeing.</p>
-			
-			<p><b>Techniques used in advanced clinical massage:</b></p>
-			
-			<ul>
-				<li>Sports massage</li>
-				<li>Myofascial release</li>
-				<li>Trigger point therapy</li>
-				<li>Amma fusion (shiatsu)</li>
-				<li>Sports stretching - PNF, AIS, passive</li>
-				<li>Deep tissue work </li>
-			</ul>
-			
-			<br>
-			
-			<h2 id="hotStoneMassage">Hot Stone Fusion Massage</h2>
-			
-			<p>Hot stone massage offers a fusion of specialised Eastern and Western advanced stone techniques. Soothing stones are incorporated into the massage to treat sport injuries, chronic pain or just as the ultimate luxury treatment.</p>
-			
-			<p><b>Therapeutic effects of heat:</b></p>
-			
-			<ul>
-				<li>Very effective for injury rehabitation and chronic pain.</li>
-				<li>Has a 'feel good' factor about it and takes relaxation to the 'next level' which makes it easier to work deeply in a gentle and more effective way.</li>
-				<li>Reduces muscle tightness which is often the primary cause of pain and pain referring trigger points.</li>
-				<li>Increases circulation thus bringing fresh blood and nutrients to the affected area. This helps stimulate tissue repair.</li>
-				<li>Alters the sensation of pain as it stimulates the sensory receptors in the skin and reduces the transmission of pain signals to the brain.</li>
-			</ul>
-			
-			<p><b>Cold stones (hydrotherapy) is an ideal treatment for acute injuries:</b></p>
-			
-			<ul>
-				<li>To prevent and reduce swelling</li>
-				<li>Decrease inflammation</li>
-				<li>Decrease pain</li>
-				<li>Reduce muscle soreness</li>
-				<li>Increase mobility</li>
-				<li>Decrease spasm</li>
-				<li>Heal quicker</li>
-			</ul>
-			
-			<p><b>Hot and cold contrast applications:</b></p>
-			
-			<p>These cause dilation and constriction of the blood vessels and lymph vessels which creates a 'pumping action' that increases circulation and improves many of the neurological responses that will create the best environment for healing. Contrast bathing is effective for long term chronic pain.</p>
-			
-			<p>The combination of different approaches within a treatment will gain maximum results. <br>
-			Self care is an important part of treatment, in addition to massage; exercise and movement is recommended to reduce pain and improve function.</p>
-			
-			<br>
-			
-			<h2 id="scarTissueMassage">Scar Tissue Release Massage</h2>
-			
-			<p>Our body has an amazing ability to heal itself but sometimes after an injury, illness, surgery or other medical treatments scar tissue and adhesions are formed. The inflammatory process and the  production of scar tissue is part of the healing. However, if these scars are not treated, they may lead to future long term problems. <br>
-			Scars are often the underlying course of chronic pain or lack of mobility. Symptoms can include physical imbalance, postural misalignment and muscle atrophy.</p>
-			
-			<p>Scar tissue work through massage can be a very effective way of helping to treat and relieve these symptoms by decreasing pain, improving range of motion of a joint and  improving appearance.</p>
-			
-			<p>Sometimes a physical scar can hide other emotional issues where massage can also be of benefit. <br>
-			Treatments can usually start 6-8 weeks after healing but will vary from client to client. If in doubt please check with your doctor/surgeon. A minimum of 6 treatments are required depending on the depth and width of the scar and how old it is. With newer scars the techniques will be more gentle and only last a few minutes. A combination of techniques is normally recommended, these include  <u>heat, myofascial release and stretching</u>.</p>
-			
-			<p><b>Scar tissue and adhesions that can be worked on:</b> <br>
-			(but are not limited to the following)</p>
-			
-			<ul>
-				<li>Caesarean</li>
-				<li>Hysterectomy</li>
-				<li>Masectomy</li>
-				<li>Back and hip surgery</li>
-				<li>Burns</li>
-				<li>Appendectomy</li>
-				<li>Thyroidectomy</li>
-				<li>Falls and accidents</li>
-			</ul>
-			
-			<br><br>
-			
-			<p style="text-align:center; font-size:1.15em;"><i><b>Take time to 'log off' and enjoy a signature treatment which is intensely warming, relaxing and luxurious yet therapeutic.</b></i></p>
 		</div>
-		
-		<br><br>
+
+		<!-- Call to action -->
+		<div id="contact" class="jumbotron jumbotron-fluid">
+			<div class="container">
+				<h1 class="display-4">Take some time to log off...</h1>
+				<hr class="my-4">
+				<p class="lead">...And enjoy a signature treatment that is <span class="highlight-font">luxurious</span> yet <span class="highlight-font">therapeutic</span>.</p>
+				<a href="contact.html">
+					<button class="btn btn-primary btn-large">Book me in now!</button>
+				</a>
+			</div>
+		</div>
+
 		<!-- Footer -->
-		<div id="footer" class="ui inverted vertical segment">
-				<div class="ui container">
-					<div class="ui center aligned inverted divided stackable grid">
-						<div class="three wide left aligned column">
-							<h4 class="ui inverted header">Massages Offered</h4>
-							<div class="ui inverted link list">
-								<a class="item" href="treatments.html#swedishMassage">Swedish</a>
-								<a class="item" href="treatments.html#deepTissueMassage">Deep Tissue</a>
-								<a class="item" href="treatments.html#advancedClinicalMassage">Advanced Clinical</a>
-								<a class="item" href="treatments.html#hotStoneMassage">Hot Stone Fusion</a>
-								<a class="item" href="treatments.html#scarTissueMassage">Scar Tissue Release</a>
+		<div id="footer" class="container-fluid">
+			<div class="container-tight">
+				<div class="row row-mobile-ow">
+					<div class="col-sm-8">
+						<div class="row row-mobile-ow row-wrapper">
+							<div class="col">
+								<h4>Massages Offered</h4>
+								<ul class="list">
+									<li><a href="treatments.html#swedishMassage">Swedish</a></li>
+									<li><a href="treatments.html#deepTissueMassage">Deep Tissue</a></li>
+									<li><a href="treatments.html#advancedClinicalMassage">Advanced Clinical</a></li>
+									<li><a href="treatments.html#hotStoneMassage">Hot Stone Fusion</a></li>
+									<li><a href="treatments.html#scarTissueMassage">Scar Tissue Release</a></li>
+								</ul>
+							</div> 
+							<div class="col">
+								<h4>Contact Us</h4>
+								<ul class="list">
+									<li>
+										<div class="content">
+											<i class="flaticon-user-filled-person-shape"></i>
+											Aase Waterman
+										</div>
+									</li>
+									<li>
+										<div class="content">
+											<i class="flaticon-placeholder-filled-point"></i>
+											Rowledge, Surrey
+										</div>
+									</li>
+									<li>
+										<div class="content">
+											<a href="tel:07784740591">
+												<i class="flaticon-telephone-auricular"></i>
+												07784740591
+											</a>
+										</div>
+									</li>
+									<li>
+										<div class="content">
+											<a href="mailto:aase@aquaman.plus.com" class=" word-wrap">
+												<i class="flaticon-new-email-filled-closed-envelope-back"></i>
+												aase@aquaman.plus.com
+											</a>
+										</div>
+									</li>
+								</ul>
 							</div>
-						</div> 
-						<div class="four wide left aligned column">
-							<h4 class="ui inverted header">Contact Us</h4>
-							<div class="ui inverted link list">
-								<div class="item">
-									<i class="user outline icon"></i>
-									<div class="content">
-										Aase Waterman
-									</div>
-								</div>
-								<div class="item">
-									<i class="marker icon"></i>
-									<div class="content">
-										Rowledge, Surrey
-									</div>
-								</div>
-								<div class="item">
-									<i class="text telephone icon"></i>
-									<div class="content">
-										07784740591
-									</div>
-								</div>
-								<div class="item">
-									<i class="mail icon"></i>
-									<div class="content word-wrap">
-										<a href="mailto:aase@aquaman.plus.com">aase@aquaman.plus.com</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="seven wide left aligned column">
-							<h4 class="ui inverted header">About Aase</h4>
-							<div class="sub inverted header">Aase is a professionally trained, CTHA-certified massage therapist who works in and around Rowledge.</div>
 						</div>
 					</div>
-					<div class="ui inverted section divider"></div>
-					<div class="ui center aligned container">
-						<img src="../assets/images/logo.png" class="ui centered medium image" alt="AW Massage Logo">
-						<h5 class="inverted header">Copyright <i class="copyright icon"></i> 2017 AW Massage</h5>
-						<div class="ui horizontal inverted small divided list">
-							<div class="item">Rowledge</div>
-							<div class="item">Farnham</div> 
-							<div class="item">Frensham</div>
-							<div class="item">Alton</div>
-							<div class="item">Crondall</div>
-							<div class="item">Bentley</div>
-							<div class="item">Churt</div>
-						</div>
+					<div class="col-sm-4 about">
+						<h4>About Aase</h4>
+						<p style="margin: 1em 0;">Aase is a professionally trained, CTHA-certified massage therapist who works in and around Rowledge.</p>
+					</div>
+				</div>
+				<div class="row row-mobile-ow copyright">
+					<div class="col">
+						<img src="../assets/images/logo.png" height="100" alt="AW Massage Logo" style="margin-bottom: 5px">
+						<h5 style="margin-bottom: 20px">Copyright &copy; 
+							<script language="javascript" type="text/javascript">
+								document.write(new Date().getFullYear())
+							</script>
+							AW Massage
+						</h5>
+						<ul class="horizontal-bar-list">
+							<li>Rowledge</li>
+							<li>Farnham</li> 
+							<li>Frensham</li>
+							<li>Alton</li>
+							<li>Crondall</li>
+							<li>Bentley</li>
+							<li>Churt</li>
+						</ul>
+						<p style="font-size:.8rem">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>, licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY.</a></p>
 					</div>
 				</div>
 			</div>
 		</div>
-		<!-- Scripts -->
-		<script src="script.js"></script>
 	</body>
 </html>

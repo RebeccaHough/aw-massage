@@ -57,27 +57,32 @@ body ul {
 }
 body h1, body h2, body h3, body h4, body h5, body h6 {
   font-family: PlayfairReg, Georgia, "Times New Roman", Times, serif;
-  line-height: 1.3rem;
   padding: 0;
   font-weight: 700;
 }
 body h1 {
   font-size: 2rem;
+  line-height: 2rem;
 }
 body h2 {
   font-size: 1.7rem;
+  line-height: 1.7rem;
 }
 body h3 {
   font-size: 1.3rem;
+  line-height: 1.3rem;
 }
 body h4 {
   font-size: 1.1rem;
+  line-height: 1.1rem;
 }
 body h5 {
   font-size: 1rem;
+  line-height: 1rem;
 }
 body h6 {
   font-size: 0.9rem;
+  line-height: 0.9rem;
 }
 body p {
   line-height: 1.43em;
@@ -319,13 +324,18 @@ body a:hover {
 #companyHeader p {
   font-style: italic;
 }
-#companyHeader .offset {
-  margin-left: 30vw;
+#companyHeader .start {
+  text-align: start;
+}
+#companyHeader .end {
+  text-align: end;
 }
 
+/* index.html content */
 #mainContent img {
   width: 250px;
-  margin-left: 10px;
+  height: 250px;
+  margin: 10px 10px 0 10px;
 }
 
 #treatmentsHeader {
@@ -460,6 +470,26 @@ body a:hover {
   color: #71509C;
 }
 
+/* treatments.html content */
+#costs {
+  background-color: #441B70;
+  color: #ffffff;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  text-align: center;
+}
+
+/* whattoexpect.html content */
+#massageAccordion .card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#massageAccordion .card-header a {
+  cursor: pointer;
+}
+
+/* contact.html content */
 #contactTable {
   width: 500px;
   margin-left: auto;
@@ -475,31 +505,8 @@ body a:hover {
   font-size: 1.1em;
 }
 
-#aboutTable {
-  margin: auto;
-  max-width: 900px;
-  border: 0px solid black;
-}
-#aboutTable tr, #aboutTable td {
-  border: 0px;
-}
-
-.centeredImage img {
-  display: block;
-  margin-top: 2em;
-  margin-bottom: 2em;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#treatmentInfo {
-  text-align: center;
-  font-size: 1.5em;
-  font-weight: bold;
-  background-color: #441B70;
-  padding: 0.8em;
-}
-
+/* about.html content */
+/* Footer */
 #footer {
   background-color: white;
   color: rgba(0, 0, 0, 0.5);

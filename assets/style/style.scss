@@ -14,16 +14,33 @@ body {
 	}	
 	h1, h2, h3, h4, h5, h6 {
 		font-family: $font-heading;
-		line-height: 1.3rem;
 		padding: 0;
 		font-weight: 700;
 	}
-	h1 { font-size: 2rem }
-	h2 { font-size: 1.7rem }
-	h3 { font-size: 1.3rem }
-	h4 { font-size: 1.1rem }
-	h5 { font-size: 1rem }
-	h6 { font-size: .9rem }
+	h1 { 
+		font-size: 2rem;
+		line-height: 2rem;
+	}
+	h2 {
+		font-size: 1.7rem;
+		line-height: 1.7rem;
+	}
+	h3 { 
+		font-size: 1.3rem;
+		line-height: 1.3rem;
+	}
+	h4 { 
+		font-size: 1.1rem;
+		line-height: 1.1rem;
+	}
+	h5 { 
+		font-size: 1rem;
+		line-height: 1rem;
+	}
+	h6 { 
+		font-size: .9rem;
+		line-height: .9rem;
+	}
 	p { 
 		line-height: 1.43em; 
 		&:last-child { 
@@ -234,10 +251,12 @@ $nav-transition-time: 1s;
 	}
 }
 
+/* index.html content */
 #mainContent {
 	img {
 		width: 250px;
-		margin-left: 10px;
+		height: 250px;
+		margin: 10px 10px 0 10px;
 	}
 }
 
@@ -373,6 +392,26 @@ $nav-transition-time: 1s;
 	}
 }
 
+/* treatments.html content */
+#costs {
+	background-color: $primary;
+	color: $white;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	text-align: center;
+}
+
+/* whattoexpect.html content */
+#massageAccordion .card-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	a {
+		cursor: pointer;
+	}
+}
+
+/* contact.html content */
 #contactTable {
 	width: 500px;
 	margin-left: auto;
@@ -388,34 +427,9 @@ $nav-transition-time: 1s;
 	}
 } 
 
-#aboutTable {
-	margin: auto;
-	max-width: 900px;
-	border: 0px solid black;
-	tr, td {
-		border: 0px;
-	}
-}
+/* about.html content */
 
-.centeredImage img {
-	display: block;
-	margin-top: 2em;
-	margin-bottom: 2em;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-#mainContent {
-}
-
-#treatmentInfo {
-	text-align: center;
-	font-size: 1.5em;
-	font-weight: bold;
-	background-color: $primary;
-	padding: 0.8em;
-}
-
+/* Footer */
 #footer { 
 	background-color: white;
 	color: rgba(0, 0, 0, 0.5);
@@ -554,7 +568,7 @@ ul.list {
 }
 
 .rtl {
-    direction: rtl;
+  direction: rtl;
 }
 
 [class^="flaticon-"] {

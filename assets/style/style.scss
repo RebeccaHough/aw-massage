@@ -228,20 +228,30 @@ $nav-transition-time: 1s;
 	margin-bottom: 0;
 }
 
-#companyHeader {
-    padding-top: 3.5rem;
-    padding-bottom: 3.5rem;
+.coloured-header {
+	margin: 0;
+	padding: 4rem 2rem;
 	background: $secondary-gradient;
-	font-family: $font-heading;
-	font-weight: initial;
+	//background-color: $secondary;
 	color: $white;
 	text-align: center;
+	hr {
+		border-color: $white;
+	}
+}
+
+#companyHeader {
+	@extend .coloured-header;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+	font-family: $font-heading;
+	font-weight: initial;
 	h1 {
 		margin-bottom: 0;
 		&.fancy-font {
       font-size: 4rem;
-			line-height: 4.7rem;
-			font-weight: normal;
+      line-height: 4.7rem;
+      font-weight: normal;
 		}
 	}
     p {
@@ -253,25 +263,6 @@ $nav-transition-time: 1s;
 }
 
 /* index.html content */
-#mainContent {
-	img {
-		width: 250px;
-		height: 250px;
-		margin: 10px 10px 0 10px;
-	}
-}
-
-#treatmentsHeader {
-	background: $secondary-gradient;
-	//background-color: $secondary;
-	color: white;
-	text-align: center;
-	margin: 0;
-	hr {
-		border-color: white;
-	}
-}
-
 #treatmentsDesc {
 	margin-bottom: 2rem;
 	text-align: center;
@@ -429,6 +420,9 @@ $nav-transition-time: 1s;
 } 
 
 /* about.html content */
+#aboutLogos {
+	padding-top: 0;
+}
 
 /* Footer */
 #footer { 
@@ -494,6 +488,24 @@ $nav-transition-time: 1s;
 //even more padding on extra large desktop sizes
 .container-extra-tight {
 	@extend .container-tight;
+}
+
+//img must be the first element in container for floating to work
+.wrap-around-img {
+	display: flex;
+	flex-direction: column;
+	img {
+		margin: 0 auto 3rem;
+	}
+}
+
+// wrap child p tags in a div to prevent text reversal
+.wrap-around-img-below {
+	@extend .wrap-around-img;
+	flex-direction: column-reverse;
+	img {
+		margin: 3rem auto 0;
+	}
 }
 
 ul.list {
@@ -660,6 +672,13 @@ hr.white {
 	#mainNavbar #navLogo {
 		padding-bottom: 0;
 		margin-bottom: 0;
+  }
+	.wrap-around-img {
+		display: block;
+		img {
+			float: right;
+			margin: 0 0 20px 20px;
+		}
 	}
  }
 

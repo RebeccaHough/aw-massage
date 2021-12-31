@@ -305,14 +305,22 @@ body a:hover {
   margin-bottom: 0;
 }
 
+.coloured-header, #companyHeader {
+  margin: 0;
+  padding: 4rem 2rem;
+  background: linear-gradient(40deg, #9990bd, #8e70af);
+  color: #ffffff;
+  text-align: center;
+}
+.coloured-header hr, #companyHeader hr {
+  border-color: #ffffff;
+}
+
 #companyHeader {
   padding-top: 3.5rem;
   padding-bottom: 3.5rem;
-  background: linear-gradient(40deg, #9990bd, #8e70af);
   font-family: PlayfairReg, Georgia, "Times New Roman", Times, serif;
   font-weight: initial;
-  color: #ffffff;
-  text-align: center;
 }
 #companyHeader h1 {
   margin-bottom: 0;
@@ -330,22 +338,6 @@ body a:hover {
 }
 
 /* index.html content */
-#mainContent img {
-  width: 250px;
-  height: 250px;
-  margin: 10px 10px 0 10px;
-}
-
-#treatmentsHeader {
-  background: linear-gradient(40deg, #9990bd, #8e70af);
-  color: white;
-  text-align: center;
-  margin: 0;
-}
-#treatmentsHeader hr {
-  border-color: white;
-}
-
 #treatmentsDesc {
   margin-bottom: 2rem;
   text-align: center;
@@ -504,6 +496,10 @@ body a:hover {
 }
 
 /* about.html content */
+#aboutLogos {
+  padding-top: 0;
+}
+
 /* Footer */
 #footer {
   background-color: white;
@@ -555,6 +551,21 @@ body a:hover {
   padding-left: 0;
   margin-right: auto;
   margin-left: auto;
+}
+
+.wrap-around-img, .wrap-around-img-below {
+  display: flex;
+  flex-direction: column;
+}
+.wrap-around-img img, .wrap-around-img-below img {
+  margin: 0 auto 3rem;
+}
+
+.wrap-around-img-below {
+  flex-direction: column-reverse;
+}
+.wrap-around-img-below img {
+  margin: 3rem auto 0;
 }
 
 ul.list {
@@ -704,6 +715,14 @@ hr.white {
   #mainNavbar #navLogo {
     padding-bottom: 0;
     margin-bottom: 0;
+  }
+
+  .wrap-around-img, .wrap-around-img-below {
+    display: block;
+  }
+  .wrap-around-img img, .wrap-around-img-below img {
+    float: right;
+    margin: 0 0 20px 20px;
   }
 }
 @media (min-width: 768px) and (max-width: 991.98px) {

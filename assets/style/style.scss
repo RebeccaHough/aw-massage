@@ -239,8 +239,9 @@ $nav-transition-time: 1s;
 	h1 {
 		margin-bottom: 0;
 		&.fancy-font {
-            font-size: 4rem;
-            line-height: 4.7rem;
+      font-size: 4rem;
+			line-height: 4.7rem;
+			font-weight: normal;
 		}
 	}
     p {
@@ -655,6 +656,10 @@ hr.white {
 	}
 	.mobileMenuToggle-wrapper, #mobileMenuToggle {
 		display: none;
+	}
+	#mainNavbar #navLogo {
+		padding-bottom: 0;
+		margin-bottom: 0;
 	}
  }
 

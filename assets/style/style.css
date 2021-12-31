@@ -320,15 +320,13 @@ body a:hover {
 #companyHeader h1.fancy-font {
   font-size: 4rem;
   line-height: 4.7rem;
+  font-weight: normal;
 }
 #companyHeader p {
   font-style: italic;
 }
-#companyHeader .start {
-  text-align: start;
-}
-#companyHeader .end {
-  text-align: end;
+#companyHeader .offset {
+  margin-left: 30vw;
 }
 
 /* index.html content */
@@ -701,6 +699,11 @@ hr.white {
 
   .mobileMenuToggle-wrapper, #mobileMenuToggle {
     display: none;
+  }
+
+  #mainNavbar #navLogo {
+    padding-bottom: 0;
+    margin-bottom: 0;
   }
 }
 @media (min-width: 768px) and (max-width: 991.98px) {

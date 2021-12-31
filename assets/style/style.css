@@ -335,6 +335,41 @@ body a:hover {
   height: 250px;
   margin: 10px 10px 0 10px;
 }
+#mainContent .title {
+  display: flex;
+  align-items: center;
+}
+#mainContent .title h1 {
+  color: #441B70;
+  padding: 10px 0;
+  border-bottom: 5px solid #441B70;
+}
+#mainContent #cardsContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0 0;
+}
+#mainContent #cardsContainer .card {
+  width: 18rem;
+  height: 18rem;
+  border-radius: 0;
+  border: 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  transition: all 0.2s ease 0s;
+}
+#mainContent #cardsContainer .card:hover {
+  background-color: #b6add9;
+  color: #ffffff;
+}
+#mainContent #cardsContainer .card .hover-content {
+  padding: 1.25rem;
+  visibility: hidden;
+  opacity: 0;
+}
+#mainContent #cardsContainer .card .hover-content:hover {
+  visibility: visible;
+  opacity: 1;
+}
 
 #treatmentsHeader {
   background: linear-gradient(40deg, #9990bd, #8e70af);

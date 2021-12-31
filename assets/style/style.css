@@ -328,6 +328,7 @@ body a:hover {
 #companyHeader h1.fancy-font {
   font-size: 4rem;
   line-height: 4.7rem;
+  font-weight: normal;
 }
 #companyHeader p {
   font-style: italic;
@@ -709,6 +710,11 @@ hr.white {
 
   .mobileMenuToggle-wrapper, #mobileMenuToggle {
     display: none;
+  }
+
+  #mainNavbar #navLogo {
+    padding-bottom: 0;
+    margin-bottom: 0;
   }
 
   .wrap-around-img, .wrap-around-img-below {

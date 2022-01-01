@@ -6,7 +6,7 @@ $('document').ready(function() {
 
     /* Setup functions */
     //run on window resize
-    window.onresize = toggleNavbarClass;
+    window.addEventListener('resize', toggleNavbarClass, true);
     //run once on load
     toggleNavbarClass();
     //run on scroll
@@ -155,5 +155,27 @@ $('document').ready(function() {
     //#endregion index
 
     /* Other Pages */
-});
+    //#region treatments
 
+    /**
+     * Offset jump links by current menu height on treatments page
+     */
+    // if(document.getElementById('swedishMassage')) {
+        function setJumpLinkOffset() {
+            let navbarHeight = document.getElementById("mainNavbar").offsetHeight;
+            const jumpLinks = document.getElementsByClassName("jump-link-offset");
+            for(let element of jumpLinks) {
+                console.log(element);
+                console.log(navbarHeight);
+                element.style.top = `-${navbarHeight}px`;
+                console.log(element.style.top);
+            };
+        }
+        //on resize and on menu open and close
+        setJumpLinkOffset()
+        window.addEventListener('resize', setJumpLinkOffset);
+        //todo custom event for menu opening??
+    // }
+
+    //#endregion
+});

@@ -404,6 +404,13 @@ $nav-transition-time: 1s;
 	text-align: center;
 }
 
+.jump-link-offset {
+	display: block;
+	position: relative;
+	top: 0; //height will be set in script
+	visibility: hidden;
+}
+
 /* whattoexpect.html content */
 #massageAccordion .card-header {
 	display: flex;

@@ -6,7 +6,7 @@ $('document').ready(function() {
 
     /* Setup functions */
     //run on window resize
-    window.onresize = toggleNavbarClass;
+    window.addEventListener('resize', toggleNavbarClass, true);
     //run once on load
     toggleNavbarClass();
     //run on scroll
@@ -14,6 +14,7 @@ $('document').ready(function() {
 
     /* All Pages */
     //#region all
+
     //#endregion
 
     /* Menu functions */
@@ -45,13 +46,13 @@ $('document').ready(function() {
         const navbar = document.getElementById("mainNavbarContent");
         //if mobile menu is open
         if(navbar.classList.contains('show')) {
-            //animate arrow up
+            //animate arrow down
             arrowWrapper.classList.remove('rotateUp');
             arrowWrapper.classList.add('rotateDown');
         }
         //if mobile menu is closed
         else { 
-            //animate arrow down
+            //animate arrow up
             arrowWrapper.classList.remove('rotateDown');
             arrowWrapper.classList.add('rotateUp');
         }
@@ -136,7 +137,9 @@ $('document').ready(function() {
 
         // $('#sliderTitle .list-group-item').on('shown.bs.tab', function(event) {});
         $('#sliderTitle .list-group-item').on('hidden.bs.tab', function(event) {
-            var showIndex = tabs.findIndex((id) => id === event.relatedTarget.id);
+            var showIndex = tabs.findIndex(function(id) {
+                return id === event.relatedTarget.id
+            });
             activeIndex = showIndex;
         });
 
@@ -155,5 +158,32 @@ $('document').ready(function() {
     //#endregion index
 
     /* Other Pages */
-});
+    //#region treatments
 
+    /**
+     * Offset treatments jump links by current menu height
+     */
+    if(!!document.querySelector('a[name="swedishMassage"]')) {
+        function setJumpLinkOffset() {
+            let navbarHeight = document.getElementById("mainNavbar").offsetHeight;
+            const jumpLinks = document.getElementsByClassName("jump-link-offset");
+            for(let element of jumpLinks) {
+                element.style.top = `-${navbarHeight}px`;
+            };
+        }
+        //on load
+        setJumpLinkOffset()
+        
+        //on resize, on nav logo collapse, and on mobile menu open and close 
+        window.addEventListener('resize', setJumpLinkOffset);
+        //wait for css transitions/animations to finish so we get the correct height of the navbar
+        //nb: if a jump link is clicked while the navbar is still animating, the height will be incorrect, but it's not worth fixing this
+        document.getElementById("navLogo").addEventListener('animationend', setJumpLinkOffset);
+        document.getElementById("mobileMenuToggle").addEventListener('transitionend', function(e) {
+            // only execute setJumpLinkOffset once, as mobileMenuToggle has multiple transitioning properties
+            if(e.propertyName !== 'transform') return;
+            setJumpLinkOffset()
+        });
+    }
+    //#endregion treatments
+});

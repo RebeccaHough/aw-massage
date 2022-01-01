@@ -13,8 +13,8 @@ home
         make text wrap around img
 
 treatments
-    jump links  
-        add offset to account for sticky-top menu
+    jump links
+        consider adding padding/more height in script so there is a little space between the heading and the navbar when a jump link is clicked
 
 contact
     add form

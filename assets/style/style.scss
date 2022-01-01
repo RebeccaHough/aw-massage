@@ -404,6 +404,19 @@ $nav-transition-time: 1s;
 	text-align: center;
 }
 
+#treatmentsMainContent {
+  h2 {
+    padding-top: 35px;
+  }
+}
+
+.jump-link-offset {
+	display: block;
+	position: relative;
+	top: calc(-126px - 35px); //height will be changed in script, but set to a sensible default
+	visibility: hidden;
+}
+
 /* whattoexpect.html content */
 #massageAccordion .card-header {
 	display: flex;

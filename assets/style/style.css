@@ -376,14 +376,25 @@ body a:hover {
 #treatmentsSlider #sliderImage {
   padding: 0 10px 0 20px;
   display: flex;
+  position: relative;
 }
 #treatmentsSlider #sliderImage img {
+  display: none;
   align-self: center;
-  height: 200px;
+  height: 280px;
+}
+#treatmentsSlider #sliderImage .filter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #441B70;
+  mix-blend-mode: color;
 }
 #treatmentsSlider #sliderContent {
   flex: 1;
-  padding: 0 10px;
+  padding: 20px 10px 0;
 }
 
 #openingTimes {
@@ -730,6 +741,10 @@ hr.white {
     margin-bottom: 0;
   }
 
+  #treatmentsSlider #sliderImage img {
+    display: block;
+  }
+
   .wrap-around-img, .wrap-around-img-below {
     display: block;
   }
@@ -763,6 +778,10 @@ hr.white {
 
   .container-extra-tight {
     max-width: 800px;
+  }
+
+  #treatmentsSlider #sliderImage img {
+    height: 235px;
   }
 }
 /*#endregion*/

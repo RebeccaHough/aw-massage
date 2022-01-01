@@ -299,14 +299,25 @@ $nav-transition-time: 1s;
 	#sliderImage {
 		padding: 0 10px 0 20px;
 		display: flex;
+    position: relative;
 		img {
+      display: none;
 			align-self: center;
-			height: 200px;
+			height: 280px;
 		}
+    .filter {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: $primary;
+      mix-blend-mode: color;
+    }
 	}
 	#sliderContent {
 		flex: 1;
-		padding: 0 10px;
+		padding: 20px 10px 0;
 	}
 }
 
@@ -686,6 +697,9 @@ hr.white {
 		padding-bottom: 0;
 		margin-bottom: 0;
   }
+  #treatmentsSlider #sliderImage img {
+    display: block;
+  }
 	.wrap-around-img {
 		display: block;
 		img {
@@ -723,6 +737,9 @@ hr.white {
 	.container-extra-tight {
 		max-width: 800px;
 	}
+  #treatmentsSlider #sliderImage img {
+    height: 235px;
+  }
  }
 
 /*#endregion*/

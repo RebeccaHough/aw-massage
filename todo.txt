@@ -19,7 +19,7 @@ treatments
 contact
     add form
     add picture of inside/outside of studio?
-    change the alt text of Phone.jpg to something more meaningful
+    opening times (on live) don't match index page, which is correct and where shall we put them on this page?
 
 ---- Mobile ----
 

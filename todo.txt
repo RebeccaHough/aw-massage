@@ -1,7 +1,4 @@
 ---- General ----
-nav
-    mobile
-        fix toggler being vertically off-centre when nav logo collapses
 
 ---- Pages ----
 
@@ -11,6 +8,7 @@ home
     main content
         reduce amount of text
         make text wrap around img
+    remove re-opening banner
 
 treatments
     jump links  

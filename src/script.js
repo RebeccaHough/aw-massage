@@ -80,7 +80,6 @@ $('document').ready(function() {
                 collapsed = true;
                 if(debug) console.log('[collapseNavLogo] collapsed: ' + collapsed);
                 //scrolled down (collapse menu)
-                document.getElementById("mainNavbar").style.padding = "0 0";
                 document.getElementById("navLogo").querySelector('.logo-image').style.height = "50px";
         
                 //remove old fade class
@@ -93,7 +92,6 @@ $('document').ready(function() {
                 collapsed = false;
                 if(debug) console.log('[collapseNavLogo] collapsed: ' + collapsed);
                 //scroll at top (expand menu)
-                document.getElementById("mainNavbar").style.padding = ".5rem 0";
                 document.getElementById("navLogo").querySelector('.logo-image').style.height = "65px";
     
                 //remove old fade class

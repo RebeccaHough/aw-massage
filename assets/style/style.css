@@ -137,7 +137,7 @@ body a:hover {
 
 /* Navigation */
 #mainNavbar {
-  padding: 0.5rem 0;
+  padding: 0;
   font-size: 1.12rem;
   background: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -745,6 +745,7 @@ hr.white {
 
   #mainNavbar #navLogo {
     padding-bottom: 0;
+    margin-top: 10px;
     margin-bottom: 0;
   }
 

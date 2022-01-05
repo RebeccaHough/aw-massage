@@ -17,10 +17,6 @@ treatments
 
 switch to rem for font sizing
 
----- Content ---- 
-
-any mention of travelling to them? make location more obvious
-
 ---- Polish ----
 
     fading-in/moving-in-from-bottom load
@@ -41,3 +37,4 @@ production
     check we're not shipping all of admin-ui
     what do 404 pages look like
     check project for '//todo's
+    check with Aase that content is correct

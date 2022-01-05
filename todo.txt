@@ -14,11 +14,6 @@ treatments
     jump links  
         add offset to account for sticky-top menu
 
-contact
-    add form
-    add picture of inside/outside of studio?
-    opening times (on live) don't match index page, which is correct and where shall we put them on this page?
-
 ---- Mobile ----
 
 switch to rem for font sizing
@@ -37,6 +32,9 @@ any mention of travelling to them? make location more obvious
         size convert to rem
     review copyright "flaticon.com" etc
     ensure it's obvious which page you're viewing (since we aren't highlighting this in the nav)
+    contact
+        add form
+        add picture of inside/outside of studio?
 
 ---- Misc ----
 

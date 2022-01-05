@@ -102,6 +102,7 @@ body a:hover {
 
 /* Announcement Banner */
 #banner {
+  display: none;
   background-color: #ffd700;
   padding: 12px 0;
   color: #464646;

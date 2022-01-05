@@ -60,6 +60,7 @@ body {
 
 /* Announcement Banner */
 #banner {
+	display: none;
     background-color: $alert;
     padding: 12px 0;
     color: $grey-very-dark;

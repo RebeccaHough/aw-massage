@@ -8,7 +8,6 @@ home
     main content
         reduce amount of text
         make text wrap around img
-    remove re-opening banner
 
 treatments
     jump links  

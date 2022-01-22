@@ -1,7 +1,4 @@
 ---- General ----
-nav
-    mobile
-        fix toggler being vertically off-centre when nav logo collapses
 
 ---- Pages ----
 
@@ -16,18 +13,9 @@ treatments
     jump links
         consider adding padding/more height in script so there is a little space between the heading and the navbar when a jump link is clicked
 
-contact
-    add form
-    add picture of inside/outside of studio?
-    opening times (on live) don't match index page, which is correct and where shall we put them on this page?
-
 ---- Mobile ----
 
 switch to rem for font sizing
-
----- Content ---- 
-
-any mention of travelling to them? make location more obvious
 
 ---- Polish ----
 
@@ -39,6 +27,9 @@ any mention of travelling to them? make location more obvious
         size convert to rem
     review copyright "flaticon.com" etc
     ensure it's obvious which page you're viewing (since we aren't highlighting this in the nav)
+    contact
+        add form
+        add picture of inside/outside of studio?
 
 ---- Misc ----
 
@@ -46,3 +37,4 @@ production
     check we're not shipping all of admin-ui
     what do 404 pages look like
     check project for '//todo's
+    check with Aase that content is correct

@@ -60,6 +60,7 @@ body {
 
 /* Announcement Banner */
 #banner {
+	display: none;
     background-color: $alert;
     padding: 12px 0;
     color: $grey-very-dark;
@@ -98,7 +99,7 @@ body {
 /* Navigation */
 $nav-transition-time: 1s;
 #mainNavbar {
-	padding: .5rem 0;
+	padding: 0;
 	font-size: 1.12rem;
 	background: white;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -708,6 +709,7 @@ hr.white {
 	}
 	#mainNavbar #navLogo {
 		padding-bottom: 0;
+		margin-top: 10px;
 		margin-bottom: 0;
   }
   #treatmentsSlider #sliderImage img {

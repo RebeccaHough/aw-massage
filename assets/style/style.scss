@@ -411,6 +411,13 @@ $nav-transition-time: 1s;
   }
 }
 
+/* feedback.html content */
+#feedbackMainContent {
+  b {
+    color: $primary;
+  }
+}
+
 .jump-link-offset {
 	display: block;
 	position: relative;
@@ -491,13 +498,6 @@ $nav-transition-time: 1s;
 	width: 100%;
 	padding: 10px 15px;
 	text-align: center;
-}
-
-.word-wrap {
-	// width: 100%;
-	// overflow-wrap: break-word;
-	// word-wrap: break-word;
-	word-break: break-all;
 }
 
 //to be placed on container-fluid divs
@@ -662,6 +662,10 @@ hr.white {
 
 .fancy-font {
 	font-family: $font-logo;
+}
+
+.alternate-bg {
+  background-color: $grey-light;
 }
 
 

@@ -485,6 +485,11 @@ body a:hover {
   padding-top: 35px;
 }
 
+/* feedback.html content */
+#feedbackMainContent b {
+  color: #441B70;
+}
+
 .jump-link-offset {
   display: block;
   position: relative;
@@ -565,10 +570,6 @@ body a:hover {
   width: 100%;
   padding: 10px 15px;
   text-align: center;
-}
-
-.word-wrap {
-  word-break: break-all;
 }
 
 .text-container {
@@ -714,6 +715,10 @@ hr.white {
 
 .fancy-font {
   font-family: TangerineBold, "Brush Script MT", cursive, sans-serif;
+}
+
+.alternate-bg {
+  background-color: #f4f4f4;
 }
 
 /*#region Media queries */

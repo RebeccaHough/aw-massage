@@ -19,27 +19,28 @@ body {
 	}
 	h1 { 
 		font-size: 2rem;
-		line-height: 2rem;
+		line-height: 2.2rem;
 	}
 	h2 {
 		font-size: 1.7rem;
-		line-height: 1.7rem;
+		line-height: 2rem;
+    margin-bottom: 1rem;
 	}
 	h3 { 
 		font-size: 1.3rem;
-		line-height: 1.3rem;
+		line-height: 1.5rem;
 	}
 	h4 { 
 		font-size: 1.1rem;
-		line-height: 1.1rem;
+		line-height: 1.3rem;
 	}
 	h5 { 
 		font-size: 1rem;
-		line-height: 1rem;
+		line-height: 1.2rem;
 	}
 	h6 { 
 		font-size: .9rem;
-		line-height: .9rem;
+		line-height: 1.1rem;
 	}
 	p { 
 		line-height: 1.43em; 
@@ -407,7 +408,14 @@ $nav-transition-time: 1s;
 
 #treatmentsMainContent {
   h2 {
-    padding-top: 35px;
+    color: $primary;
+    padding-top: 30px;
+  }
+  & > div:first-child h2 {
+    padding-top: 0;
+  }
+  ul {
+    list-style-type: disclosure-closed;
   }
 }
 
@@ -418,21 +426,12 @@ $nav-transition-time: 1s;
   }
 }
 
-.jump-link-offset {
-	display: block;
-	position: relative;
-	top: calc(-126px - 35px); //height will be changed in script, but set to a sensible default
-	visibility: hidden;
-}
-
 /* whattoexpect.html content */
-#massageAccordion .card-header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	a {
-		cursor: pointer;
-	}
+#whatToExpectMainContent {
+  padding-top: 0;
+  > div:first-child {
+    @extend #treatmentsMainContent;
+  }
 }
 
 /* contact.html content */
@@ -491,6 +490,13 @@ $nav-transition-time: 1s;
 }
 
 /* Utility classes */
+.jump-link-offset {
+	display: block;
+	position: relative;
+	top: calc(-126px - 35px); //height will be changed in script, but set to a sensible default
+	visibility: hidden;
+}
+
 .text-overlay {
 	position: absolute;
 	bottom: 0;

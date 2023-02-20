@@ -62,27 +62,28 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
 }
 body h1 {
   font-size: 2rem;
-  line-height: 2rem;
+  line-height: 2.2rem;
 }
 body h2 {
   font-size: 1.7rem;
-  line-height: 1.7rem;
+  line-height: 2rem;
+  margin-bottom: 1rem;
 }
 body h3 {
   font-size: 1.3rem;
-  line-height: 1.3rem;
+  line-height: 1.5rem;
 }
 body h4 {
   font-size: 1.1rem;
-  line-height: 1.1rem;
+  line-height: 1.3rem;
 }
 body h5 {
   font-size: 1rem;
-  line-height: 1rem;
+  line-height: 1.2rem;
 }
 body h6 {
   font-size: 0.9rem;
-  line-height: 0.9rem;
+  line-height: 1.1rem;
 }
 body p {
   line-height: 1.43em;
@@ -481,8 +482,15 @@ body a:hover {
   text-align: center;
 }
 
-#treatmentsMainContent h2 {
-  padding-top: 35px;
+#treatmentsMainContent h2, #whatToExpectMainContent > div:first-child h2 {
+  color: #441B70;
+  padding-top: 30px;
+}
+#treatmentsMainContent > div:first-child h2, #whatToExpectMainContent > div:first-child > div:first-child h2 {
+  padding-top: 0;
+}
+#treatmentsMainContent ul, #whatToExpectMainContent > div:first-child ul {
+  list-style-type: disclosure-closed;
 }
 
 /* feedback.html content */
@@ -490,23 +498,10 @@ body a:hover {
   color: #441B70;
 }
 
-.jump-link-offset {
-  display: block;
-  position: relative;
-  top: -161px;
-  visibility: hidden;
-}
-
 /* whattoexpect.html content */
-#massageAccordion .card-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+#whatToExpectMainContent {
+  padding-top: 0;
 }
-#massageAccordion .card-header a {
-  cursor: pointer;
-}
-
 /* contact.html content */
 #contactTable {
   width: 500px;
@@ -563,6 +558,13 @@ body a:hover {
 }
 
 /* Utility classes */
+.jump-link-offset {
+  display: block;
+  position: relative;
+  top: -161px;
+  visibility: hidden;
+}
+
 .text-overlay {
   position: absolute;
   bottom: 0;

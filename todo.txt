@@ -9,12 +9,8 @@ home
     main content
         reduce amount of text
         make text wrap around img
-    greys
-        make massages offered hover and opening times similar greys, same as logo grey?
-treatments
-    break up wall of text
-what to expect
-    rework content layout
+home, what to expect and about
+    images
 
 ---- Mobile ----
 
@@ -33,6 +29,9 @@ switch to rem for font sizing
     contact
         add form
         add picture of inside/outside of studio?
+    home
+        greys
+            make massages offered hover and opening times similar greys, same as logo grey?
 
 ---- Misc ----
 

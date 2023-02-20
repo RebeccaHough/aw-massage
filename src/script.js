@@ -156,14 +156,15 @@ $('document').ready(function() {
     //#endregion index
 
     /* Other Pages */
-    //#region treatments
-
     /**
-     * Offset treatments jump links by current menu height
+     * Offset jump links by current menu height
      */
-    if(!!document.querySelector('a[name="swedishMassage"]')) {
+    if(
+      !!document.querySelector('.jump-link-offset')
+    ) {
         function setJumpLinkOffset() {
             let navbarHeight = document.getElementById("mainNavbar").offsetHeight;
+            if(debug) console.log('[setJumpLinkOffset] navbarHeight: ', navbarHeight);
             const jumpLinks = document.getElementsByClassName("jump-link-offset");
             for(let element of jumpLinks) {
                 element.style.top = `-${navbarHeight}px`;
@@ -183,5 +184,4 @@ $('document').ready(function() {
             setJumpLinkOffset()
         });
     }
-    //#endregion treatments
 });

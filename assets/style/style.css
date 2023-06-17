@@ -607,6 +607,11 @@ body a:hover {
   margin: 3rem auto 0;
 }
 
+.img-shadow {
+  border-radius: 3px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
 ul.list {
   display: block;
   margin: 1em 0;

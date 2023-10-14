@@ -244,21 +244,20 @@ $nav-transition-time: 1s;
 
 #companyHeader {
 	@extend .coloured-header;
-    padding-top: 3.5rem;
-    padding-bottom: 3.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 	font-family: $font-heading;
 	font-weight: initial;
-	h1 {
+	h2 {
 		margin-bottom: 0;
-		&.fancy-font {
-      font-size: 4rem;
-      line-height: 4.7rem;
-      font-weight: normal;
-		}
+    font-size: 2.3rem;
+    line-height: 3.8rem;
+    font-weight: normal;
 	}
-    p {
-        font-style: italic;
-    }
+  p {
+    font-style: italic;
+    margin-bottom: 10px
+  }
 	.offset {
 		margin-left: 30vw;
 	}

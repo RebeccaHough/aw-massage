@@ -9,42 +9,42 @@ body {
 	margin: 0px;
 	padding: 0px;
 	background: white;
-	ul { 
+	ul {
 		list-style-type: none;
-	}	
+	}
 	h1, h2, h3, h4, h5, h6 {
 		font-family: $font-heading;
 		padding: 0;
 		font-weight: 700;
 	}
-	h1 { 
+	h1 {
 		font-size: 2rem;
 		line-height: 2.2rem;
 	}
 	h2 {
 		font-size: 1.7rem;
 		line-height: 2rem;
-    margin-bottom: 1rem;
+	margin-bottom: 1rem;
 	}
-	h3 { 
+	h3 {
 		font-size: 1.3rem;
 		line-height: 1.5rem;
 	}
-	h4 { 
+	h4 {
 		font-size: 1.1rem;
 		line-height: 1.3rem;
 	}
-	h5 { 
+	h5 {
 		font-size: 1rem;
 		line-height: 1.2rem;
 	}
-	h6 { 
+	h6 {
 		font-size: .9rem;
 		line-height: 1.1rem;
 	}
-	p { 
-		line-height: 1.43em; 
-		&:last-child { 
+	p {
+		line-height: 1.43em;
+		&:last-child {
 			margin-bottom: 0;
 		}
 	}
@@ -62,14 +62,14 @@ body {
 /* Announcement Banner */
 #banner {
 	display: none;
-    background-color: $alert;
-    padding: 12px 0;
-    color: $grey-very-dark;
-    text-align: center;
-    .container {
-        display: flex;
-        justify-content: center;
-    }
+	background-color: $alert;
+	padding: 12px 0;
+	color: $grey-very-dark;
+	text-align: center;
+	.container {
+		display: flex;
+		justify-content: center;
+	}
 }
 
 /* Contact Bar */
@@ -82,7 +82,8 @@ body {
 		justify-content: space-evenly;
 	}
 	//override <a>
-	*, a { 
+	*, a {
+		font-size: 1.2rem;
 		font-family: $font-heading;
 		color: $white;
 		font-weight: 100;
@@ -130,7 +131,7 @@ $nav-transition-time: 1s;
 	}
 }
 
-/* Logo styling in navbar (temp)*/ 
+/* Logo styling in navbar (temp)*/
 //todo extend to be reusable with sass, make height and padding ratios
 .logo-image {
 	margin-left: 10px;
@@ -149,7 +150,7 @@ $nav-transition-time: 1s;
 /* For navbar logo text only*/
 .fade-in {
 	animation: fadein-text $nav-transition-time linear forwards;
-	-webkit-animation:  fadein-text $nav-transition-time linear forwards;
+	-webkit-animation: fadein-text $nav-transition-time linear forwards;
 }
 
 .fade-out {
@@ -198,23 +199,23 @@ $nav-transition-time: 1s;
 	border-radius: $border-radius;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
 	cursor: pointer;
-	
+
 	.icon-rotate-wrapper {
 		transition: all 0.6s ease-in-out;
 		i {
 			color: $white !important;
 		}
-	}	
+	}
 }
 
-.rotateDown { 
+.rotateDown {
 	transform: rotate3d(0, 0, 0, 0);
 	margin: 0;
 }
 
 .rotateUp {
 	transform: rotate3d(1, 0, 0, 180deg);
-	margin-top: -4px; //center when upside down; icon isn't same length in 
+	margin-top: -4px; //center when upside down; icon isn't same length in
 	margin-bottom: 4px;
 }
 
@@ -244,20 +245,20 @@ $nav-transition-time: 1s;
 
 #companyHeader {
 	@extend .coloured-header;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
 	font-family: $font-heading;
 	font-weight: initial;
 	h2 {
 		margin-bottom: 0;
-    font-size: 2.3rem;
-    line-height: 3.8rem;
-    font-weight: normal;
+		font-size: 2.3rem;
+		line-height: 3.8rem;
+		font-weight: normal;
 	}
-  p {
-    font-style: italic;
-    margin-bottom: 10px
-  }
+	p {
+		font-style: italic;
+		margin-bottom: 10px
+	}
 	.offset {
 		margin-left: 30vw;
 	}
@@ -286,9 +287,9 @@ $nav-transition-time: 1s;
 		.list-group-item {
 			color: rgba(0, 0, 0, 0.65);
 		}
-        .list-group-item-action:focus {
-            background-color: white;
-        }
+		.list-group-item-action:focus {
+			background-color: white;
+		}
 		.list-group-item.active {
 			color: $primary;
 			font-weight: bold;
@@ -300,21 +301,21 @@ $nav-transition-time: 1s;
 	#sliderImage {
 		padding: 0 10px 0 20px;
 		display: flex;
-    position: relative;
+		position: relative;
 		img {
-      display: none;
+			display: none;
 			align-self: center;
 			height: 280px;
 		}
-    .filter {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-color: $primary;
-      mix-blend-mode: color;
-    }
+		.filter {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: $primary;
+			mix-blend-mode: color;
+		}
 	}
 	#sliderContent {
 		flex: 1;
@@ -326,7 +327,7 @@ $nav-transition-time: 1s;
 	background-color: $grey-light;
 	overflow: hidden;
 	.opening-text {
-		margin: auto; 
+		margin: auto;
 		padding-right: 30px;
 		ul {
 			margin-bottom: 1.5rem;
@@ -361,7 +362,7 @@ $nav-transition-time: 1s;
 /* Testimonials carousel */
 #testimonials {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/consultation.jpg');
-  	background-repeat: no-repeat;
+	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 	position: relative;
@@ -406,31 +407,31 @@ $nav-transition-time: 1s;
 }
 
 #treatmentsMainContent {
-  h2 {
-    color: $primary;
-    padding-top: 30px;
-  }
-  & > div:first-child h2 {
-    padding-top: 0;
-  }
-  ul {
-    list-style-type: disclosure-closed;
-  }
+	h2 {
+		color: $primary;
+		padding-top: 30px;
+	}
+	& > div:first-child h2 {
+		padding-top: 0;
+	}
+	ul {
+		list-style-type: disclosure-closed;
+	}
 }
 
 /* feedback.html content */
 #feedbackMainContent {
-  b {
-    color: $primary;
-  }
+	b {
+		color: $primary;
+	}
 }
 
 /* whattoexpect.html content */
 #whatToExpectMainContent {
-  padding-top: 0;
-  > div:first-child {
-    @extend #treatmentsMainContent;
-  }
+	padding-top: 0;
+	> div:first-child {
+		@extend #treatmentsMainContent;
+	}
 }
 
 /* contact.html content */
@@ -450,16 +451,16 @@ $nav-transition-time: 1s;
 }
 
 #location {
-  position: relative;
-  height: 0;
-  padding-bottom: 32rem;
-  iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
+	position: relative;
+	height: 0;
+	padding-bottom: 32rem;
+	iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
 }
 
 /* about.html content */
@@ -468,7 +469,7 @@ $nav-transition-time: 1s;
 }
 
 /* Footer */
-#footer { 
+#footer {
 	background-color: white;
 	color: rgba(0, 0, 0, 0.5);
 	padding: 2.5rem 0 1rem 0;
@@ -480,8 +481,8 @@ $nav-transition-time: 1s;
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
-        text-align: center;
-        margin-top: 10px;
+		text-align: center;
+		margin-top: 10px;
 		img {
 			align-self: center;
 		}
@@ -523,9 +524,9 @@ $nav-transition-time: 1s;
 .container-tight {
 	width: 100%;
 	padding-right: 0;
-    padding-left: 0;
-    margin-right: auto;
-    margin-left: auto;
+	padding-left: 0;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 //even more padding on extra large desktop sizes
@@ -552,8 +553,8 @@ $nav-transition-time: 1s;
 }
 
 .img-shadow {
-  border-radius: 3px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	border-radius: 3px;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 ul.list {
@@ -612,7 +613,6 @@ ul.list {
 		margin: 0;
 		padding: 0 .25em 0 0;
 	}
-	
 }
 
 .highlight-font {
@@ -629,7 +629,7 @@ ul.list {
 }
 
 .rtl {
-  direction: rtl;
+	direction: rtl;
 }
 
 [class^="flaticon-"] {
@@ -675,7 +675,7 @@ hr.white {
 }
 
 .alternate-bg {
-  background-color: $grey-light;
+	background-color: $grey-light;
 }
 
 
@@ -686,7 +686,7 @@ hr.white {
 		//hide clickable menu items and non-clickable dropdown
 		a, div.ui.dropdown {
 			display: none;
-		} 
+		}
 		//show mobile sidebar menu opener
 		a.toggle.item {
 			display: block;
@@ -700,7 +700,7 @@ hr.white {
 // No media query since this is the default in Bootstrap
 
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) { 
+@media (min-width: 576px) {
 	.container-tight {
 		max-width: 540px;
 		padding-right: 15px;
@@ -712,7 +712,7 @@ hr.white {
  }
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
 	.container-tight {
 		max-width: 700px;
 		padding-right: 15px;
@@ -725,10 +725,10 @@ hr.white {
 		padding-bottom: 0;
 		margin-top: 10px;
 		margin-bottom: 0;
-  }
-  #treatmentsSlider #sliderImage img {
-    display: block;
-  }
+	}
+	#treatmentsSlider #sliderImage img {
+	display: block;
+	}
 	.wrap-around-img {
 		display: block;
 		img {
@@ -736,16 +736,16 @@ hr.white {
 			margin: 0 0 20px 20px;
 		}
 	}
- }
+}
 
- @media (min-width: 768px) and (max-width: 991.98px) { 
+@media (min-width: 768px) and (max-width: 991.98px) {
 	#mainNavbarContent > ul li {
 		padding: 10px 3px;
 	}
- }
+}
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) { 
+@media (min-width: 992px) {
 	.container-tight {
 		max-width: 700px;
 		padding-right: 15px;
@@ -754,10 +754,10 @@ hr.white {
 	#mainNavbarContent > ul li {
 		padding: 10px;
 	}
- }
+}
 
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { 
+@media (min-width: 1200px) {
 	.container-tight {
 		max-width: 900px;
 		padding-right: 15px;
@@ -766,17 +766,17 @@ hr.white {
 	.container-extra-tight {
 		max-width: 800px;
 	}
-  #treatmentsSlider #sliderImage img {
-    height: 235px;
-  }
- }
+	#treatmentsSlider #sliderImage img {
+	height: 235px;
+	}
+}
 
 /*#endregion*/
 
 /*#region Bootstrap desktop-first responsive breakpoints */
 
 // Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) { 
+@media (max-width: 575.98px) {
 	//overwrite removal of margins on mobile for bootstrap row
 	.row-mobile-ow {
 		margin-right: 0;
@@ -789,8 +789,8 @@ hr.white {
 		.about {
 			margin: 0 15px;
 		}
-	} 
- }
+	}
+}
 
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 767.98px) {  }

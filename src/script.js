@@ -29,9 +29,9 @@ $('document').ready(function() {
     function toggleNavbarClass() {
         const navbar = document.getElementById("mainNavbarContent");
         if(!isMobileMenu()) {
-            navbar.classList.add("navbar-collapse"); 
+            navbar.classList.add("navbar-collapse");
         } else {
-            navbar.classList.remove("navbar-collapse"); 
+            navbar.classList.remove("navbar-collapse");
         }
         if(debug) console.log('[toggleNavbarClass] navbar classes: ', navbar.classList);
     }
@@ -51,7 +51,7 @@ $('document').ready(function() {
             arrowWrapper.classList.add('rotateDown');
         }
         //if mobile menu is closed
-        else { 
+        else {
             //animate arrow up
             arrowWrapper.classList.remove('rotateDown');
             arrowWrapper.classList.add('rotateUp');
@@ -82,7 +82,7 @@ $('document').ready(function() {
                 if(debug) console.log('[collapseNavLogo] collapsed: ' + collapsed);
                 //scrolled down (collapse menu)
                 document.getElementById("navLogo").querySelector('.logo-image').style.height = "50px";
-        
+
                 //remove old fade class
                 document.getElementById("navLogo").querySelector('.logo-text').classList.remove('fade-in');
                 //add new fade class
@@ -94,7 +94,7 @@ $('document').ready(function() {
                 if(debug) console.log('[collapseNavLogo] collapsed: ' + collapsed);
                 //scroll at top (expand menu)
                 document.getElementById("navLogo").querySelector('.logo-image').style.height = "65px";
-    
+
                 //remove old fade class
                 document.getElementById("navLogo").querySelector('.logo-text').classList.remove('fade-out');
                 //add new fade class
@@ -108,10 +108,10 @@ $('document').ready(function() {
     if(debug) console.log("[collapseNavLogo] collapsed: " + collapsed);
     //if logo should start collapsed, run collapse animation once
     if(collapsed) {
-        collapsed = false; 
+        collapsed = false;
         collapseNavLogo();
     }
-    
+
     //#endregion menu
 
     /* Index Page */
@@ -122,14 +122,14 @@ $('document').ready(function() {
      */
     if(document.getElementById('treatmentsSlider')) {
         const sliderTime = 2000;
-        let tabs = ["list-swedish-massage", "list-deep-tissue-massage", "list-advanced-clinical-massage", "list-hot-stone-massage", "list-scar-tissue-massage"];
+        let tabs = ["list-swedish-massage", "list-deep-tissue-massage", "list-advanced-clinical-massage", "list-hot-stone-massage", "list-myofascial-release-massage"];
         let activeIndex = 1;
         let sliderInterval = setInterval(runTreatmentSlider, sliderTime);
 
         function runTreatmentSlider(e) {
             $('#sliderTitle #' + tabs[activeIndex]).tab('show');
             activeIndex++;
-            if(activeIndex >= tabs.length) 
+            if(activeIndex >= tabs.length)
                 activeIndex = 0;
         }
 
@@ -147,7 +147,7 @@ $('document').ready(function() {
         function pauseTreatmentSlider(e) {
             clearInterval(sliderInterval);
         }
-        
+
         document.getElementById('treatmentsSlider').onmouseleave = resumeTreatmentSlider;
         function resumeTreatmentSlider(e) {
             sliderInterval = setInterval(runTreatmentSlider, sliderTime);
@@ -172,8 +172,8 @@ $('document').ready(function() {
         }
         //on load
         setJumpLinkOffset()
-        
-        //on resize, on nav logo collapse, and on mobile menu open and close 
+
+        //on resize, on nav logo collapse, and on mobile menu open and close
         window.addEventListener('resize', setJumpLinkOffset);
         //wait for css transitions/animations to finish so we get the correct height of the navbar
         //nb: if a jump link is clicked while the navbar is still animating, the height will be incorrect, but it's not worth fixing this

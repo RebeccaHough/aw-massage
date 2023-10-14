@@ -17,15 +17,10 @@ From Aase
 
 Motto - "use it or lose it" - kinda cringe maybe don't add this 😛
 Bigger phone number in the bar at the top (of every page?)
-Write that she combines techniques on the Treatment page
-Remove on the about page and in the footer the text about going to clients (only in her Studio in Rowledge)
-  make sure footers are all the same (one page is different I think)
 Replace Scar Tissue heading on Treatments page with Myofascial Release
   the paragraph needs rewording a little to include more myofascial release text
-Replace home page heading "Massages Offered" to some text describing combination of massages
 
 Padding or margin improvements
-  text in the rotating "massages offered" section on the home page makes the section bigger or smaller depending on the amount of text there
   similar to above with the quotes section on the home page, more text / lines = expanding / contracting area
 
 ---- Mobile ----

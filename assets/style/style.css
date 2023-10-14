@@ -462,6 +462,9 @@ body a:hover {
   background-color: #441B70;
   height: 4px;
 }
+#testimonialsCarousel .carousel-inner {
+  min-height: 110px;
+}
 
 #contact {
   background-color: #9990bd;
@@ -744,6 +747,7 @@ hr.white {
     padding-right: 15px;
     padding-left: 15px;
   }
+
   #contactBar .container {
     justify-content: space-between;
   }
@@ -754,17 +758,21 @@ hr.white {
     padding-right: 15px;
     padding-left: 15px;
   }
+
   .mobileMenuToggle-wrapper, #mobileMenuToggle {
     display: none;
   }
+
   #mainNavbar #navLogo {
     padding-bottom: 0;
     margin-top: 10px;
     margin-bottom: 0;
   }
+
   #treatmentsSlider #sliderImage img {
     display: block;
   }
+
   .wrap-around-img, .wrap-around-img-below {
     display: block;
   }
@@ -784,6 +792,7 @@ hr.white {
     padding-right: 15px;
     padding-left: 15px;
   }
+
   #mainNavbarContent > ul li {
     padding: 10px;
   }
@@ -794,9 +803,11 @@ hr.white {
     padding-right: 15px;
     padding-left: 15px;
   }
+
   .container-extra-tight {
     max-width: 800px;
   }
+
   #treatmentsSlider #sliderImage img {
     height: 235px;
   }
@@ -808,6 +819,7 @@ hr.white {
     margin-right: 0;
     margin-left: 0;
   }
+
   #footer .row-wrapper {
     margin-bottom: 15px;
   }

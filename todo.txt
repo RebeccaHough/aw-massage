@@ -18,9 +18,6 @@ From Aase
 Motto - "use it or lose it" - kinda cringe maybe don't add this 😛
 The Myofascial Release paragraph needs rewording a little to include more myofascial release text
 
-Padding or margin improvements
-  similar to above with the quotes section on the home page, more text / lines = expanding / contracting area
-
 ---- Mobile ----
 
 switch to rem for font sizing

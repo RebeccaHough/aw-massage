@@ -407,8 +407,16 @@ body a:hover {
   margin: auto;
   padding-right: 30px;
 }
-#openingTimes .opening-text ul {
+#openingTimes .opening-text > div {
   margin-bottom: 1.5rem;
+  margin-left: 50px;
+}
+#openingTimes .opening-text .opening-days {
+  text-align: end;
+  margin-right: 20px;
+}
+#openingTimes .opening-text .opening-times {
+  text-align: end;
 }
 #openingTimes .offset-square {
   position: relative;
@@ -483,6 +491,10 @@ body a:hover {
   padding-top: 3rem;
   padding-bottom: 3rem;
   text-align: center;
+}
+
+#treatmentsSummary .nav {
+  font-size: 1.4rem;
 }
 
 #treatmentsMainContent h2, #whatToExpectMainContent > div:first-child h2 {
@@ -747,7 +759,6 @@ hr.white {
     padding-right: 15px;
     padding-left: 15px;
   }
-
   #contactBar .container {
     justify-content: space-between;
   }
@@ -758,21 +769,17 @@ hr.white {
     padding-right: 15px;
     padding-left: 15px;
   }
-
   .mobileMenuToggle-wrapper, #mobileMenuToggle {
     display: none;
   }
-
   #mainNavbar #navLogo {
     padding-bottom: 0;
     margin-top: 10px;
     margin-bottom: 0;
   }
-
   #treatmentsSlider #sliderImage img {
     display: block;
   }
-
   .wrap-around-img, .wrap-around-img-below {
     display: block;
   }
@@ -792,7 +799,6 @@ hr.white {
     padding-right: 15px;
     padding-left: 15px;
   }
-
   #mainNavbarContent > ul li {
     padding: 10px;
   }
@@ -803,11 +809,9 @@ hr.white {
     padding-right: 15px;
     padding-left: 15px;
   }
-
   .container-extra-tight {
     max-width: 800px;
   }
-
   #treatmentsSlider #sliderImage img {
     height: 235px;
   }
@@ -819,7 +823,6 @@ hr.white {
     margin-right: 0;
     margin-left: 0;
   }
-
   #footer .row-wrapper {
     margin-bottom: 15px;
   }

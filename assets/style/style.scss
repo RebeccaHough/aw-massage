@@ -329,8 +329,16 @@ $nav-transition-time: 1s;
 	.opening-text {
 		margin: auto;
 		padding-right: 30px;
-		ul {
+		> div {
 			margin-bottom: 1.5rem;
+			margin-left: 50px;
+		}
+		.opening-days {
+			text-align: end;
+			margin-right: 20px;
+		}
+		.opening-times {
+			text-align: end;
 		}
 	}
 	.offset-square {
@@ -409,6 +417,12 @@ $nav-transition-time: 1s;
 	padding-top: 3rem;
 	padding-bottom: 3rem;
 	text-align: center;
+}
+
+#treatmentsSummary {
+	.nav {
+		font-size: 1.4rem;
+	}
 }
 
 #treatmentsMainContent {

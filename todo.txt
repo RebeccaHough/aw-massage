@@ -13,11 +13,6 @@ home, what to expect and about
     images
 
 
-From Aase
-
-Motto - "use it or lose it" - kinda cringe maybe don't add this 😛
-The Myofascial Release paragraph needs rewording a little to include more myofascial release text
-
 ---- Mobile ----
 
 switch to rem for font sizing
@@ -45,4 +40,3 @@ production
     check we're not shipping all of admin-ui
     what do 404 pages look like
     check project for '//todo's
-    check with Aase that content is correct

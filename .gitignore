@@ -3,18 +3,18 @@
 
 # images
 # but keep logo and favicon
-/assets/images/**
-!/assets/images/logo.png
-!/assets/images/favicons
+/src/assets/images/**
+!/src/assets/images/logo.png
+!/src/assets/images/favicons
 
 # fonts
-/assets/fonts/111235-admin-ui/**
-!/assets/fonts/111235-admin-ui/font/
-!/assets/fonts/111235-admin-ui/font/**
+/src/assets/fonts/111235-admin-ui/**
+!/src/assets/fonts/111235-admin-ui/font/
+!/src/assets/fonts/111235-admin-ui/font/**
 
-/assets/images/favicons/*
-!/assets/images/favicons/favicon.ico
+/src/assets/images/favicons/*
+!/src/assets/images/favicons/favicon.ico
 
 # compilery things for sass
-/assets/style/.sass-cache
-/assets/style/style.css.map
+/src/assets/style/.sass-cache
+/src/assets/style/style.css.map

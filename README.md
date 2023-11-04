@@ -9,7 +9,7 @@ Available at: http://sass-lang.com/install
 ### Compiling
 Run:
 ```
-sass --watch assets/style/style.scss:assets/style/style.css
+sass --watch src/assets/style/style.scss:src/assets/style/style.css
 ```
 in the project directory to get sass to re-compile on file change.
 

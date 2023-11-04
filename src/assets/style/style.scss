@@ -393,11 +393,11 @@ $nav-transition-time: 1s;
 			height: 4px;
 		}
 	}
-  .carousel-inner {
-    // makes sure the carousel doesn't bump the page length up and down
-    // when it rotates on desktop
-    min-height: 110px;
-  }
+	.carousel-inner {
+		// makes sure the carousel doesn't bump the page length up and down
+		// when it rotates on desktop
+		min-height: 110px;
+	}
 }
 
 #contact {
